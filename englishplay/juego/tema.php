@@ -1,6 +1,6 @@
 <?php
 
-	include 'conexionDB.php';
+	include '..\conexionDB.php';
 
 	$txtIdTema = $_GET['txtIdTema'];
 
