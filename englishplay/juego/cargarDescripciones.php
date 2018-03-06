@@ -1,6 +1,6 @@
 <?php
 
-	include '../conexionDB.php';
+	include 'conexionDB.php';
 
 	if(!$conexion->connect_errno) {
 		$sql 		= "SELECT descripcionObjeto FROM objeto";
