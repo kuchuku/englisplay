@@ -183,6 +183,15 @@ CREATE TABLE IF NOT EXISTS `pregunta` (
 /*!40000 ALTER TABLE `pregunta` DISABLE KEYS */;
 /*!40000 ALTER TABLE `pregunta` ENABLE KEYS */;
 
+CREATE TABLE IF NOT EXISTS `profesor` (
+  `codigoProfesor` double NOT NULL,
+  `contraseniaProfesor` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`codigoProfesor`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*!40000 ALTER TABLE `profesor` DISABLE KEYS */;
+/*!40000 ALTER TABLE `profesor` ENABLE KEYS */;
+
 CREATE TABLE IF NOT EXISTS `resultadodesafio` (
   `idResultadoDesafio` int(11) NOT NULL,
   `codigoEstudiante` double NOT NULL,
