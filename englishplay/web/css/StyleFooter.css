@@ -1,11 +1,12 @@
 footer{
+	width: 100%;
 }
 
 h3{
 	background: no-repeat scroll 0 0 #cccccccf;
 	border-radius: 5px;
 	color: #7d6319;
-	font-family:  Trattatello, fantasy;
+	font-family:  arial;
 	font-size: 25px;
 	padding: 5px;
 	text-shadow: 1px 1px 1px #e4b42d;

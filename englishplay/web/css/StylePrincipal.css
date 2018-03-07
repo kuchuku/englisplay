@@ -5,7 +5,7 @@
 body{
 	max-width: 100%;
 	color: #000;
-	font-family: Trattatello, fantasy;
+	font-family: arial;
 	font-size: 20px;
 }
 .container{
@@ -17,7 +17,7 @@ body{
 	text-align: center;
 }
 main{
-	padding-bottom: 20px;
+	padding-bottom: 0px;
 }
 a.start{
 	display: inline-block;
@@ -51,6 +51,7 @@ nav a{
 	text-decoration: none;
 	text-shadow: 1px 1px 1px #e4b42d;
 	line-height: 40px;
+	font-size: 22px;
 }
 #enlaces:hover{
 	background: #dedede;
