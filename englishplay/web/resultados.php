@@ -1,6 +1,6 @@
 <?php 
 include("header.php");
-require("php/conexion.php");
+require('../conexionDB.php');
 include("php/sesion.php");
 ?>
 
@@ -15,7 +15,7 @@ include("php/sesion.php");
 		<h2>Congrats! You have completed the test </h2>
 
 		<?php  
-			$query ="SELECT * FROM preguntas WHERE test = 0 AND capitulo = 1";
+			$query ="SELECT * FROM pregunta WHERE test = 0 AND capitulo = 1";
 		 	//Get result
 		 	$results = mysqli_query($conexion,$query); 	
 		 	$_SESSION['score'] = 0;

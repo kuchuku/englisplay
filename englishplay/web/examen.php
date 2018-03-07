@@ -1,11 +1,11 @@
 <?php 
 include("header.php");
-require("php/conexion.php");
+require('../conexionDB.php');
 include("php/sesion.php");
 ?>
 <?php 
 	// Get Total Questions
-	$query = "SELECT * FROM preguntas";
+	$query = "SELECT * FROM pregunta";
 	// Get result
 	$results =  mysqli_query($conexion,$query);
 	$total = $results->num_rows;
