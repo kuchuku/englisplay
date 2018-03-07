@@ -1,10 +1,10 @@
 <?php 
 include("header.php");
-require("php/conexion.php");
+require('../conexionDB.php');
 include("php/sesion.php");
 ?>
 <?php 
-		 	$query ="SELECT id,pregunta,respuesta,elec1,elec2 FROM preguntas WHERE test = 0 AND capitulo = 1";
+		 	$query ="SELECT id,pregunta,respuesta,elec1,elec2 FROM pregunta WHERE test = 0 AND capitulo = 1";
 		 	//Get result
 		 	$consulta = mysqli_query($conexion,$query);
 		 	$total = $consulta->num_rows;		

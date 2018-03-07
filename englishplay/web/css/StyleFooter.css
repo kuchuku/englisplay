@@ -3,12 +3,12 @@ footer{
 }
 
 h3{
-	background: no-repeat scroll 0 0 #cccccccf;
+	background: no-repeat scroll 0 0 #ccc;
 	border-radius: 5px;
 	color: #7d6319;
 	font-family:  arial;
 	font-size: 25px;
-	padding: 5px;
+	padding: 12px;
 	text-shadow: 1px 1px 1px #e4b42d;
 }
 .row-fluid{
