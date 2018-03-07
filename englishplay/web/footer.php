@@ -1,3 +1,4 @@
+<footer>
 <div class="container">
 	<div class="mini-title">
 		<h3>EnglisPlay Team</h3>
@@ -65,6 +66,6 @@
 		</div>
 	</div>
 </div>
-<footer>
+
 </footer>
 </html>
