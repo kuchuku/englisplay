@@ -13,6 +13,7 @@ include("php/sesion.php");
 <main>
 	<div class="container">
 		<div class="container2">
+			<br>
 		<h2 id="titulo">Congrats! You have completed the test </h2>
 		<br>
 		<?php  
@@ -47,8 +48,8 @@ include("php/sesion.php");
 		 		if ($correct_choice != $selected_choice) 
 		 		{				 	
 				 	//answer is incorrect				 	
-				 	echo "tu respuesta: ".'<span id="wrong">'.$selected_choice.'</span>'.'<br>';
-				 	echo "respuesta correcta: ".'<span id="correct">'.$correct_choice.'</span>'.'<br><br>';
+				 	echo '<span id="pregidform">'."incorrecto! tu respuesta fue: ".'</span>'.'<span id="wrong">'.$selected_choice.'</span>'.'<br>';
+				 	echo '<span id="pregidform">'." y la respuesta correcta es: ".'</span>'.'<span id="correct">'.$correct_choice.'</span>'.'<br><br>';
 		 		}		
 		 		if ($correct_choice == $selected_choice) 
 		 		{
@@ -59,10 +60,10 @@ include("php/sesion.php");
 		 	}
 		 echo '</div>';	
 		?>			
-		<br><br>	
-		<p id="score">Final Score: <?php echo $_SESSION['score']; ?></p>
+		<br>
+		<p id="score">Final Score: <?php echo $_SESSION['score']; ?></p><br>
 		<a href="index.php" class="boton">Continue</a>
-		<br><br>
+		<br>
 	</div>
 	</div>
 	<br>

@@ -18,18 +18,20 @@ include("php/sesion.php");
 
 <main>
 	<div class="container">
+		<br>
 		<h1> EXAMEN DE CONOCIMIENTOS EN INGLÉS </h1>
-	
-		<h2>Test your PHP Knowledge</h2>
-		<p>
-			This is a multiple quiz to test your knowledge of PHP
+		<h2>Prueba tus conocimientos</h2>
+		<p id="eligetext">
+			Por favor digita el examen que deseas realizar, cada examen cuenta con:
 		</p>
-		<ul>
-			<li><strong>Number of Questions: </strong><?php echo $total; ?></li>
-			<li><strong>Type: </strong>Multiple Choice</li>
-			<li><strong>Estimated Time: </strong><?php echo $total * .5 ?> min</li>
+		<ul id="cadatest">
+			<li><strong>Número de preguntas: </strong><?php echo $total; ?></li>
+			<li><strong>Tipo: </strong>Elección múltiple única respuesta</li>
+			<li><strong>Tiempo estimado: </strong><?php echo $total * .5 ?> min</li>
 		</ul>
-		<a href="preguntas.php" class="start">Start Quiz</a>
+		<br><br>
+		<a href="preguntas.php" class="boton">Comenzar</a>
+		<br>
 	</div>
 </main>
 </body>
