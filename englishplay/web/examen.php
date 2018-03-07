@@ -19,8 +19,7 @@ include("php/sesion.php");
 <main>
 	<div class="container">
 		<h1> EXAMEN DE CONOCIMIENTOS EN INGLÉS </h1>
-	</div>
-	<div class="container">
+	
 		<h2>Test your PHP Knowledge</h2>
 		<p>
 			This is a multiple quiz to test your knowledge of PHP

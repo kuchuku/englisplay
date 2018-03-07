@@ -12,8 +12,9 @@ include("php/sesion.php");
 
 <main>
 	<div class="container">
-		<h2>Congrats! You have completed the test </h2>
-
+		<div class="container2">
+		<h2 id="titulo">Congrats! You have completed the test </h2>
+		<br>
 		<?php  
 			$query ="SELECT * FROM pregunta WHERE test = 0 AND capitulo = 1";
 		 	//Get result
@@ -23,7 +24,7 @@ include("php/sesion.php");
 		 	while ($row = mysqli_fetch_array($results)) 
 		 	{
 		 	$idprg = $row['id'];
-		 	$resp = $row['pregunta'];
+		 	$preg = $row['pregunta'];
 		 	$selected_choice = $_POST['choice'.$row['id']]; 	
 		 	
 		    	if (!isset($_SESSION['score'])) {
@@ -37,32 +38,34 @@ include("php/sesion.php");
 				 	//Get result
 				 	$respuesta = mysqli_query($conexion,$query); 
 		 			$correct_choice = $row ['respuesta'];
-		 		}
-		 		echo "(",$idprg,") ",$resp;
+		 		}?>
+		 		<div id=comprobar><?php
+		 		echo '<span id="pregidform">'."(".$idprg.")".'</span>'." ".'<span id="pregidform2">'.$preg.'</span>';
+		 		?></div>
+		 		<?php 
+		 		echo '<div id= "formchoices">';
 		 		if ($correct_choice != $selected_choice) 
-		 		{
+		 		{				 	
 				 	//answer is incorrect				 	
-				 	echo '<br>'."tu respuesta: ".'<span style="background-color: #FF9C9E">'.$selected_choice.'</span>';
-				 	echo '<br>'."respuesta correcta: ".'<span style="background-color: #ADFFB4">'.$correct_choice.'</span><br>';
+				 	echo "tu respuesta: ".'<span id="wrong">'.$selected_choice.'</span>'.'<br>';
+				 	echo "respuesta correcta: ".'<span id="correct">'.$correct_choice.'</span>'.'<br><br>';
 		 		}		
 		 		if ($correct_choice == $selected_choice) 
 		 		{
 				 	//answer is correct
 				 	$_SESSION['score']++;
-				 	echo '<br><p><span style="background-color: #ADFFB4">'.$selected_choice.'</span></p>';
+				 	echo "Felicidades acertaste! tu respuesta: ".'<span id="correct">'.$selected_choice.'</span>'." fue correcta".'<br><br>';
 		 		}	
 		 	}
-		 	
-		?>	
-
-		
-		<a href="index.php" class="start">Continue</a>
-		<p>Final Score: <?php echo $_SESSION['score']; ?></p>
-		<p><span style="background-color: #FF9C9E"></span></p>
-	
-
-
+		 echo '</div>';	
+		?>			
+		<br><br>	
+		<p id="score">Final Score: <?php echo $_SESSION['score']; ?></p>
+		<a href="index.php" class="boton">Continue</a>
+		<br><br>
 	</div>
+	</div>
+	<br>
 </main>
 </body>
 </html>

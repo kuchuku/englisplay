@@ -1,5 +1,6 @@
 <footer>
 <div class="container">
+	<br>
 	<div class="mini-title">
 		<h3>EnglisPlay Team</h3>
 	</div>
