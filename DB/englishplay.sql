@@ -166,8 +166,22 @@ CREATE TABLE IF NOT EXISTS `personaje` (
 /*!40000 ALTER TABLE `personaje` DISABLE KEYS */;
 INSERT INTO `personaje` (`codigoEstudiante`, `sexoPersonaje`, `rolPersonaje`, `expPersonaje`, `oroPersonaje`, `nivelPersonaje`, `skinGuerrero`, `skinMago`, `skinArquero`, `armaGuerrero`, `armaMago`, `armaArquero`) VALUES
 	(1663714, 'h', 0, 0, 0, 1, 0, 0, 0, 0, 0, 0),
-	(201255229, 'h', 0, 0, 8, 1, 1, 1, 1, 2, 0, 1);
+	(201255229, 'h', 0, 0, 8, 1, 1, 1, 1, 2, 1, 1);
 /*!40000 ALTER TABLE `personaje` ENABLE KEYS */;
+
+CREATE TABLE IF NOT EXISTS `pregunta` (
+  `id` int(11) NOT NULL,
+  `test` int(11) DEFAULT NULL,
+  `capitulo` int(11) DEFAULT NULL,
+  `pregunta` varchar(100) DEFAULT NULL,
+  `respuesta` varchar(100) DEFAULT NULL,
+  `elec1` varchar(100) DEFAULT NULL,
+  `elec2` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*!40000 ALTER TABLE `pregunta` DISABLE KEYS */;
+/*!40000 ALTER TABLE `pregunta` ENABLE KEYS */;
 
 CREATE TABLE IF NOT EXISTS `resultadodesafio` (
   `idResultadoDesafio` int(11) NOT NULL,
