@@ -85,64 +85,72 @@
 }
 .preguntas_text label{
 	display: block;
-	margin:auto;
-	text-align: center;
+	text-align: left;
+	margin-left: 50px;
+    margin-right: 50px;
 }
 ul.choices {
 	text-align: center;
 	margin-top: 10px;
+	list-style: none;
 }
 ul.choices li{
-	text-align: center;
+	text-align: left;
 	margin-top: 5px;
+	margin-left: 80px;
+    margin-right: 80px
 }
-.container h2#titulo{
+.container .container2 h2#titulo{
 	text-align: center;
 	color: #43980e;
 }
 .container div#comprobar{
 	margin-bottom: 5px;
-	display: block;
-	text-align: center;	
-	border-radius: 15px;
-}
-.container div#comprobar span#pregidform{
-	border-radius: 15px;
-	background-color: #f4f4f4;
-}
-.container div#comprobar span#pregidform2{
-	border-radius: 15px;
-	background-color: #f4f4f4;
-}
-.container div#formchoices{
-	margin-top: 10px;
-	display: block;
-	text-align: center;	
-}
-.container div#formchoices span#pregidform{
+	text-align: left;	
 	border-radius: 15px;
 	
 }
-.container div#formchoices span#wrong{
+.container .container2 div#comprobar span#pregidform{
+	border-radius: 15px;
+	background-color: #f4f4f4;
+}
+.container .container2 div#comprobar span#pregidform2{
+	border-radius: 15px;
+	background-color: #f4f4f4;
+}
+.container .container2 div#comprobar div#formchoices{
+	text-align: left;
+	border-radius: 15px;
+}
+.container .container2 div#comprobar div#formchoices span#pregidform{
+	border-radius: 15px;
+	text-align: left;
+	margin-left: 100px;
+}
+.container .container2 div#comprobar div#formchoices span#wrong{
 	background-color: #f4f4f4;
 	border-radius: 5px;
 	color: #ff0000;
 }
-.container div#formchoices span#correct{
+.container .container2 div#comprobar div#formchoices span#correct{
 	background-color: #f4f4f4;
 	border-radius: 5px;
 	color: #1daf14;
 }
 .container{
 	width: 100%;
-	background-color: #f4f4f4;
+	background-color: #aaa;
 }
 .container .container2{
-	width: 80%;
+	width: 60%;
+	height: 60%;
 	display: block;
-	text-align: center;
+	text-align: left;
 	margin:auto;
+	margin-bottom: 25px;
+	margin-top: -5px;
 	background-color: #eee;
+	border-radius: 5px;
 }
 .container h2{
 	margin-top: 10px;
@@ -152,11 +160,48 @@ ul.choices li{
 	margin-top: 25px;
 	padding: 5px;
 }
-.container ul#cadatest{
+.container .container2 ul#cadatest{
+	margin-top: 25px;
+	text-align: center;
+	list-style: none;
+}
+.container .container2 .formControl input[type="number"]{
+	width: 50px;
+	height: 15px;
+	margin-bottom: 25px;
+}
+.container .container2 .formControl select{
+	width: 30%;
+	height: 100%;
+	margin: auto;
+	margin-top: 15px;
+	text-align: center;
+	display: block;
+	margin-bottom: 5px;
+	background-color: #f9f9f9;
+	font-family: : arial;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+.container .container2 div#piechart{
+	width: 70%; 
+	height: 70%;
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+.container .container2 p#score{
+	width: 60%; 
+	height: 70%;
+	display: block;
+	margin-top: 25px;
+	margin:auto;
 	text-align: center;
 }
 @media only screen and (max-width: 960px) {
 .container input[type="text"]{width: 80%;margin-left: 20px;}
 .container input[type="number"]{width: 80%;margin-left: 20px;}
 .container label{margin-left: 20px;}
+.container .container2{width: 60%}
 }

@@ -4,11 +4,14 @@ require('../conexionDB.php');
 include("php/sesion.php");
 ?>
 <?php 
-		 	$query ="SELECT id,pregunta,respuesta,elec1,elec2 FROM pregunta WHERE test = 0 AND capitulo = 1";
+	$num_test = $_POST['num_test'];
+	$num_cap = $_POST['num_cap'];
+		$query ="SELECT id,pregunta,respuesta,elec1,elec2,test FROM pregunta WHERE test =".$num_test." AND capitulo =".$num_cap;
 		 	//Get result
-		 	$consulta = mysqli_query($conexion,$query);
-		 	$total = $consulta->num_rows;		
+		 	$consulta = mysqli_query($conexion,$query);	
 		
+
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -16,8 +19,11 @@ include("php/sesion.php");
 <body>
 <main>
 	<div class="container">	
+		<div class="container2">
 		<br>		
 		<form method="post" class="formControl" action="resultados.php">
+			<input type="hidden" name="exam" value="<?php echo $num_test ?>">
+			<input type="hidden" name="cap" value="<?php echo $num_cap ?>">
 		<?php while ($row = mysqli_fetch_array($consulta))  {
 		 	$idPregunta = $row["id"];
 		 	$textoPregunta = $row["pregunta"];
@@ -45,6 +51,7 @@ include("php/sesion.php");
 		<input type="submit" class="boton" value="Finalizar" />
 		<br>
 	</form>
+	</div>
 	</div>
 </main>
 </body>
