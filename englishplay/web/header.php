@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>English Play</title>
+	<title>Simple and continuous verb tenses</title>
 	<link rel="stylesheet" href="css/StylePrincipal.css">
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/styleSlider.css" />
@@ -40,14 +40,8 @@
 						echo "<a href='examen.php' id='enlaces'>Examen</a>";
 						?>
 					</li>
-					<li>
-					<?php 
-						echo "<li><a href='student.php' id='enlaces'>Student</a></li>";
-					?>
-					</li>
-					<?php					
+					<?php
 					echo "<li><a id='enlaces' href='php/salir.php'>Salir</a></li>";
-
 					}else{
 						echo "<li><a id='enlaces' href='login.php'>Login</a></li>";
 					}
