@@ -1,9 +1,6 @@
-<?php 
+<?php
 	require ("../conexionDB.php");
 	include("header.php");
-?>
-
-<?php
 			
 	session_start();
 	//recibe el codigo del estudiante que inició sesión.
@@ -292,7 +289,7 @@
 ?>
 
 
- <!DOCTYPE html>
+<!DOCTYPE html>
  <html>
 
  	<head>
