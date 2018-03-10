@@ -32,12 +32,13 @@
 		<ul>
 			<li><a href="index.php" id ="logo">&nbsp;</a></li>
 			<li><a href="index.php" id ="enlaces" class="inicio">Inicio</a></li>
-			<li>
+			
 				<?php
 					error_reporting(E_ALL ^ E_NOTICE);
 					session_start();
 					if($_SESSION["autenticado"]){
-						echo "<a href='examen.php' id='enlaces'>Examen</a>";
+						echo "<li><a href='examen.php' id='enlaces'>Examen</a></li>";
+						echo "<li><a href='student.php' id='enlaces'>Student</a></li>";
 						?>
 					</li>
 					<?php
