@@ -283,7 +283,7 @@
 		 			break;
 		 	}
 
-		 	$table .= "<td border=1>$img</td>";
+		 	$table .= "<td>$img</td>";
 		}			
 
 ?>
@@ -292,7 +292,8 @@
 <!DOCTYPE html>
  <html>
 
- 	<head>
+ 	<head>	
+ 			<link rel="stylesheet" href="css/student.css">
  			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		    <script type="text/javascript">
 		      google.charts.load('current', {'packages':['bar']});
@@ -309,7 +310,7 @@
 		          legend: { position: 'none' },
 		          bars: 'horizontal', // Required for Material Bar Charts.
 		          series: { 
-		          	0: { color: '#66ED2F' },
+		          	0: { color: '#DEB605' },//66ED2F
 		          	1: { color: '#000000' }, 
 		      		},
 		          axes: {
