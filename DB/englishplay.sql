@@ -92,6 +92,7 @@ CREATE TABLE IF NOT EXISTS `estadisticas` (
   `examen` int(11) NOT NULL,
   `tema` varchar(50) NOT NULL,
   `puntuacion` int(11) DEFAULT NULL,
+  `nombreEstudiante` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`codEstudiante`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
