@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>English Play</title>
+	<title>Simple and continuous verb tenses</title>
 	<link rel="stylesheet" href="css/StylePrincipal.css">
 	<link rel="stylesheet" href="css/flexslider.css">
 	<link rel="stylesheet" type="text/css" href="css/styleSlider.css" />
@@ -32,22 +32,17 @@
 		<ul>
 			<li><a href="index.php" id ="logo">&nbsp;</a></li>
 			<li><a href="index.php" id ="enlaces" class="inicio">Inicio</a></li>
-			<li>
+			
 				<?php
 					error_reporting(E_ALL ^ E_NOTICE);
 					session_start();
 					if($_SESSION["autenticado"]){
-						echo "<a href='examen.php' id='enlaces'>Examen</a>";
+						echo "<li><a href='examen.php' id='enlaces'>Examen</a></li>";
+						echo "<li><a href='student.php' id='enlaces'>Student</a></li>";
 						?>
 					</li>
-					<li>
-					<?php 
-						echo "<li><a href='student.php' id='enlaces'>Student</a></li>";
-					?>
-					</li>
-					<?php					
+					<?php
 					echo "<li><a id='enlaces' href='php/salir.php'>Salir</a></li>";
-
 					}else{
 						echo "<li><a id='enlaces' href='login.php'>Login</a></li>";
 					}
