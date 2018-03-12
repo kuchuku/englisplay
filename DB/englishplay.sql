@@ -1,12 +1,22 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Versión del servidor:         10.1.26-MariaDB - mariadb.org binary distribution
+-- SO del servidor:              Win32
+-- HeidiSQL Versión:             9.4.0.5125
+-- --------------------------------------------------------
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
+
+-- Volcando estructura de base de datos para englishplay
 CREATE DATABASE IF NOT EXISTS `englishplay` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `englishplay`;
 
+-- Volcando estructura para tabla englishplay.avance
 CREATE TABLE IF NOT EXISTS `avance` (
   `codigoEstudiante` double NOT NULL,
   `mundoAvance` int(11) NOT NULL,
@@ -15,11 +25,13 @@ CREATE TABLE IF NOT EXISTS `avance` (
   CONSTRAINT `Estudiante_Avance_codEstudiante` FOREIGN KEY (`codigoEstudiante`) REFERENCES `estudiante` (`codigoUsuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.avance: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `avance` DISABLE KEYS */;
 INSERT INTO `avance` (`codigoEstudiante`, `mundoAvance`, `nivelAvance`) VALUES
 	(201255229, 4, 3);
 /*!40000 ALTER TABLE `avance` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.checkpoint
 CREATE TABLE IF NOT EXISTS `checkpoint` (
   `codigoEstudiante` double NOT NULL,
   `mundoCheckpoint` int(11) NOT NULL,
@@ -45,11 +57,13 @@ CREATE TABLE IF NOT EXISTS `checkpoint` (
   CONSTRAINT `Estudiante_Checkpoint_codigoEstudiante` FOREIGN KEY (`codigoEstudiante`) REFERENCES `estudiante` (`codigoUsuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.checkpoint: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `checkpoint` DISABLE KEYS */;
 INSERT INTO `checkpoint` (`codigoEstudiante`, `mundoCheckpoint`, `nivelCheckpoint`, `posXCheckpoint`, `posYCheckpoint`, `saludCheckpoint`, `cajasMisionCheckpoint`, `cajaMision1`, `cajaMision2`, `cajaMision3`, `cajaMision4`, `cajaMision5`, `casaDesafio1`, `casaDesafio2`, `casaDesafio3`, `casaDesafio4`, `casaDesafio5`, `casaDesafio6`, `casaDesafio7`, `casaDesafio8`) VALUES
 	(201255229, 4, 1, 8.3075, -34.9895, 199, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
 /*!40000 ALTER TABLE `checkpoint` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.compra
 CREATE TABLE IF NOT EXISTS `compra` (
   `codigoEstudiante` double NOT NULL,
   `idObjeto` int(11) NOT NULL,
@@ -59,6 +73,7 @@ CREATE TABLE IF NOT EXISTS `compra` (
   CONSTRAINT `Objeto_Compra_idObjeto` FOREIGN KEY (`idObjeto`) REFERENCES `objeto` (`idObjeto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.compra: ~8 rows (aproximadamente)
 /*!40000 ALTER TABLE `compra` DISABLE KEYS */;
 INSERT INTO `compra` (`codigoEstudiante`, `idObjeto`) VALUES
 	(201255229, 1),
@@ -71,6 +86,7 @@ INSERT INTO `compra` (`codigoEstudiante`, `idObjeto`) VALUES
 	(201255229, 31);
 /*!40000 ALTER TABLE `compra` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.estadisticas
 CREATE TABLE IF NOT EXISTS `estadisticas` (
   `codEstudiante` int(11) NOT NULL,
   `examen` int(11) NOT NULL,
@@ -80,9 +96,11 @@ CREATE TABLE IF NOT EXISTS `estadisticas` (
   PRIMARY KEY (`codEstudiante`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.estadisticas: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `estadisticas` DISABLE KEYS */;
 /*!40000 ALTER TABLE `estadisticas` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.estudiante
 CREATE TABLE IF NOT EXISTS `estudiante` (
   `codigoUsuario` double NOT NULL,
   `idGrupo` int(11) NOT NULL,
@@ -93,23 +111,27 @@ CREATE TABLE IF NOT EXISTS `estudiante` (
   CONSTRAINT `Usuario_Estudiante_codigoUsuario` FOREIGN KEY (`codigoUsuario`) REFERENCES `usuario` (`codigoUsuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.estudiante: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `estudiante` DISABLE KEYS */;
 INSERT INTO `estudiante` (`codigoUsuario`, `idGrupo`, `nickEstudiante`) VALUES
 	(1663714, 1, 'Sakasuki'),
 	(201255229, 1, 'simon24');
 /*!40000 ALTER TABLE `estudiante` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.grupo
 CREATE TABLE IF NOT EXISTS `grupo` (
   `idGrupo` int(11) NOT NULL AUTO_INCREMENT,
   `nombreGrupo` varchar(50) NOT NULL,
   PRIMARY KEY (`idGrupo`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.grupo: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `grupo` DISABLE KEYS */;
 INSERT INTO `grupo` (`idGrupo`, `nombreGrupo`) VALUES
 	(1, 'Inglés I Sistemas Agosto-Diciembre 2017');
 /*!40000 ALTER TABLE `grupo` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.objeto
 CREATE TABLE IF NOT EXISTS `objeto` (
   `idObjeto` int(11) NOT NULL,
   `nombreObjeto` varchar(50) NOT NULL,
@@ -117,6 +139,7 @@ CREATE TABLE IF NOT EXISTS `objeto` (
   PRIMARY KEY (`idObjeto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.objeto: ~36 rows (aproximadamente)
 /*!40000 ALTER TABLE `objeto` DISABLE KEYS */;
 INSERT INTO `objeto` (`idObjeto`, `nombreObjeto`, `descripcionObjeto`) VALUES
 	(0, 'Espada 0', 'Attack +0'),
@@ -157,6 +180,7 @@ INSERT INTO `objeto` (`idObjeto`, `nombreObjeto`, `descripcionObjeto`) VALUES
 	(35, 'Skin Arquero 5', 'Vitality +40 Life +250');
 /*!40000 ALTER TABLE `objeto` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.personaje
 CREATE TABLE IF NOT EXISTS `personaje` (
   `codigoEstudiante` double NOT NULL,
   `sexoPersonaje` char(50) NOT NULL,
@@ -174,12 +198,14 @@ CREATE TABLE IF NOT EXISTS `personaje` (
   CONSTRAINT `Estudiante_Personaje_codigoEstudiante` FOREIGN KEY (`codigoEstudiante`) REFERENCES `estudiante` (`codigoUsuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.personaje: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `personaje` DISABLE KEYS */;
 INSERT INTO `personaje` (`codigoEstudiante`, `sexoPersonaje`, `rolPersonaje`, `expPersonaje`, `oroPersonaje`, `nivelPersonaje`, `skinGuerrero`, `skinMago`, `skinArquero`, `armaGuerrero`, `armaMago`, `armaArquero`) VALUES
 	(1663714, 'h', 0, 0, 0, 1, 0, 0, 0, 0, 0, 0),
 	(201255229, 'h', 0, 0, 8, 1, 1, 1, 1, 2, 1, 1);
 /*!40000 ALTER TABLE `personaje` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.pregunta
 CREATE TABLE IF NOT EXISTS `pregunta` (
   `id` int(11) NOT NULL,
   `test` int(11) DEFAULT NULL,
@@ -191,24 +217,27 @@ CREATE TABLE IF NOT EXISTS `pregunta` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.pregunta: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `pregunta` DISABLE KEYS */;
 /*!40000 ALTER TABLE `pregunta` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.resultadodesafio
 CREATE TABLE IF NOT EXISTS `resultadodesafio` (
-  `idResultadoDesafio` int(11) NOT NULL,
   `codigoEstudiante` double NOT NULL,
-  `mundoDesafio` int(11) NOT NULL,
-  `nivelDesafio` int(11) NOT NULL,
-  `calificacionDesafio` int(11) NOT NULL,
-  `idDesafio` int(11) NOT NULL,
-  PRIMARY KEY (`idResultadoDesafio`,`codigoEstudiante`),
+  `mundo` int(11) NOT NULL,
+  `desafio` int(11) NOT NULL,
+  `preguntas` int(11) NOT NULL,
+  `correctas` int(11) NOT NULL,
+  PRIMARY KEY (`codigoEstudiante`,`mundo`,`desafio`),
   KEY `Estudiante_ResultadoDesafio_codigoEstudiante` (`codigoEstudiante`),
   CONSTRAINT `Estudiante_ResultadoDesafio_codigoEstudiante` FOREIGN KEY (`codigoEstudiante`) REFERENCES `estudiante` (`codigoUsuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.resultadodesafio: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `resultadodesafio` DISABLE KEYS */;
 /*!40000 ALTER TABLE `resultadodesafio` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.resultadotest
 CREATE TABLE IF NOT EXISTS `resultadotest` (
   `idResultadoTest` int(11) NOT NULL,
   `codigoEstudiante` double NOT NULL,
@@ -220,15 +249,18 @@ CREATE TABLE IF NOT EXISTS `resultadotest` (
   CONSTRAINT `Estudiante_ResultadoTest_codigoEstudiante` FOREIGN KEY (`codigoEstudiante`) REFERENCES `estudiante` (`codigoUsuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.resultadotest: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `resultadotest` DISABLE KEYS */;
 /*!40000 ALTER TABLE `resultadotest` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.tema
 CREATE TABLE IF NOT EXISTS `tema` (
   `idTema` varchar(50) NOT NULL,
   `contenido` varchar(10000) NOT NULL,
   PRIMARY KEY (`idTema`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.tema: ~36 rows (aproximadamente)
 /*!40000 ALTER TABLE `tema` DISABLE KEYS */;
 INSERT INTO `tema` (`idTema`, `contenido`) VALUES
 	('Adejtivos de una Sílaba', 'Para conjugar en su forma comparativa y superlativa los adjetivos de una sola sílaba, se utiliza la siguiente regla:'),
@@ -269,6 +301,7 @@ INSERT INTO `tema` (`idTema`, `contenido`) VALUES
 	('Terminados en Y', 'Para formar comparativos y superlativos en adjetivos de dos sílabas que terminen en <b>y</b>, se debe sustituir la y final por <b>i</b> y añadir <b>-er</b> si es para comparativo y <b>-est</b> si es para superlativo');
 /*!40000 ALTER TABLE `tema` ENABLE KEYS */;
 
+-- Volcando estructura para tabla englishplay.usuario
 CREATE TABLE IF NOT EXISTS `usuario` (
   `codigoUsuario` double NOT NULL,
   `contraseniaUsuario` int(11) NOT NULL,
@@ -277,6 +310,7 @@ CREATE TABLE IF NOT EXISTS `usuario` (
   PRIMARY KEY (`codigoUsuario`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+-- Volcando datos para la tabla englishplay.usuario: ~2 rows (aproximadamente)
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
 INSERT INTO `usuario` (`codigoUsuario`, `contraseniaUsuario`, `nombreUsuario`, `tipoUsuario`) VALUES
 	(1663714, 123456, 'LUIS FERNANDO QUINTERO', '0'),
