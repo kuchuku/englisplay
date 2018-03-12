@@ -6,12 +6,18 @@
 	$txtContrasenia	= $_GET['txtContrasenia'];
 
 	if(!$conexion->connect_errno) {
-		$sql 		= "SELECT nombreEstudiante, nickEstudiante FROM estudiante WHERE codigoEstudiante = '$txtCodigo' AND contraseniaEstudiante = '$txtContrasenia'";
+		$sql 		= "SELECT nombreUsuario FROM usuario WHERE codigoUsuario = '$txtCodigo' AND contraseniaUsuario = '$txtContrasenia'";
 		$resultado	= mysqli_query($conexion, $sql);
 
 		if(mysqli_num_rows($resultado) == 1) {
 			$row = mysqli_fetch_assoc($resultado);
-			echo $row["nombreEstudiante"].'|'.$row["nickEstudiante"];
+			$nombreUsuario = $row["nombreUsuario"];
+
+			$sql	= "SELECT nickEstudiante FROM estudiante WHERE codigoUsuario = '$txtCodigo'";
+			$resultado	= mysqli_query($conexion, $sql);
+			$row = mysqli_fetch_assoc($resultado);
+
+			echo $nombreUsuario.'|'.$row["nickEstudiante"];
 		}else {
 			echo 'datosIncorrectos';
 		}
