@@ -7,7 +7,7 @@ include("php/sesion.php");
 
 <!DOCTYPE html>
 <html>
-
+	<link rel="stylesheet" type="text/css" href="css/preguntasForm.css" />
 	<body>
 		<main>		
 		<div class="container"><br>
@@ -21,6 +21,7 @@ include("php/sesion.php");
 		 	//Get result
 		 	$results = mysqli_query($conexion,$query); 	
 		 	$_SESSION['score'] = 0;
+		 	$total = $results->num_rows;
 
 		 	while ($row = mysqli_fetch_array($results)) 
 		 	{
@@ -31,7 +32,6 @@ include("php/sesion.php");
 		    	if (!isset($_SESSION['score'])) {
 					$_SESSION['score'] = 0;
 				}
-
 		    	if ($_POST) 
 		    	{	    			
 				 	//Obtener la respuesta correcta
@@ -61,7 +61,7 @@ include("php/sesion.php");
 		 echo '</div>';	
 		?>	</div>		
 
-		<link rel="stylesheet" type="text/css" href="css/preguntasForm.css" />
+		
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     	<script type="text/javascript">
 	      google.charts.load('current', {'packages':['corechart']});
@@ -72,7 +72,7 @@ include("php/sesion.php");
 	        var data = google.visualization.arrayToDataTable([
 	          ['Task', 'Hours per Day'],
 	          ['Aciertos', <?php echo $_SESSION['score']; ?> ],
-	          ['Fallos', <?php $fallos = 20 - $_SESSION['score']; echo $fallos; ?> ]
+	          ['Fallos', <?php $fallos = $total - $_SESSION['score']; echo $fallos; ?> ]
        		 ]);
 
 	        var options = {
@@ -89,7 +89,16 @@ include("php/sesion.php");
 		<br>
 	</div>
 	</div>
-	
+	<?php 
+		session_start();
+		 		//recibe el codigo del estudiante que inició sesión.
+		$cod = $_SESSION["codEst"];
+		$sql=  mysqli_query($conexion,"SELECT nombreEstudiante FROM estudiante WHERE codigoEstudiante = '$cod'");	
+		$consulta = mysqli_fetch_array($sql);	
+		$nombre= $consulta[0];
+		$query= "INSERT INTO estadisticas (codEstudiante,nombreEstudiante,examen,tema,puntuacion) VALUES('".$cod."','".$nombre."','".$_POST['exam']."','".$_POST['cap']."','".$_SESSION['score']."')";
+		$estadisticas=  mysqli_query($conexion,$query);
+	 ?>
 </main>
 </body>
 </html>
