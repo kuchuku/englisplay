@@ -36,14 +36,22 @@
 				<?php
 					error_reporting(E_ALL ^ E_NOTICE);
 					session_start();
-					if($_SESSION["autenticado"]){
+					//AGREGAMOS LO DE ESTUDIANTES
+					if($_SESSION["autenticado"] & $_SESSION["estudiante"]){
 						echo "<li><a href='examen.php' id='enlaces'>Examen</a></li>";
 						echo "<li><a href='student.php' id='enlaces'>Student</a></li>";
 						?>
 					</li>
 					<?php
 					echo "<li><a id='enlaces' href='php/salir.php'>Salir</a></li>";
-					}else{
+					}
+					//EL ELSE IF ES LO DEL PROFESOR
+					elseif ($_SESSION["autenticado"] & !$_SESSION["estudiante"]) {
+						echo "<li><a id='enlaces' href='php/salir.php'>Salir</a></li>";
+					}
+
+
+					else{
 						echo "<li><a id='enlaces' href='login.php'>Login</a></li>";
 					}
 				?>
