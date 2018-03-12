@@ -90,10 +90,10 @@ INSERT INTO `compra` (`codigoEstudiante`, `idObjeto`) VALUES
 CREATE TABLE IF NOT EXISTS `estadisticas` (
   `codEstudiante` int(11) NOT NULL,
   `examen` int(11) NOT NULL,
-  `tema` varchar(50) NOT NULL,
+  `tema` int(11) NOT NULL,
   `puntuacion` int(11) DEFAULT NULL,
   `nombreEstudiante` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`codEstudiante`)
+  PRIMARY KEY (`codEstudiante`,`examen`,`tema`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- Volcando datos para la tabla englishplay.estadisticas: ~0 rows (aproximadamente)
