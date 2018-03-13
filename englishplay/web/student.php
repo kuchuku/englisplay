@@ -7,7 +7,7 @@
 	$cod = $_SESSION["codEst"];
 
 	//Datos del estudiante
-	$resultados = mysqli_query($conexion, "SELECT * FROM estudiante WHERE codigoEstudiante = '$cod'");
+	$resultados = mysqli_query($conexion, "SELECT * FROM estudiante WHERE codigoUsuario = '$cod'");
 	$consulta = mysqli_fetch_array($resultados);
 
 	//Datos del personaje
@@ -284,7 +284,173 @@
 		 	}
 
 		 	$table .= "<td>$img</td>";
-		}			
+		}
+
+	//Desafios Realizados en el mundo Aldea.
+	$resultados6 = mysqli_query($conexion, "SELECT * FROM resultadodesafio WHERE codigoEstudiante = '$cod' and mundo = '1'");
+			
+			$table1 = '';
+	//Recorrer la tabla resultado desafios e imprimir las preguntas contestadas en una tabla por medio de echo.	
+		while ($consulta6 = mysqli_fetch_array($resultados6)) {
+			
+			//$desafio = $consulta6['desafio'];
+
+		 	switch ($consulta6['desafio']) {
+		 		case '1':
+		 				$desA = "CorrectBox";
+		 			break;
+		 		case '2':
+		 				$desA = "Combat";
+		 			break;
+		 		case '3':
+		 				$desA = "Plataformas";
+		 			break;
+		 		case '4':
+		 				$desA = "Electro Shock";
+		 			break;
+		 		case '5':
+		 				$desA = "Enlazar";
+		 			break;
+		 		case '6':
+		 				$desA = "Shooter";
+		 			break;
+		 		case '7':
+		 				$desA = "Laser";
+		 			break;
+		 		case '8':
+		 				$desA = "Camino Correcto";
+		 			break;
+		 	}
+		 	$table1 .= "<tr>";
+		 	$table1 .= "<td>$desA</td>";
+		 	$table1 .= "<td>$consulta6[preguntas]</td>";
+		 	$table1 .= "<td>$consulta6[correctas]</td>";
+		 	$table1 .= "</tr>";
+		}
+
+	//Desafios Realizados en el mundo Bosque.
+	$resultados7 = mysqli_query($conexion, "SELECT * FROM resultadodesafio WHERE codigoEstudiante = '$cod' and mundo = '2'");
+			
+			$table2 = '';
+	//Recorrer la tabla resultado desafios e imprimir las preguntas contestadas en una tabla por medio de echo.	
+		while ($consulta7 = mysqli_fetch_array($resultados7)) {
+			
+			//$desafio = $consulta6['desafio'];
+
+		 	switch ($consulta7['desafio']) {
+		 		case '1':
+		 				$desB = "CorrectBox";
+		 			break;
+		 		case '2':
+		 				$desB = "Combat";
+		 			break;
+		 		case '3':
+		 				$desB = "Plataformas";
+		 			break;
+		 		case '4':
+		 				$desB = "Electro Shock";
+		 			break;
+		 		case '5':
+		 				$desB = "Enlazar";
+		 			break;
+		 		case '6':
+		 				$desB = "Shooter";
+		 			break;
+		 		case '7':
+		 				$desB = "Laser";
+		 			break;
+		 		case '8':
+		 				$desB = "Camino Correcto";
+		 			break;
+		 	}
+		 	$table2 .= "<tr>";
+		 	$table2 .= "<td>$desB</td>";
+		 	$table2 .= "<td>$consulta7[preguntas]</td>";
+		 	$table2 .= "<td>$consulta7[correctas]</td>";
+		 	$table2 .= "</tr>";
+		}
+	//Desafios Realizados en el mundo Cueva.
+	$resultados8 = mysqli_query($conexion, "SELECT * FROM resultadodesafio WHERE codigoEstudiante = '$cod' and mundo = '3'");
+			
+			$table3 = '';
+	//Recorrer la tabla resultado desafios e imprimir las preguntas contestadas en una tabla por medio de echo.	
+		while ($consulta8 = mysqli_fetch_array($resultados8)) {
+			
+			//$desafio = $consulta6['desafio'];
+
+		 	switch ($consulta8['desafio']) {
+		 		case '1':
+		 				$desC = "CorrectBox";
+		 			break;
+		 		case '2':
+		 				$desC = "Combat";
+		 			break;
+		 		case '3':
+		 				$desC = "Plataformas";
+		 			break;
+		 		case '4':
+		 				$desC = "Electro Shock";
+		 			break;
+		 		case '5':
+		 				$desC = "Enlazar";
+		 			break;
+		 		case '6':
+		 				$desC = "Shooter";
+		 			break;
+		 		case '7':
+		 				$desC = "Laser";
+		 			break;
+		 		case '8':
+		 				$desC = "Camino Correcto";
+		 			break;
+		 	}
+		 	$table3 .= "<tr>";
+		 	$table3 .= "<td>$desC</td>";
+		 	$table3 .= "<td>$consulta8[preguntas]</td>";
+		 	$table3 .= "<td>$consulta8[correctas]</td>";
+		 	$table3 .= "</tr>";
+		}
+	//Desafios Realizados en el mundo Castillo.
+	$resultados9 = mysqli_query($conexion, "SELECT * FROM resultadodesafio WHERE codigoEstudiante = '$cod' and mundo = '4'");
+			
+			$table4 = '';
+	//Recorrer la tabla resultado desafios e imprimir las preguntas contestadas en una tabla por medio de echo.	
+		while ($consulta9 = mysqli_fetch_array($resultados9)) {
+			
+			//$desafio = $consulta6['desafio'];
+
+		 	switch ($consulta9['desafio']) {
+		 		case '1':
+		 				$desCa = "CorrectBox";
+		 			break;
+		 		case '2':
+		 				$desCa = "Combat";
+		 			break;
+		 		case '3':
+		 				$desCa = "Plataformas";
+		 			break;
+		 		case '4':
+		 				$desCa = "Electro Shock";
+		 			break;
+		 		case '5':
+		 				$desCa = "Enlazar";
+		 			break;
+		 		case '6':
+		 				$desCa = "Shooter";
+		 			break;
+		 		case '7':
+		 				$desCa = "Laser";
+		 			break;
+		 		case '8':
+		 				$desCa = "Camino Correcto";
+		 			break;
+		 	}
+		 	$table4 .= "<tr>";
+		 	$table4 .= "<td>$desCa</td>";
+		 	$table4 .= "<td>$consulta9[preguntas]</td>";
+		 	$table4 .= "<td>$consulta9[correctas]</td>";
+		 	$table4 .= "</tr>";
+		}
 
 ?>
 
@@ -293,7 +459,7 @@
  <html>
 
  	<head>	
- 			<link rel="stylesheet" href="css/student.css">
+ 			<?php //<link rel="stylesheet" href="css/student.css"> ?>
  			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		    <script type="text/javascript">
 		      google.charts.load('current', {'packages':['bar']});
@@ -330,7 +496,7 @@
  	</head>
 	<body id="estudiante">
 	 	
-	 		<h3 align="center"> Bienvenido <?php echo $consulta['nickEstudiante'] ?></h3>
+	 		<h1 align="center"> Bienvenido <?php echo $consulta['nickEstudiante'] ?></h1>
 
 			<br>
 	 			<h2>Personaje Seleccionado:</h2>
@@ -350,13 +516,49 @@
 	 		<br>
 	 			<h2>Avance del juego:</h2>
 	 				<div id="barchart_material" style="width: 98%; height: 60px;"></div>
-	 				
-							
-			<br>
+	 		<br>
 				<h2>Compras realizadas:</h2>
-					<table border="1">
+					<table border="1" id="compra">
 					 	<?php echo $table?>				 	
 					</table>
+			<br>
+				<h2>Tablas de desafios:</h2>
+					<h1>Aldea</h1>
+						<table border="1">
+							<tr>
+								<th>Desafio</th>
+								<th>Preguntas Hechas</th>
+								<th>Respuestas Correctas</th>
+							</tr>
+						 	<?php echo $table1?>				 	
+						</table>
+					<h1>Bosque</h1>
+						<table border="1">
+							<tr>
+								<th>Desafio</th>
+								<th>Preguntas Hechas</th>
+								<th>Respuestas Correctas</th>
+							</tr>
+						 	<?php echo $table2?>				 	
+						</table>
+					<h1>Cueva</h1>
+						<table border="1">
+							<tr>
+								<th>Desafio</th>
+								<th>Preguntas Hechas</th>
+								<th>Respuestas Correctas</th>
+							</tr>
+						 	<?php echo $table3?>				 	
+						</table>
+					<h1>Castillo</h1>
+						<table border="1">
+							<tr>
+								<th>Desafio</th>
+								<th>Preguntas Hechas</th>
+								<th>Respuestas Correctas</th>
+							</tr>
+						 	<?php echo $table4?>				 	
+						</table>
 	 			
 
 	 </body>
