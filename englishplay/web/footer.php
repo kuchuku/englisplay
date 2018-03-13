@@ -2,7 +2,7 @@
 <div class="container">
 	
 	<div class="mini-title">
-		<h3>EnglisPlay Team</h3>
+		<h3>EnglishPlay Team</h3>
 	</div>
 	<div class="row-fluid">
 		<div class="span3">

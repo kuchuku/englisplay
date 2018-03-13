@@ -4,10 +4,6 @@ require('../conexionDB.php');
 include("php/sesion.php");
 ?>
 
-
-<!DOCTYPE html>
-<html>
-	<link rel="stylesheet" type="text/css" href="css/preguntasForm.css" />
 	<body>
 		<main>		
 		<div class="container"><br>
@@ -101,7 +97,6 @@ include("php/sesion.php");
 	 ?>
 </main>
 </body>
-</html>
 <?php 
 include("footer.php");
  ?>

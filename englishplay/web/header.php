@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/styleSlider.css" />
 	<link rel="stylesheet" type="text/css" href="css/StyleFooter.css" />
 	<link rel="stylesheet" type="text/css" href="css/StyleForm.css" />
+	<link rel="stylesheet" type="text/css" href="css/preguntasForm.css" />
 	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 	<script type=" text/javascript" src="js/modernizr.custom.28468.js"></script>
 	<script src="js/jquery.flexslider-min.js"></script>
@@ -38,8 +39,9 @@
 					session_start();
 					//AGREGAMOS LO DE ESTUDIANTES
 					if($_SESSION["autenticado"] & $_SESSION["estudiante"]){
-						echo "<li><a href='examen.php' id='enlaces'>Examen</a></li>";
+						echo "<li><a href='examen.php' id='enlaces'>Exam</a></li>";
 						echo "<li><a href='student.php' id='enlaces'>Student</a></li>";
+						echo "<li><a href='estadisticas.php' id='enlaces'>Results</a></li>";
 						?>
 					</li>
 					<?php

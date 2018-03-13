@@ -2,6 +2,9 @@
 	color: #9c7d25; 
 }
 
+body{
+}
+
 p{
 	color: #755F0B;
 }
@@ -12,7 +15,7 @@ h2{
 	font-family: arial; 
 }
 
-.compra{
+table{
 	border-spacing: 2px;
 	border-color: #000;
 	background-image: url("../images/tabla.jpg");

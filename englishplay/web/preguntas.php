@@ -9,13 +9,9 @@ include("php/sesion.php");
 		$query ="SELECT id,pregunta,respuesta,elec1,elec2,test FROM pregunta WHERE test =".$num_test." AND capitulo =".$num_cap;
 		 	//Get result
 		 	$consulta = mysqli_query($conexion,$query);	
-		
-
 
  ?>
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" type="text/css" href="css/preguntasForm.css" />
+
 <body>
 <main>
 	<div class="container">	
@@ -54,8 +50,6 @@ include("php/sesion.php");
 	</div>
 	</div>
 </main>
-</body>
-</html>
 <?php 
 include("footer.php");
  ?>

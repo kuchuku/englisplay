@@ -3,17 +3,11 @@ include("header.php");
 require('../conexionDB.php');
 include("php/sesion.php");
 ?>
-
-<!DOCTYPE html>
-<html>
-	<link rel="stylesheet" type="text/css" href="css/preguntasForm.css" />
 	<body>
 		<main>		
 			<div class="container"><br>
-				<div class="container2">
-					<br>
+				<div class="container2"><br>
 					<h2 id="titulo">Los resultados de tus examenes</h2><br><br>
-
 					<?php 
 						session_start();
 						//recibe el codigo del estudiante que inició sesión.
@@ -51,7 +45,8 @@ include("php/sesion.php");
 					<table id="tablaPuntuacion" ">
 					<tr>
 						<th>Examen</th>
-						<th>Puntuación</th>
+						<th>Aciertos</th>
+						<th>Nota</th>
 					</tr>					
 					<?php while ($consulta = mysqli_fetch_array($resultado))  {
 						//obteniendo el tipo de examen
@@ -60,47 +55,71 @@ include("php/sesion.php");
 					} elseif ($consulta[2] == 1) {
 						$examen = "Final";
 					} ?>
-					<tr>						
+					<tr>
+					<?php $nota = $consulta[4] / 4 ?>						
 						<td><?php echo $examen ?></td>
 						<td><?php echo $consulta[4]?></td>
+						<td><?php echo $nota?></td>
 					</tr>
 					<?php } ?>					
-					 </table>
-					 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-			<?php  
-		//Para el examen del capitulo 1
-      		$query ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 1";
-		 	//Get result
+					 </table><br>
+					 
+			<?php
+
+		//Para el examen 0 del capitulo 1
+      		$query ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 1 AND examen = 0";
 			$resultado = mysqli_query($conexion,$query); 
-			$consulta = mysqli_fetch_array($resultado);
-		//Para el examen del capitulo 2
-      		$query1 ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 2";
-		 	//Get result
+			$puntuexamen = mysqli_fetch_array($resultado);
+
+		//Para el examen 1 del capitulo 1
+      		$query1 ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 1 AND examen = 1";
 			$resultado1 = mysqli_query($conexion,$query1); 
-			$consulta1 = mysqli_fetch_array($resultado1);
-		//Para el examen del capitulo 3
-      		$query2 ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 3";
-		 	//Get result
+			$puntuexamen1 = mysqli_fetch_array($resultado1);	
+
+		//Para el examen 0 del capitulo 2
+      		$query2 ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND examen = 0 AND tema = 2";
 			$resultado2 = mysqli_query($conexion,$query2); 
-			$consulta2 = mysqli_fetch_array($resultado2);
-				//Para el examen del capitulo 4
-      		$query3 ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 4";
-		 	//Get result
+			$puntuexamen2 = mysqli_fetch_array($resultado2);
+
+		//Para el examen 1 del capitulo 2
+      		$query2f ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 2 AND examen = 1";
+			$resultado2f = mysqli_query($conexion,$query2f); 
+			$puntuexamen2f = mysqli_fetch_array($resultado2f);
+
+		//Para el examen 0 del capitulo 3
+      		$query3 ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 3 AND examen = 0";
 			$resultado3 = mysqli_query($conexion,$query3); 
-			$consulta3 = mysqli_fetch_array($resultado3);
-	   ?>		 
+			$puntuexamen3 = mysqli_fetch_array($resultado3);
+		//Para el examen 1 del capitulo 3
+			$query3F ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 3 AND examen = 1";
+		 	//Get result
+			$resultado3F = mysqli_query($conexion,$query3F); 
+			$puntuexamen3f = mysqli_fetch_array($resultado3F);
+		//Para el examen 0 del capitulo 4
+      		$query4 ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 4 AND examen = 0";
+		 	//Get result
+			$resultado4 = mysqli_query($conexion,$query4); 
+			$puntuexamen4 = mysqli_fetch_array($resultado4);
+		//Para el examen 1 del capitulo 4
+      		$query4f ="SELECT puntuacion FROM estadisticas WHERE codEstudiante =  '$cod' AND tema = 4 AND examen = 1";
+		 	//Get result
+			$resultado4f = mysqli_query($conexion,$query4f); 
+			$puntuexamen4f = mysqli_fetch_array($resultado4f);
+	   ?>	<?php
+					}
+					 ?>	 
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		    <script type="text/javascript">
 		      google.charts.load('current', {'packages':['bar']});
 		      google.charts.setOnLoadCallback(drawChart);
-
 		      
 		      function drawChart() {
 		        var data = google.visualization.arrayToDataTable([
 		          ['Tema', 'Inicial', 'Final'],
-		          ['T.Simples/Compuestos',  '<?php echo $consulta[0]; ?>', '<?php echo $consulta[1]; ?>'],
-		          ['T.perfectos/Voz Pasiva',  '<?php echo $consulta1[0]; ?>', '<?php echo $consulta1[1]; ?>'],
-		          ['Preposiciones',  '<?php echo $consulta2[0]; ?>', '<?php echo $consulta2[1]; ?>'],
-		          ['Comparativos/Superlativos',  '<?php echo $consulta3[0]; ?>', '<?php echo $consulta3[1]; ?>']
+		          ['T.Simples/Compuestos',  <?php echo $puntuexamen[0]; ?>, <?php echo $puntuexamen1[0]; ?>],
+		          ['T.perfectos/Voz Pasiva',  <?php echo $puntuexamen2[0]; ?>, <?php echo $puntuexamen2f[0]; ?>],
+		          ['Preposiciones',  <?php echo $puntuexamen3[0]; ?>, <?php echo $puntuexamen3f[0]; ?>],
+		          ['Comparativos/Superlativos',  <?php echo $puntuexamen4[0]; ?>, <?php echo $puntuexamen4f[0]; ?>]
 		        ]);
 
 		        var options = {
@@ -109,24 +128,19 @@ include("php/sesion.php");
 		          }
 		        };
 
-		        var chart = new google.charts.Bar(document.getElementById('piechart'));
+		        var chart = new google.charts.Bar(document.getElementById('piechart2'));
 
 		        chart.draw(data, google.charts.Bar.convertOptions(options));
 		      }
 		    </script>
-					 <?php
-					}
-					 ?>
-					 <div id="piechart" style="width: 90%; height: 60%;"></div><br>
+		    
+		    <br><br><div id="piechart2"></div><br><br>
+		     
+					
 				</div>
 			</div>
 		</main>
 	</body>
-</html>
-
-
-
-
 <?php 
 include("footer.php");
  ?>

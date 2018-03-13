@@ -10,9 +10,7 @@ include("php/sesion.php");
 	$total = $results->num_rows;
 
 ?>
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" type="text/css" href="css/preguntasForm.css" />
+
 <body id="andres">
 
 <main>
@@ -62,7 +60,6 @@ include("php/sesion.php");
 	</div>
 </main>
 </body>
-</html>
 <?php 
 include("footer.php");
  ?>
