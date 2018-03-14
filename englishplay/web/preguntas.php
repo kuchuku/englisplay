@@ -32,7 +32,7 @@ include("php/sesion.php");
 		<p class="question">
 		<?php echo '</p>
 			<div class="preguntas_text" align="justify"> 			
-			<label name="preguntaText">'."(".$idPregunta.") ".$textoPregunta.'</label>
+			<label name="preguntaText">'."(".$num_pregunta.") ".$textoPregunta.'</label>
 			</div>
 			<ul class="choices">
 				<li><input name="choice'.$idPregunta.'" type="radio" value="'.$ans_array[0].'" required/>'.$ans_array[0].'</li>

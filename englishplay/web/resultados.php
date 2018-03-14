@@ -89,7 +89,7 @@ include("php/sesion.php");
 		session_start();
 		 		//recibe el codigo del estudiante que inició sesión.
 		$cod = $_SESSION["codEst"];
-		$sql=  mysqli_query($conexion,"SELECT nombreEstudiante FROM estudiante WHERE codigoEstudiante = '$cod'");	
+		$sql=  mysqli_query($conexion,"SELECT nombreUsuario FROM usuario WHERE codigoUsuario = '$cod'");	
 		$consulta = mysqli_fetch_array($sql);	
 		$nombre= $consulta[0];
 		$query= "INSERT INTO estadisticas (codEstudiante,nombreEstudiante,examen,tema,puntuacion) VALUES('".$cod."','".$nombre."','".$_POST['exam']."','".$_POST['cap']."','".$_SESSION['score']."')";
