@@ -287,7 +287,7 @@
 		 			break;
 		 	}
 
-		 	$table .= "<td>$img</td>";
+		 	$table .= "$img";
 		}
 
 	//Desafios Realizados en el mundo Aldea.
