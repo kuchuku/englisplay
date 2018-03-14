@@ -1,0 +1,47 @@
+body{
+	background-color: #aaa;
+	color: #9c7d25;
+}
+
+p{
+	color: #000;
+	text-shadow: 1px 1px 1px #e4b42d;
+	padding-left: 5px;
+}
+
+h2{
+	background: #d0cece;
+	text-shadow: 1px 1px 1px #e4b42d;
+	font-family: arial;
+	padding-left: 8px;
+}
+
+div, p{
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+table, td{
+	color:#000;
+	background-color: #F6D353;
+	border-color: #000; 
+}
+
+table th{
+	background-color: #C89113;
+}
+
+#imag{
+	border-color: #C89113;
+	background-color: #F6D353;
+	height: 180px;
+	width: 130px;
+}
+
+#compra{
+	border-spacing: 5px;
+	border-color: #000;
+	background-image: url("../images/tabla.jpg");
+	background-repeat: repeat;
+}
+
