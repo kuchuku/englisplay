@@ -7,7 +7,7 @@
 	$cod = $_SESSION["codEst"];
 
 	//Datos del estudiante
-	$resultados = mysqli_query($conexion, "SELECT * FROM estudiante WHERE codigoEstudiante = '$cod'");
+	$resultados = mysqli_query($conexion, "SELECT * FROM estudiante WHERE codigoUsuario = '$cod'");
 	$consulta = mysqli_fetch_array($resultados);
 
 	//Datos del personaje
@@ -20,68 +20,68 @@
 				if ($consulta2['rolPersonaje'] == '0') {
 					switch ($consulta2['skinGuerrero']) {
 						case '1':
-								$skin = "<td><img src=images/Guerrero1.png width=130 height=200></td>";
+								$skin = "<img id=imag src=images/Guerrero1.png width=130 height=200 border=2px>";
 							break;
 						case '2':
-								$skin = "<td><img src=images/Guerrero2.png width=130 height=200></td>";
+								$skin = "<img id=imag src=images/Guerrero2.png width=130 height=200 border=2px>";
 							break;
 						case '3':
-								$skin = "<td><img src=images/Guerrero3.png width=130 height=200></td>";
+								$skin = "<img id=imag src=images/Guerrero3.png width=130 height=200 border=2px>";
 							break;
 						case '4':
-								$skin = "<td><img src=images/Guerrero4.png width=130 height=200></td>";
+								$skin = "<img id=imag src=images/Guerrero4.png width=130 height=200 border=2px>";
 							break;
 						case '5':
-								$skin = "<td><img src=images/Guerrero5.png width=130 height=200></td>";
+								$skin = "<img id=imag src=images/Guerrero5.png width=130 height=200 border=2px>";
 							break;
 						
 						default:
-								$skin = "<td><img src=images/Guerrero0.png width=140 height=200></td>";
+								$skin = "<img id=imag src=images/Guerrero0.png width=140 height=200 border=2px>";
 							break;
 					}
 				}else if ($consulta2['rolPersonaje'] == '1') {
 					switch ($consulta2['skinMago']) {
 						case '1':
-								$skin = "<img src=images/Mago1.png width=130 height=200>";
+								$skin = "<img id=imag src=images/Mago1.png width=130 height=200 border=2px>";
 							break;
 						case '2':
-								$skin = "<img src=images/Mago2.png width=130 height=200>";
+								$skin = "<img id=imag src=images/Mago2.png width=130 height=200 border=2px>";
 							break;
 						case '3':
-								$skin = "<img src=images/Mago3.png width=130 height=200>";
+								$skin = "<img id=imag src=images/Mago3.png width=130 height=200 border=2px>";
 							break;
 						case '4':
-								$skin = "<img src=images/Mago4.png width=130 height=200>";
+								$skin = "<img id=imag src=images/Mago4.png width=130 height=200 border=2px>";
 							break;
 						case '5':
-								$skin = "<img src=images/Mago5.png width=130 height=200>";
+								$skin = "<img id=imag src=images/Mago5.png width=130 height=200 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img src=images/Mago0.png width=120 height=200>";
+								$skin = "<img id=imag src=images/Mago0.png width=120 height=200 border=2px>";
 							break;
 					}
 					
 				}else{
 					switch ($consulta2['skinArquero']) {
 						case '1':
-								$skin = "<img src=images/Arquero1.png width=150 height=200>";
+								$skin = "<img id=imag src=images/Arquero1.png width=150 height=200 border=2px>";
 							break;
 						case '2':
-								$skin = "<img src=images/Arquero2.png width=150 height=200>";
+								$skin = "<img id=imag src=images/Arquero2.png width=150 height=200 border=2px>";
 							break;
 						case '3':
-								$skin = "<img src=images/Arquero3.png width=150 height=200>";
+								$skin = "<img id=imag src=images/Arquero3.png width=150 height=200 border=2px>";
 							break;
 						case '4':
-								$skin = "<img src=images/Arquero4.png width=150 height=200>";
+								$skin = "<img id=imag src=images/Arquero4.png width=150 height=200 border=2px>";
 							break;
 						case '5':
-								$skin = "<img src=images/Arquero5.png width=150 height=200>";
+								$skin = "<img id=imag src=images/Arquero5.png width=150 height=200 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img src=images/Arquero0.png width=140 height=200>";
+								$skin = "<img id=imag src=images/Arquero0.png width=140 height=200 border=2px>";
 							break;
 					}
 
@@ -91,68 +91,68 @@
 				if ($consulta2['rolPersonaje'] == '0') {
 					switch ($consulta2['skinGuerrero']) {
 						case '1':
-								$skin = "<img src=images/Guerrera1.png width=160 height=230>";
+								$skin = "<img id=imag src=images/Guerrera1.png width=160 height=230 border=2px>";
 							break;
 						case '2':
-								$skin = "<img src=images/Guerrera2.png width=160 height=230>";
+								$skin = "<img id=imag src=images/Guerrera2.png width=160 height=230 border=2px>";
 							break;
 						case '3':
-								$skin = "<img src=images/Guerrera3.png width=160 height=230>";
+								$skin = "<img id=imag src=images/Guerrera3.png width=160 height=230 border=2px>";
 							break;
 						case '4':
-								$skin = "<img src=images/Guerrera4.png width=160 height=230>";
+								$skin = "<img id=imag src=images/Guerrera4.png width=160 height=230 border=2px>";
 							break;
 						case '5':
-								$skin = "<img src=images/Guerrera5.png width=160 height=230>";
+								$skin = "<img id=imag src=images/Guerrera5.png width=160 height=230 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img src=images/Guerrera0.png width=140 height=200>";
+								$skin = "<img id=imag src=images/Guerrera0.png width=140 height=200 border=2px>";
 							break;
 					}
 				}else if ($consulta2['rolPersonaje'] == '1') {
 					switch ($consulta2['skinMago']) {
 						case '1':
-								$skin = "<img src=images/Maga1.png width=150 height=200>";
+								$skin = "<img id=imag src=images/Maga1.png width=150 height=200 border=2px>";
 							break;
 						case '2':
-								$skin = "<img src=images/Maga2.png width=150 height=200>";
+								$skin = "<img id=imag src=images/Maga2.png width=150 height=200 border=2px>";
 							break;
 						case '3':
-								$skin = "<img src=images/Maga3.png width=150 height=200>";
+								$skin = "<img id=imag src=images/Maga3.png width=150 height=200 border=2px>";
 							break;
 						case '4':
-								$skin = "<img src=images/Maga4.png width=150 height=200>";
+								$skin = "<img id=imag src=images/Maga4.png width=150 height=200 border=2px>";
 							break;
 						case '5':
-								$skin = "<img src=images/Maga5.png width=150 height=200>";
+								$skin = "<img id=imag src=images/Maga5.png width=150 height=200 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img src=images/Maga0.png width=130 height=200>";
+								$skin = "<img id=imag src=images/Maga0.png width=130 height=200 border=2px>";
 							break;
 					}
 					
 				}else{
 					switch ($consulta2['skinArquero']) {
 						case '1':
-								$skin = "<img src=images/Arquera1.png width=150 height=230>";
+								$skin = "<img id=imag src=images/Arquera1.png width=150 height=230 border=2px>";
 							break;
 						case '2':
-								$skin = "<img src=images/Arquera2.png width=150 height=230>";
+								$skin = "<img id=imag src=images/Arquera2.png width=150 height=230 border=2px>";
 							break;
 						case '3':
-								$skin = "<img src=images/Arquera3.png width=150 height=230>";
+								$skin = "<img id=imag src=images/Arquera3.png width=150 height=230 border=2px>";
 							break;
 						case '4':
-								$skin = "<img src=images/Arquera4.png width=150 height=230>";
+								$skin = "<img id=imag src=images/Arquera4.png width=150 height=230 border=2px>";
 							break;
 						case '5':
-								$skin = "<img src=images/Arquera5.png width=150 height=230>";
+								$skin = "<img id=imag src=images/Arquera5.png width=150 height=230 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img src=images/Arquera0.png width=140 height=200>";
+								$skin = "<img id=imag src=images/Arquera0.png width=140 height=200 border=2px>";
 							break;
 					}
 
@@ -164,16 +164,20 @@
 	$consulta3 = mysqli_fetch_array($resultados3);
 	switch ($consulta3['mundoAvance']) {
 		case '1':
-				$mundo = "<img src=images/Mundo1.png width=250 height=250>";
+				$imgMundo = "<img src=images/Mundo1.png width=250 height=250>";
+				$nomMundo = "Village";
 			break;
 		case '2':
-				$mundo = "<img src=images/Mundo2.png width=250 height=250>";
+				$imgMundo = "<img src=images/Mundo2.png width=250 height=250>";
+				$nomMundo = "Forest";
 			break;
 		case '3':
-				$mundo = "<img src=images/Mundo3.png width=250 height=250>";
+				$imgMundo = "<img src=images/Mundo3.png width=250 height=250>";
+				$nomMundo = "Cave";
 			break;
 		case '4':
-				$mundo = "<img src=images/Mundo4.png width=250 height=250>";
+				$imgMundo = "<img src=images/Mundo4.png width=250 height=250>";
+				$nomMundo = "Castle";
 			break;
 	}
 
@@ -284,16 +288,178 @@
 		 	}
 
 		 	$table .= "<td>$img</td>";
-		}			
+		}
+
+	//Desafios Realizados en el mundo Aldea.
+	$resultados6 = mysqli_query($conexion, "SELECT * FROM resultadodesafio WHERE codigoEstudiante = '$cod' and mundo = '1'");
+			
+			$table1 = '';
+	//Recorrer la tabla resultado desafios e imprimir las preguntas contestadas en una tabla por medio de echo.	
+		while ($consulta6 = mysqli_fetch_array($resultados6)) {
+			
+			//$desafio = $consulta6['desafio'];
+
+		 	switch ($consulta6['desafio']) {
+		 		case '1':
+		 				$desA = "CorrectBox";
+		 			break;
+		 		case '2':
+		 				$desA = "Combat";
+		 			break;
+		 		case '3':
+		 				$desA = "Plataformas";
+		 			break;
+		 		case '4':
+		 				$desA = "Electro Shock";
+		 			break;
+		 		case '5':
+		 				$desA = "Enlazar";
+		 			break;
+		 		case '6':
+		 				$desA = "Shooter";
+		 			break;
+		 		case '7':
+		 				$desA = "Laser";
+		 			break;
+		 		case '8':
+		 				$desA = "Camino Correcto";
+		 			break;
+		 	}
+		 	$table1 .= "<tr>";
+		 	$table1 .= "<td>$desA</td>";
+		 	$table1 .= "<td>$consulta6[preguntas]</td>";
+		 	$table1 .= "<td>$consulta6[correctas]</td>";
+		 	$table1 .= "</tr>";
+		}
+
+	//Desafios Realizados en el mundo Bosque.
+	$resultados7 = mysqli_query($conexion, "SELECT * FROM resultadodesafio WHERE codigoEstudiante = '$cod' and mundo = '2'");
+			
+			$table2 = '';
+	//Recorrer la tabla resultado desafios e imprimir las preguntas contestadas en una tabla por medio de echo.	
+		while ($consulta7 = mysqli_fetch_array($resultados7)) {
+			
+			//$desafio = $consulta6['desafio'];
+
+		 	switch ($consulta7['desafio']) {
+		 		case '1':
+		 				$desB = "CorrectBox";
+		 			break;
+		 		case '2':
+		 				$desB = "Combat";
+		 			break;
+		 		case '3':
+		 				$desB = "Plataformas";
+		 			break;
+		 		case '4':
+		 				$desB = "Electro Shock";
+		 			break;
+		 		case '5':
+		 				$desB = "Enlazar";
+		 			break;
+		 		case '6':
+		 				$desB = "Shooter";
+		 			break;
+		 		case '7':
+		 				$desB = "Laser";
+		 			break;
+		 		case '8':
+		 				$desB = "Camino Correcto";
+		 			break;
+		 	}
+		 	$table2 .= "<tr>";
+		 	$table2 .= "<td>$desB</td>";
+		 	$table2 .= "<td>$consulta7[preguntas]</td>";
+		 	$table2 .= "<td>$consulta7[correctas]</td>";
+		 	$table2 .= "</tr>";
+		}
+	//Desafios Realizados en el mundo Cueva.
+	$resultados8 = mysqli_query($conexion, "SELECT * FROM resultadodesafio WHERE codigoEstudiante = '$cod' and mundo = '3'");
+			
+			$table3 = '';
+	//Recorrer la tabla resultado desafios e imprimir las preguntas contestadas en una tabla por medio de echo.	
+		while ($consulta8 = mysqli_fetch_array($resultados8)) {
+			
+			//$desafio = $consulta6['desafio'];
+
+		 	switch ($consulta8['desafio']) {
+		 		case '1':
+		 				$desC = "CorrectBox";
+		 			break;
+		 		case '2':
+		 				$desC = "Combat";
+		 			break;
+		 		case '3':
+		 				$desC = "Plataformas";
+		 			break;
+		 		case '4':
+		 				$desC = "Electro Shock";
+		 			break;
+		 		case '5':
+		 				$desC = "Enlazar";
+		 			break;
+		 		case '6':
+		 				$desC = "Shooter";
+		 			break;
+		 		case '7':
+		 				$desC = "Laser";
+		 			break;
+		 		case '8':
+		 				$desC = "Camino Correcto";
+		 			break;
+		 	}
+		 	$table3 .= "<tr>";
+		 	$table3 .= "<td>$desC</td>";
+		 	$table3 .= "<td>$consulta8[preguntas]</td>";
+		 	$table3 .= "<td>$consulta8[correctas]</td>";
+		 	$table3 .= "</tr>";
+		}
+	//Desafios Realizados en el mundo Castillo.
+	$resultados9 = mysqli_query($conexion, "SELECT * FROM resultadodesafio WHERE codigoEstudiante = '$cod' and mundo = '4'");
+			
+			$table4 = '';
+	//Recorrer la tabla resultado desafios e imprimir las preguntas contestadas en una tabla por medio de echo.	
+		while ($consulta9 = mysqli_fetch_array($resultados9)) {
+			
+			//$desafio = $consulta6['desafio'];
+
+		 	switch ($consulta9['desafio']) {
+		 		case '1':
+		 				$desCa = "CorrectBox";
+		 			break;
+		 		case '2':
+		 				$desCa = "Combat";
+		 			break;
+		 		case '3':
+		 				$desCa = "Plataformas";
+		 			break;
+		 		case '4':
+		 				$desCa = "Electro Shock";
+		 			break;
+		 		case '5':
+		 				$desCa = "Enlazar";
+		 			break;
+		 		case '6':
+		 				$desCa = "Shooter";
+		 			break;
+		 		case '7':
+		 				$desCa = "Laser";
+		 			break;
+		 		case '8':
+		 				$desCa = "Camino Correcto";
+		 			break;
+		 	}
+		 	$table4 .= "<tr>";
+		 	$table4 .= "<td>$desCa</td>";
+		 	$table4 .= "<td>$consulta9[preguntas]</td>";
+		 	$table4 .= "<td>$consulta9[correctas]</td>";
+		 	$table4 .= "</tr>";
+		}
 
 ?>
-
-
-<!DOCTYPE html>
- <html>
-
- 	<head>	
- 			<link rel="stylesheet" href="css/student.css">
+												<!-- Inicia HTML  -->
+<head>	
+ 			
  			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 		    <script type="text/javascript">
 		      google.charts.load('current', {'packages':['bar']});
@@ -326,15 +492,17 @@
 		      }
 		    </script>
 
+		    <link rel="stylesheet" href="css/styleStudent.css">
+</head>
 
- 	</head>
-	<body id="estudiante">
+
+<body id="estudiante">
 	 	
-	 		<h3 align="center"> Bienvenido <?php echo $consulta['nickEstudiante'] ?></h3>
+	 		<h1> Bienvenido <?php echo $consulta['nickEstudiante'] ?></h1>
 
 			<br>
 	 			<h2>Personaje Seleccionado:</h2>
-	 				<?php echo $skin ?>
+	 				<p><?php echo $skin ?></p>
 			<br>
 	 			<h2>Nivel del personaje:</h2>
 	 				<p><?php echo $consulta2['nivelPersonaje']?></p>
@@ -346,21 +514,60 @@
 	 				<p><?php echo $consulta2['oroPersonaje']?></p>
 	 		<br>
 	 			<h2>Mundo desbloqueado:</h2>
-	 				<p><?php echo $mundo ?></p>
+	 				<p><?php echo $nomMundo ?> </p><br>
+	 				<p><?php echo $imgMundo ?> </p> 
+
 	 		<br>
 	 			<h2>Avance del juego:</h2>
-	 				<div id="barchart_material" style="width: 98%; height: 60px;"></div>
-	 				
-							
-			<br>
+	 				<p><div id="barchart_material" style="width: 98%; height: 60px;"></div></p>
+	 		<br>
 				<h2>Compras realizadas:</h2>
-					<table border="1">
-					 	<?php echo $table?>				 	
-					</table>
+					<p><table id="compra" border="1">
+						 	<?php echo $table?>				 	
+						</table></p>
+			<br>
+				<h1>Tablas de desafios</h1>
+					<h2>Aldea</h2>
+						<p><table border="1">
+								<tr>
+									<th>Desafio</th>
+									<th>Preguntas Hechas</th>
+									<th>Respuestas Correctas</th>
+								</tr>
+							 	<?php echo $table1?>				 	
+							</table></p>
+					<h2>Bosque</h2>
+						<p><table border="1">
+								<tr>
+									<th>Desafio</th>
+									<th>Preguntas Hechas</th>
+									<th>Respuestas Correctas</th>
+								</tr>
+							 	<?php echo $table2?>				 	
+							</table></p>
+					<h2>Cueva</h2>
+						<p><table border="1">
+								<tr>
+									<th>Desafio</th>
+									<th>Preguntas Hechas</th>
+									<th>Respuestas Correctas</th>
+								</tr>
+							 	<?php echo $table3?>				 	
+							</table></p>
+					<h2>Castillo</h2>
+						<p><table border="1">
+								<tr>
+									<th>Desafio</th>
+									<th>Preguntas Hechas</th>
+									<th>Respuestas Correctas</th>
+								</tr>
+							 	<?php echo $table4?>				 	
+							</table></p>
 	 			
 
-	 </body>
- </html>
+</body>
+<!-- Fin HTML -->
+
 <?php 
 	include("footer.php");
 ?>
