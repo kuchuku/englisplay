@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-03-2018 a las 22:21:03
+-- Tiempo de generación: 14-03-2018 a las 23:03:54
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.9
 
@@ -331,7 +331,67 @@ INSERT INTO `pregunta` (`id`, `test`, `capitulo`, `pregunta`, `respuesta`, `elec
 (57, 1, 2, 'Mary ___ the mechanic ___ her car yesterday.', 'got / to repair', 'had / to repair', 'will have / repair'),
 (58, 1, 2, 'My bike which ___  was brought back only when a 20-pound-reward ___ ', 'was stolen / was offered', 'has been stolen / has been offered', 'stole / offered'),
 (59, 1, 2, 'The criminal ___ for further questioning but as he had a heart attack during the first questioning he ___ to hospital for a week.', 'was to have been held / was sent', 'has been held / has been sent', 'has held / was sent'),
-(60, 1, 2, 'Look at Susan\'s fair hair. She has had it ___ .', 'dyed', 'being dyed', 'to dye');
+(60, 1, 2, 'Look at Susan\'s fair hair. She has had it ___ .', 'dyed', 'being dyed', 'to dye'),
+(61, 0, 3, 'They live ___ Atlantic Avenue.', 'on', 'in', 'at'),
+(62, 0, 3, 'Tokyo is the most crowded city ___ the world.', 'in', 'at', 'on'),
+(63, 0, 3, 'Don\'t walk ___ the street! Walk here ___ the sidewalk.', 'in / on', 'on / at', 'at / on\r\n'),
+(64, 0, 3, 'I\'m going to meet my friends, ___ Times Square tonight.', 'in', 'on', 'over'),
+(65, 0, 3, 'He tried to open the tin ___ a knife.', 'with', 'by', 'to'),
+(66, 0, 3, 'Mike is sitting ___ the desk ___ front of the door.', 'at / in', 'in / on', 'on / on'),
+(67, 0, 3, 'Listen! I think there is someone ___ the front door.', 'at', 'on', 'in'),
+(68, 0, 3, 'There\'s paper ___ the floor. Please put it ___ the wastebasket.', 'on / in', 'on / at', 'at / into'),
+(69, 0, 3, 'See you ___ Monday morning.', 'on', 'at', 'in'),
+(70, 0, 3, 'We are giving him a surprise party ___ his birthday.', 'on', 'with', 'in'),
+(71, 0, 3, 'A dictionary has information ___ words.', 'about', 'to', 'in'),
+(72, 0, 3, 'You\'ll find the poem ___ page 16', 'on', 'over', 'in'),
+(73, 0, 3, 'I\'ll call you ___ seven o\'clock.\r\n', 'at', 'of', 'on'),
+(74, 0, 3, 'We\'ll go ___ Caribbeans ___ June.', 'to / in', 'at / on', 'to / on'),
+(75, 0, 3, 'I was born ___ September 9th.', 'on', 'in', 'at'),
+(76, 1, 3, 'I talked to him ________ the weekend.', 'on', 'at', 'in'),
+(77, 1, 3, 'The dog is ________ the doghouse.', 'in', 'at', 'on'),
+(78, 1, 3, 'I eat breakfast ________ the morning', 'in', 'at', '0n'),
+(79, 1, 3, 'We arrived ________ the airport in the evening.', 'at', 'in', 'on'),
+(80, 1, 3, 'I woke up ___ five o\'clock ___ the morning.', 'at / in', 'at / at', 'at / on'),
+(81, 1, 3, 'The weather is pleasant here ___ the spring.', 'in', 'on', 'at'),
+(82, 1, 3, 'They met ___ Miami ___ 2004.', 'in / in', 'at / in', 'to / in'),
+(83, 1, 3, 'My friends will be there ___ two or three hours.', 'in', 'on', 'at'),
+(84, 1, 3, 'The plane will stay on the runway ___ five minutes.', 'for', 'in', 'on'),
+(85, 1, 3, 'She graduated from the university ___ 1969.', 'in', 'for', 'on'),
+(86, 1, 3, 'Are you going to study ___ the afternoon or ___ night?', 'in / at', 'at / in', 'in / in'),
+(87, 1, 3, '___ university is ___ institution of higher education.', 'a / an', 'the / the', 'an / a'),
+(88, 1, 3, 'I can\'t hear very well. Please turn the radio ___ .', 'up', 'down', 'on'),
+(89, 1, 3, 'Put the book ________ the table.', 'on', 'in', 'at'),
+(90, 1, 3, 'He is currently ________ vacation.', 'on', 'in', 'at'),
+(91, 0, 4, 'Your blue skirt is ___  the one you\'ve got on, Mary; why don\'t you change into it?', 'much nicer than', 'as better as', 'more expensive than'),
+(92, 0, 4, 'He\'s one of ___ people I\'ve ever met. He never stops talking and never says anything ___ .', 'the most boring / interesting', 'the least bored / interested', 'the more bored / interested'),
+(93, 0, 4, 'You looked ___ this morning but you look ___ now.', 'depressed / a bit happier', 'a bit happier / more depressing', 'depressed / much happy'),
+(94, 0, 4, '___ electricity you use, ___ your bill will be.', 'The more / the higher', 'The less / the higher', 'The most / the lowest'),
+(95, 0, 4, 'It\'s ___ to learn a foreign language in the country where it is spoken than in another country.', 'a lot easier', 'much easy', 'easiest'),
+(96, 0, 4, '___ a room is, ___ it is likely to be.', 'The more expensive / the more comfortable', 'The most expensive / the most comfortable', 'The most expensive / more comfortable'),
+(97, 0, 4, 'The fault in the engine is ___ this time than it was the last time.', 'much more serious', 'as serious as', 'so serious that'),
+(98, 0, 4, 'Minicomputers are _______ than mainframes.', 'less expensive', 'less expensiver', 'less expensivest'),
+(99, 0, 4, 'The politician spoke __ than was necessary.', 'louder', 'more louderst', 'the more louder'),
+(100, 0, 4, 'Bill gates is one of __ men in the world.', 'the richest', 'the richer', 'richert'),
+(101, 0, 4, 'Luis hates to clean. He has ___ apartment I’ve ever seen.', 'the dirtiest', 'dirtest', 'dirtyest'),
+(102, 0, 4, 'Supposedly, digital voice discs, or DVDs as they are called, are ___ resistant to scratching ___ records.', 'far more / than', 'such / that', 'so / as'),
+(103, 0, 4, 'I don\'t have ___ much time for reading ___ I would like to.', 'as / as', 'more / than', 'so / that'),
+(104, 0, 4, 'English is today the third ___ native language worldwide after Chinese and Hindi, with some 380 million speakers.', 'most spoken', 'the least spoken', 'much spoken'),
+(105, 0, 4, 'My students\' sleepless nights became ___ as the finals approached.', 'more frequent', 'as frequent', 'so frequently'),
+(106, 1, 4, 'It is often said that the hyena is an aggressive animal, but in fact it is not ___ many people believe.', 'so vicious as', 'more viciously than', 'as viciously as'),
+(107, 1, 4, 'The cupboard was ___ big ___ fit through the door, so we had to take it apart first.', 'too / to', 'more / than', 'so / that'),
+(108, 1, 4, 'The roots of the old tree spread out ___ thirty meters in all directions and damaged nearby buildings.', 'as much as', 'so much', 'too much'),
+(109, 1, 4, 'According to the recent election\'s results, the Democrats are ___ of the four main political parties.', 'the smallest', 'much smaller', 'smaller'),
+(110, 1, 4, 'Ever since the use of natural gas became widespread, London isn\'t ___ a polluted city ___ it was ten years ago.', 'such / as', 'as / as', 'as / as'),
+(111, 1, 4, 'The plot of the novel was ___ it was completely incomprehensible.', 'so complicated that', 'much more complicated than', 'so complicated as'),
+(112, 1, 4, 'The Mediterranean Sea, which means \'in the midst of lands\' In Latin, is the world\'s ___ inland sea and surrounded by Europe, Asia, and Africa.', 'largest', 'as large', 'the largest'),
+(113, 1, 4, 'The new language school has a ___ exam pass rate than the other schools in the area.', 'higher', 'so high', 'the highest'),
+(114, 1, 4, 'This machine is ___ of the two models in the shop, so you should buy that one.', 'the most modern', 'as modern as', 'more modern'),
+(115, 1, 4, 'Cars are becoming ___ damaging to the environment ___ factory chimneys.', 'as / as', 'so / that', 'so / as'),
+(116, 1, 4, 'People in this country live ___ anybody else in the world.', 'longer than', 'the longest', 'long as'),
+(117, 1, 4, 'His qualifications are ___ than those of any other candidate.', 'better', 'good enough', 'the best'),
+(118, 1, 4, 'I could have found the place ___ if I had a map.', 'more easily', 'more easier', 'as easily'),
+(119, 1, 4, 'The crisis we are facing now is ___ than any of the previous ones.', 'more serious', 'seriously', 'as serious'),
+(120, 1, 4, 'She is ___ than Rose and has more to think about.', 'more thoughtful', 'so thoughtful', 'such a thoughtful');
 
 -- --------------------------------------------------------
 
