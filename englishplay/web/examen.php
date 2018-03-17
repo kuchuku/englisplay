@@ -46,7 +46,7 @@ include("php/sesion.php");
  				<li>Selecciona el tema del examen</li>
  			</ul>
  			<select name="num_cap">
- 				<option  value="1">Tiempos simples y compuestos</option>
+ 				<option  value="1">Tiempos simples y continuos</option>
  				<option  value="2">Tiempos perfectos y voz pasiva</option>
  				<option  value="3">Preposiciones</option>
  				<option  value="4">Comparativos y superlativos</option>
