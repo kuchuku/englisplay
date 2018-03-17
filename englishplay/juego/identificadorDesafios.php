@@ -24,6 +24,6 @@ if(!$conexion->connect_errno)
      
 
 	$resultado = mysqli_query($conexion, $sql);
-	}
+
 }
 ?>
