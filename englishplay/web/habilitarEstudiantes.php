@@ -1,6 +1,7 @@
 <?php
 	
 	include '..\conexionDB.php';
+	include("header.php");
 
 	$file = fopen('listado_de_clase_750101M.csv', 'r');
 
@@ -22,4 +23,14 @@
 		}
 	}
 
+	include("footer.php");
+
 ?>
+
+<head>
+	
+</head>
+
+<body>
+	
+</body>
