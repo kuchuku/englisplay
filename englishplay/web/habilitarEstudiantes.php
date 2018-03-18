@@ -1,29 +1,6 @@
 <?php
 	
-	include '..\conexionDB.php';
 	include("header.php");
-
-	$file = fopen('listado_de_clase_750101M.csv', 'r');
-
-	$i = 0;
-
-	while (!feof($file))
-	{
-		$i++;
-
-		@$content = array_map('utf8_encode', fgetcsv($file, 0, ';'));
-
-		if ($i >= 5 && $content[0] != '')
-		{
-			
-			$sql 		= "INSERT INTO usuario(codigoUsuario, nombreUsuario, tipoUsuario) VALUES('$content[1]', '$content[2]', 0)";
-			mysqli_query($conexion, $sql);
-			$sql 		= "INSERT INTO estudiante(codigoUsuario, idGrupo) VALUES('$content[1]', 50)";
-			mysqli_query($conexion, $sql);
-		}
-	}
-
-	include("footer.php");
 
 ?>
 
@@ -32,5 +9,19 @@
 </head>
 
 <body>
-	
+	<!-- El tipo de codificación de datos, enctype, DEBE especificarse como sigue -->
+	<form enctype="multipart/form-data" action="php/csv.php" method="POST">
+	    <!-- MAX_FILE_SIZE debe preceder al campo de entrada del fichero -->
+	    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+	    <!-- El nombre del elemento de entrada determina el nombre en el array $_FILES -->
+	    Enviar este fichero: <input name="csv" type="file" />
+	    <input type="submit" value="Enviar fichero" />
+	</form>
+
 </body>
+
+<?php
+
+	include("footer.php");
+
+?>
