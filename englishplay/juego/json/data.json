@@ -1,0 +1,360 @@
+{  
+   "allRoundData":[  
+      {  
+         "text":"<b>Mysterious Egyptian Pyramids</b>\n\n When you think of Ancient Egypt, there is one image that probably comes to your mind first: pyramids.\n\n Egypt's pyramids were built nearly 5,000 years ago. They were designed as tombs for their kings called pharaohs. The Ancient Egyptians believed that their pharaohs were all sons of Ra, who was the god of the sun. When a pharaoh died, it was thought that his spirit would join his father Ra and all of the other gods in the afterlife. However, in order for the pharaoh's spirit to rise into the sky, his body had to be kept safe. If the pharaoh's body was damaged, he would not be able to make the journey into the sky. This would anger the other gods, causing them to punish the Egyptian people with diseases or natural disasters. The Egyptians thus carefully preserved the pharaohs' bodies and then sealed them inside of stone coffins known as sarcophagi. The pyramid itself was the final layer of protection. Built out of enormous stones and filled with traps and secret passageways, the pyramids were designed to keep the pharaoh's body in and robbers out. \n \n These robbers were not actually interested in stealing a pharaoh's body. Instead, they were hunting for all of the treasures that were buried alongside of it. Pharaohs were laid to rest with jewelry, furniture, precious metals, jars of expensive spices, fine clothing, pottery, and many other priceless items. According to the Ancient Egyptian religion, the pharaoh would need all of these things in the afterlife. If a grave robber stole the pharaoh's favorite pair of jewel encrusted sandals, for example, then the pharaoh would not be able to wear them in the afterlife. \n\n A pyramid's unique shape was also probably designed to help the pharaoh's spirit reach the afterlife. Most Egyptian pyramids rest on a square base. Each side of the pyramid is a perfect triangle. The sides come together to form a point at the top of the pyramid. Some Egyptologists experts on Ancient Egypt believe that the pyramid's pointed shape was meant to lead the pharaoh's spirit to the sky. Others think that this shape was modeled after something called a Benben stone. The Benben stone, which was pyramid shaped, was found in many Ancient Egyptian temples to Ra, the sun god. Historians believe that the Benben was meant to symbolize the rays of sun as they fell on the earth. Because the pharaoh was thought to be the son of Ra, the pharaoh's tomb was modeled after the pyramid shaped Benben stone. Still others argue that the pyramid was simply the easiest shape to build. Because most of the weight is at the bottom, pyramids can be both very tall and very sturdy. The bigger and sturdier the pyramid was, the more difficult it would be for grave robbers to get inside. \n \n Although we have evidence of over 100 pyramids in Egypt, the three largest ones still standing were built in the city of Giza. The biggest of these three is known as the Great Pyramid. Not only is it the largest pyramid in the world, it is also the only one of the Seven Wonders of the Ancient World that still exists. Built for Pharaoh Khufu, the Great Pyramid stood over 480 feet tall when it was first built. It was almost as tall as a 40 story building. In fact, the Great Pyramid of Khufu was the tallest building in the world until 1311, when the Lincoln Cathedral was built in England. This means that for over 3800 years, there was no man made structure on Earth taller than the Great Pyramid. Khufu's pyramid is impressive for other reasons as well. Each side of the pyramid is 756 feet long. It is made up of over 2.3 million stones. Each of these stones weighs nearly 3 tons. The entire pyramid weighs over 6.5 million tons. When the Pyramid was first built, it was covered in thousands of pounds of smooth white limestone rock that shone in the sun. \n \n The Ancient Egyptians did not have any modern tools, vehicles, or machines in fact, they did not even have the wheel. So how were the Ancient Egyptians capable of making such a massive building? The answer is ... no one really knows for sure. Some experts believe that the Ancient Egyptians might have used a large ramp. Others think that they used a system of logs and ropes. Some others even believe that the Ancient Egyptians had help from aliens! \n\n While we cannot be certain how the pyramids were built, historians agree on one thing: building the pyramids required thousands of workers. We do not know the exact number of people who worked on the pyramids. Some historians estimate that it took 20,000 workers; others suggest that it took as many as 100,000. Although people once believed that slaves built the pyramids, there is a good deal of evidence to suggest that this is not the case. Archaeologists recently discovered the remains of workers' camps located near the pyramids. Animal bones near these sites suggest that the workers ate a lot of meat something that only reasonably wealthy Egyptians could afford to do. Archaeologists also discovered evidence of family homes, bakeries, and decorative pottery in the camps all things that slaves probably would not have had. These and other discoveries have led Egyptologists to believe that the pyramids were built by skilled Egyptian workers who were paid well for their efforts. \n \n The Egyptian pyramids remain quite mysterious. We do not know exactly who built them or how they were built. Time, thieves, and earthquakes have damaged many of them. Nearly all of the shining limestone rock that once covered the pyramids has been stolen or destroyed. Most of the treasures that once filled the pyramids are long gone. Even though the pyramids are not as magnificent as they once were, they are still a source of fascination. Millions of tourists from around the world come to visit the pyramids every year. Egyptologists also continue to study them, hoping to find answers to some of history's greatest and oldest mysteries.",
+         "timeLimitInSeconds":20,
+         "coinsAddedForCorrectAnswer":100,
+         "questions":[  
+            {  
+               "questionText":"According to the passage, why was a pharaoh buried with so much treasure?",
+               "answers":[  
+                  {  
+                     "answerText":"When the pharaoh's spirit reached the afterlife, he would present the treasure as gifts from the Egyptian people to the gods.",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"The treasure would distract grave robbers; they would steal the treasure instead of disturbing the pharaoh's body.",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"A pharaoh would be able to use his treasure once he got to the afterlife.",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"The pharaohs were trying to hide their country's treasures from their enemies. The pyramids were the safest place to hide them.",
+                     "isCorrect":false
+                  }
+               ]
+            },
+            {  
+               "questionText":"Based on the way it is used in paragraph 6, which is the best antonym for massive?",
+               "answers":[  
+                  {  
+                     "answerText":"puny",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"monumental",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"dark",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"uninteresting",
+                     "isCorrect":false
+                  }
+               ]
+            },
+            {  
+               "questionText":"Using the passage as a guide, we can understand that which of the following has led some people to believe that aliens helped the Ancient Egyptians to build the pyramids?",
+               "answers":[  
+                  {  
+                     "answerText":"Some of the pyramids were built with large ramps, but Khufu's Great Pyramid was created with special tools that seem too advanced to be from Ancient Egypt.",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"Writings on the walls of some of the pyramids mention getting help from 'sky people.' Some experts think that these 'sky people' are the gods, but others think that they might be aliens.",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"Archaeologists have found items near pyramid sites that cannot be found anywhere on earth.",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"It is difficult to imagine that an ancient civilization with so few tools built something as large and impressive as the pyramids.",
+                     "isCorrect":true
+                  }
+               ]
+            },
+            {  
+               "questionText":"In paragraph 7, the author mentions that archaeologists found animal bones near a pyramid. According to the author, these bones suggest that",
+               "answers":[  
+                  {  
+                     "answerText":"pharaohs were likely buried with their favorite animals",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"the pyramids were not built by slaves",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"pharaohs wanted to eat meat in the afterlife",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"animals were used to carry the heavy stones used in the pyramids",
+                     "isCorrect":false
+                  }
+               ]
+            },
+            {  
+               "questionText":"Based on the information in the final paragraph, we can understand that the author thinks that",
+               "answers":[  
+                  {  
+                     "answerText":"grave robbers should be punished for their terrible crimes",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"people today are not as interested in the pyramids as they once were",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"the pyramids are worth visiting even though they have been damaged",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"Egyptologists will never figure out how the Ancient Egyptians built the pyramids",
+                     "isCorrect":false
+                  }
+               ]
+            }
+         ]
+      },
+		{  
+	 "text":"Jack Forrester is one of the most adventurous people from all over the world. In this article we will take a look at his jobs, personal life and extreme adventures.\n\n Jack has had several jobs, about 30. Among the most interesting jobs we can highlight the following: he has been an astronaut, a teacher and a dancer. According to Jack, his most rewarding job has been to be a teacher in Africa, Europe and South America.\n\n As for his personal life, we can point out that he has had five girlfriends in his life, but he has only been married once. He has not had children yet, but he wants to have two daughters.\n\n Jack has lived in more than 15 countries, his favorite country is Japan. He has gone around the world twice: the first one in 1999 by boat and the second one in hot air balloon 3 years ago. Some people may wonder how he has paid for these trips and adventures; well, Jack is an entrepreneur that has created and sold about 6 successful companies.\n\n Jack Forrester is a role model for his family and friends.",
+	 "timeLimitInSeconds":20,
+	 "coinsAddedForCorrectAnswer":10,
+	 "questions":[  
+	    {  
+	       "questionText":"What is the purpose of the article?",
+	       "answers":[  
+	          {  
+	             "answerText":"Criticize",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Inform",
+	             "isCorrect":true
+	          },
+	          {  
+	             "answerText":"Congratulate",
+	             "isCorrect":false
+	          }
+	       ]
+	    },
+	    {  
+	       "questionText":"How many times has Jack gone around the world?",
+	       "answers":[  
+	          {  
+	             "answerText":"Three times",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Once",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Two times",
+	             "isCorrect":true
+	          }
+	       ]
+	    },
+		{  
+	       "questionText":"The adjective .rewarding. is close in meaning to:",
+	       "answers":[  
+	          {  
+	             "answerText":"Gratifying",
+	             "isCorrect":true
+	          },
+	          {  
+	             "answerText":"Interesting",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Disappointing",
+	             "isCorrect":false
+	          }
+	       ]
+	    },
+		{  
+	       "questionText":"What happened in 1999?",
+	       "answers":[  
+	          {  
+	             "answerText":"Jack went around the world for the last time",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Jack went around the world for the first time",
+	             "isCorrect":true
+	          },
+	          {  
+	             "answerText":"Jack went around the world for the third time",
+	             "isCorrect":false
+	          }
+	       ]
+	    },
+	    {  
+	       "questionText":"The verb .point out. is close in meaning to:",
+	       "answers":[  
+	          {  
+	             "answerText":"Answer",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Summarize",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Indicate",
+	             "isCorrect":true
+	          }
+	       ]
+	    },
+	    {  
+	       "questionText":"The author of the passage is most likely to agree with:",
+	       "answers":[  
+	          {  
+	             "answerText":"Jack is an irresponsible person who doesn't like having a normal life.",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Jack has led an interesting and a daring life.",
+	             "isCorrect":true
+	          },
+	          {  
+	             "answerText":"Jack has been a teacher in 15 countries.",
+	             "isCorrect":false
+	          }
+	       ]
+	    }
+	 ]
+	},
+		{  
+	 "text":"Un texto es una composición de signos codificados en un sistema de escritura que forma una unidad de <b>sentido</b>.\n\n\n También es una composición de caracteres imprimibles (con grafema) generados por un algoritmo de cifrado que, aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original. En otras palabras, un texto es un entramado de signos con una intención comunicativa que adquiere sentido en determinado contexto.Las ideas esenciales que comunica un texto están contenidas en lo que se suele denominar «macroproposiciones», unidades estructurales de nivel superior o global, que otorgan coherencia al texto constituyendo su hilo central, el esqueleto estructural que cohesiona elementos lingüísticos formales de alto nivel, como los títulos y subtítulos, la secuencia de párrafos, etc. En contraste, las «microproposiciones» son los elementos coayudantes de la cohesión de un texto, pero a nivel más particular o local. Esta distinción fue realizada por Teun van Dijk en 1980.1?El nivel microestructural o local está asociado con el concepto de cohesión. Se refiere a uno de los fenómenos propios de la coherencia, el de las relaciones particulares y locales que se dan entre elementos lingüísticos, tanto los que remiten unos a otros como los que tienen la función de conectar y organizar. También es un conjunto de oraciones agrupadas en párrafos que habla de un tema determinado.",
+	 "timeLimitInSeconds":20,
+	 "coinsAddedForCorrectAnswer":10,
+	 "questions":[  
+	    {  
+	       "questionText":"'Make' is a verb?",
+	       "answers":[  
+	          {  
+	             "answerText":"True",
+	             "isCorrect":true
+	          },
+	          {  
+	             "answerText":"False",
+	             "isCorrect":false
+	          }
+	       ]
+	    },
+	    {  
+	       "questionText":"Blue is a color?",
+	       "answers":[  
+	          {  
+	             "answerText":"No",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Yes",
+	             "isCorrect":true
+	          }
+	       ]
+	    },
+		{  
+	       "questionText":"Finish question",
+	       "answers":[  
+	          {  
+	             "answerText":"Yes",
+	             "isCorrect":true
+	          },
+	          {  
+	             "answerText":"No",
+	             "isCorrect":false
+	          }
+	       ]
+	    }
+	 ]
+	},
+		{  
+	 "text":"The Rodriguez Brothers Circus in in town! Every year, the circus arrives and stays for a week.\nThen the go to the next town.\n\nThere are not many animals in the circus. People told the circus that they didn't like seeing animals perfoming. There is an elephant called jacob and two old lions, Hattie and Meg.\n\n Most of the performers are human! There is Leopold, the strongest Man In the World. His father also worked in the circus, but Leopold is stronger than him, he has bigger arms and bigger legs too! Leopold perform his act every night for the town's people who come to watch.\n\nAnother performer is Clara. She says she has the longest hair in the world. It's about 4 meters long! She also has a daugther who works in the circus. Her name is Sue Ellen. Her hair is a lot shorter, but she wants to grow it as long as her mother's. Sue Ellen helps look after the animal and she's also learning how to juggle.\n\nThe highlight of the circus are the three clowns, Pit, Pot and Pat. They all wear long red shoes, but Pat's shoes are the longest and sometimes, he falls over because they're so long! They perform for about twenty minutes and they are always the most popular act with the audience, especially the children. Many people think Pit, Pot and Pat are three brothers, but Pat is older tha the other two   he's their father! he's the oldest clown in the country, but he has a lot of energy.\n\n Tomorrow will be the longest day because the circus is leaving town and everything must be packed away into big trucks.",
+	 "timeLimitInSeconds":20,
+	 "coinsAddedForCorrectAnswer":10,
+	 "questions":[  
+	    {  
+	       "questionText":"The lions are yonger than Jacob?",
+	       "answers":[  
+	          {  
+	             "answerText":"True",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"False",
+	             "isCorrect":true
+	          }
+	       ]
+	    },
+	    {  
+	       "questionText":"Who is the strongest man in the world?",
+	       "answers":[  
+	          {  
+	             "answerText":"Leopoldo's father",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Pot",
+	             "isCorrect":false
+	          },
+			  {  
+	             "answerText":"Leopoldo",
+	             "isCorrect":true
+	          }
+	       ]
+	    },
+		{  
+	       "questionText":"Clara has....",
+	       "answers":[  
+	          {  
+	             "answerText":"the biggest arms in the world",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"the biggest legs in the world",
+	             "isCorrect":false
+	          },
+			  {  
+	             "answerText":"the longest hair in the world",
+	             "isCorrect":true
+	          }
+	       ]
+	    },
+		{  
+	       "questionText":"Sue Ellen is..",
+	       "answers":[  
+	          {  
+	             "answerText":"Leopoldo's daughter",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Clara's daughter",
+	             "isCorrect":true
+	          },
+			  {  
+	             "answerText":"sister of Pit, Pot and Pat",
+	             "isCorrect":false
+	          }
+	       ]
+	    },
+		{  
+	       "questionText":"Who is oldest?",
+	       "answers":[  
+	          {  
+	             "answerText":"Pit ",
+	             "isCorrect":false
+	          },
+	          {  
+	             "answerText":"Pot",
+	             "isCorrect":false
+	          },
+			  {  
+	             "answerText":"Pat",
+	             "isCorrect":true
+	          }
+	       ]
+	    }
+
+	 ]
+	}
+   ]
+}

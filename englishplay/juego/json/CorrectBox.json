@@ -1,0 +1,354 @@
+{
+  "allLevelsData": [
+    {
+      "theme": "Complete the sentences with Simple Present",
+      "coinsAddedForCorrectAnswer": 30,
+      "questions": [
+        {
+          "questionText": "Alice _______ her hair twice a week.",
+          "answers": [
+            {
+              "answerText": "is washing",
+              "isCorrect": false
+            },
+            {
+              "answerText": "washing",
+              "isCorrect": false
+            },
+            {
+              "answerText": "washes",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "He usually ______ to solve problems by himself.",
+          "answers": [
+            {
+              "answerText": "do try",
+              "isCorrect": false
+            },
+            {
+              "answerText": "tries",
+              "isCorrect": true
+            },
+            {
+              "answerText": "trie",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "I  _____ books from the library.",
+          "answers": [
+            {
+              "answerText": "never takes",
+              "isCorrect": false
+            },
+            {
+              "answerText": "don't take",
+              "isCorrect": true
+            },
+            {
+              "answerText": "doesn't take",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "The train _____ arrive on time.",
+          "answers": [
+            {
+              "answerText": "doesn't always",
+              "isCorrect": true
+            },
+            {
+              "answerText": "not always",
+              "isCorrect": false
+            },
+            {
+              "answerText": "never",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "____  you go to the theatre every month?",
+          "answers": [
+            {
+              "answerText": "Is",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Are",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Do",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "_____ She want an answer?",
+          "answers": [
+            {
+              "answerText": "Does",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Who",
+              "isCorrect": false
+            },
+            {
+              "answerText": "What",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "theme": "Complete the sentences with past perfect",
+      "coinsAddedForCorrectAnswer": 30,
+      "questions": [
+        {
+          "questionText": "I ___ at home all day.",
+          "answers": [
+            {
+              "answerText": "Had been",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Have been",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Has been",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Alex ___ alone",
+          "answers": [
+            {
+              "answerText": "Haven’t traveled",
+              "isCorrect": false
+            },
+            {
+              "answerText": "Hadn’t traveled",
+              "isCorrect": true
+            },
+            {
+              "answerText": "Hasn’t traveled",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "___ you __ her before?",
+          "answers": [
+            {
+              "answerText": "had metting",
+              "isCorrect": false
+            },
+            {
+              "answerText": "had meted",
+              "isCorrect": false
+            },
+            {
+              "answerText": "had met",
+              "isCorrect": true
+            }
+          ]
+        }
+      ]
+    },
+		{
+      "theme": "Prepositions",
+      "coinsAddedForCorrectAnswer": 30,
+      "questions": [
+        {
+          "questionText": "We live ______ London.",
+          "answers": [
+            {
+              "answerText": "at",
+              "isCorrect": false
+            },
+            {
+              "answerText": "in",
+              "isCorrect": true
+            },
+            {
+              "answerText": "on",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Would you like to go ______ the cinema tonight?",
+          "answers": [
+            {
+              "answerText": "at",
+              "isCorrect": false
+            },
+            {
+              "answerText": "in",
+              "isCorrect": false
+            },
+            {
+              "answerText": "to",
+              "isCorrect": true
+            }
+          ]
+        }
+        ,
+        {
+          "questionText": "No, thanks. I was ______ the cinema yesterday.",
+          "answers": [
+            {
+              "answerText": "at",
+              "isCorrect": true
+            },
+            {
+              "answerText": "into",
+              "isCorrect": false
+            },
+            {
+              "answerText": "to",
+              "isCorrect": false
+            }
+          ]
+        }
+        ,
+        {
+          "questionText": "We are going ______ holiday next week.",
+          "answers": [
+            {
+              "answerText": "in",
+              "isCorrect": false
+            },
+            {
+              "answerText": "on",
+              "isCorrect": true
+            },
+            {
+              "answerText": "to",
+              "isCorrect": false
+            }
+          ]
+        }
+        ,
+        {
+          "questionText": "There is a bridge ______ the river.",
+          "answers": [
+            {
+              "answerText": "across",
+              "isCorrect": true
+            },
+            {
+              "answerText": "through",
+              "isCorrect": false
+            },
+            {
+              "answerText": "outside",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    },
+		{
+      "theme": "Superlative",
+      "coinsAddedForCorrectAnswer": 30,
+      "questions": [
+        {
+          "questionText": "That was ___ movie I’ve ever seen. I almost walked out in the middle.",
+          "answers": [
+            {
+              "answerText": "the bad",
+              "isCorrect": false
+            },
+            {
+              "answerText": "the worse",
+              "isCorrect": false
+            },
+            {
+              "answerText": "the worst",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "Bob told ____ story last night. I couldn’t stop laughing.",
+          "answers": [
+            {
+              "answerText": "the funniest",
+              "isCorrect": true
+            },
+            {
+              "answerText": "the funiest",
+              "isCorrect": false
+            },
+            {
+              "answerText": "the funnyest",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "the Nile is ____ river in the world",
+          "answers": [
+            {
+              "answerText": "the long",
+              "isCorrect": false
+            },
+            {
+              "answerText": "the longest",
+              "isCorrect": true
+            },
+            {
+              "answerText": "longer",
+              "isCorrect": false
+            }
+          ]
+        },
+        {
+          "questionText": "Luis hates to clean. He has ____ apartment I've ever seen",
+          "answers": [
+            {
+              "answerText": "dirtyest",
+              "isCorrect": false
+            },
+            {
+              "answerText": "dirtest",
+              "isCorrect": false
+            },
+            {
+              "answerText": "the dirtiest",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "January is ___ month of the year",
+          "answers": [
+            {
+              "answerText": "the coldest",
+              "isCorrect": true
+            },
+            {
+              "answerText": "colder",
+              "isCorrect": false
+            },
+            {
+              "answerText": "more cold",
+              "isCorrect": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
