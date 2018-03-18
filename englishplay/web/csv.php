@@ -1,6 +1,8 @@
 <?php
 
-	include '..\..\conexionDB.php';
+	include("header.php");
+
+	include '..\conexionDB.php';
 
 	$tmpName = $_FILES['csv']['tmp_name'];
 	$file = fopen($tmpName, 'r');
@@ -22,5 +24,21 @@
 			mysqli_query($conexion, $sql);
 		}
 	}
+
+?>
+
+<head>
+	
+</head>
+
+<body>
+	
+	CSV Cargado correctamente
+
+</body>
+
+<?php
+
+	include("footer.php");
 
 ?>
