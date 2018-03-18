@@ -1,0 +1,436 @@
+{  
+   "allRoundData":[  
+      {  
+         "text":"Future Continuous",
+         "timeLimitInSeconds":0,
+         "coinsAddedForCorrectAnswer":50,
+         "questions":[  
+            {  
+               "questionText":"Future Continuous: \n He_____  by the time you arrive",
+               "answers":[  
+                  {  
+                     "answerText":"will eat",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"will be eating",
+                     "isCorrect":true
+                  },
+						{  
+                     "answerText":"will have eaten",
+                     "isCorrect":false
+                  }
+               ]
+            },
+            {  
+               "questionText":"Future Continuous: \n I ________ during rush hour.",
+               "answers":[  
+                  {  
+                     "answerText":"will be driving",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"will have drive",
+                     "isCorrect":false
+                  },
+						{  
+                     "answerText":"will be drive",
+                     "isCorrect":false
+                  }
+               ]
+            },
+            {  
+               "questionText":"Future Continuous: \n Nigel _____ be coming to the picnic.",
+               "answers":[  
+                  {  
+                     "answerText":"won't",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"won't not",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"willn't",
+                     "isCorrect":false
+                  },
+						{  
+                     "answerText":"wo'nt",
+                     "isCorrect":false
+                  }
+               ]
+            },
+				{  
+               "questionText":"Future Continuous: \n Where ________ sleeping?",
+               "answers":[  
+                  {  
+                     "answerText":"you be",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"will you",
+                     "isCorrect":false
+                  },
+						{  
+                     "answerText":"will you be",
+                     "isCorrect":true
+                  }
+               ]
+            },
+				{  
+               "questionText":"Future Continuous: \n I'll try my best to spot you. What ________ wearing?",
+               "answers":[  
+                  {  
+                     "answerText":"will you",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"will",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"will you be",
+                     "isCorrect":true
+                  }
+               ]
+            },
+				{  
+               "questionText":"Future Continuous: \n Sorry, I can't. I ________ my daughter to work at that time.",
+               "answers":[  
+                  {  
+                     "answerText":"will be taking",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"'ll take",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"won't be take",
+                     "isCorrect":false
+                  }
+               ]
+            }
+				
+      ]
+},
+		{  
+         "text":"Past perfect continuous",
+         "timeLimitInSeconds":0,
+         "coinsAddedForCorrectAnswer":40,
+         "questions":[              
+				{  
+               "questionText":"We ___ been __ for more than two hours",
+               "answers":[  
+                  {  
+                     "answerText":"had, talk",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"had, talking",
+                     "isCorrect":true
+                  },
+				{  
+                     "answerText":"has, talking",
+                     "isCorrect":false
+                  }
+               ]
+            },
+				{  
+               "questionText":"I __ been cooking something special for you",
+               "answers":[  
+                  {  
+                     "answerText":"hadn’t",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"haven’t",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"hasn´t",
+                     "isCorrect":false
+                  }
+               ]
+            },
+				{  
+               "questionText":"He hadn’t _______ the book.",
+               "answers":[  
+                  {  
+                     "answerText":"be readed",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"been reading",
+                     "isCorrect":true
+                  },
+				{  
+                     "answerText":"been read",
+                     "isCorrect":false
+                  }
+               ]
+            },
+			{  
+               "questionText":"You __ been investing in something revolutionary",
+               "answers":[  
+                  {  
+                     "answerText":"have",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"has",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"had",
+                     "isCorrect":true
+                  }
+               ]
+            },
+			{  
+               "questionText":"Had you been ____ in that firm for many years?",
+               "answers":[  
+                  {  
+                     "answerText":"working",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"worked",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"work",
+                     "isCorrect":false
+                  }
+               ]
+            }
+         ]
+      },
+		 {  
+         "text":"TEMA DE SIMÓN INSERTAR AQUÍ",
+         "timeLimitInSeconds":0,
+         "coinsAddedForCorrectAnswer":50,
+         "questions":[              
+				{  
+               "questionText":"simón pregunta 1",
+               "answers":[  
+                  {  
+                     "answerText":"the nice",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"the nicer",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"the nicest",
+                     "isCorrect":true
+                  }
+               ]
+            },
+				{  
+               "questionText":"simón pregunta 1",
+               "answers":[  
+                  {  
+                     "answerText":"as cheap as",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"the cheapest",
+                     "isCorrect":true
+                  },
+				{  
+                     "answerText":"cheaper",
+                     "isCorrect":false
+                  }
+               ]
+            },
+				{  
+               "questionText":"simón pregunta 1",
+               "answers":[  
+                  {  
+                     "answerText":"the most valuablest",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"the most valuable",
+                     "isCorrect":true
+                  },
+				{  
+                     "answerText":"the most valuabler",
+                     "isCorrect":false
+                  }
+               ]
+            },
+			{  
+               "questionText":"simón pregunta 1",
+               "answers":[  
+                  {  
+                     "answerText":"the best",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"the better",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"the good",
+                     "isCorrect":false
+                  }
+               ]
+            },
+			{  
+               "questionText":"simón pregunta 1.",
+               "answers":[  
+                  {  
+                     "answerText":"as dangerous as",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"the most dangerouser",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"dangerousest",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"the most dangerous",
+                     "isCorrect":true
+                  }
+               ]
+            },
+			{  
+               "questionText":"simón pregunta 1",
+               "answers":[  
+                  {  
+                     "answerText":"beautifullest",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"more beautiful than",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"the most beautiful",
+                     "isCorrect":true
+                  }
+               ]
+            }
+         ]
+      },
+	{  
+         "text":"Superlativo",
+         "timeLimitInSeconds":0,
+         "coinsAddedForCorrectAnswer":50,
+         "questions":[              
+				{  
+               "questionText":"Superlative: \n It´s a very nice house. it’s _____ house in the street.",
+               "answers":[  
+                  {  
+                     "answerText":"the nice",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"the nicer",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"the nicest",
+                     "isCorrect":true
+                  }
+               ]
+            },
+				{  
+               "questionText":"Superlative: \n This is a cheap restaurant. It’s _____ restaurant I’ve ever been.",
+               "answers":[  
+                  {  
+                     "answerText":"as cheap as",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"the cheapest",
+                     "isCorrect":true
+                  },
+				{  
+                     "answerText":"cheaper",
+                     "isCorrect":false
+                  }
+               ]
+            },
+				{  
+               "questionText":"Superlative: \n It was a very valuable painting. I’m sure it was ____ painting in the gallery.",
+               "answers":[  
+                  {  
+                     "answerText":"the most valuablest",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"the most valuable",
+                     "isCorrect":true
+                  },
+				{  
+                     "answerText":"the most valuabler",
+                     "isCorrect":false
+                  }
+               ]
+            },
+			{  
+               "questionText":"Superlative: \n She’s a very good tennis player. Her trainer says she is _____.",
+               "answers":[  
+                  {  
+                     "answerText":"the best",
+                     "isCorrect":true
+                  },
+                  {  
+                     "answerText":"the better",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"the good",
+                     "isCorrect":false
+                  }
+               ]
+            },
+			{  
+               "questionText":"Superlative: \n He’s a very dangerous criminal. The police says he is ____  criminal in the country.",
+               "answers":[  
+                  {  
+                     "answerText":"as dangerous as",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"the most dangerouser",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"dangerousest",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"the most dangerous",
+                     "isCorrect":true
+                  }
+               ]
+            },
+			{  
+               "questionText":"Superlative: \n We should buy him a beautiful present. Last year we gave him ____ gift of all in his birthday.",
+               "answers":[  
+                  {  
+                     "answerText":"beautifullest",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"more beautiful than",
+                     "isCorrect":false
+                  },
+				{  
+                     "answerText":"the most beautiful",
+                     "isCorrect":true
+                  }
+               ]
+            }
+         ]
+      }
+		]
+	}

@@ -1,0 +1,104 @@
+{"allRoundData":[{"theme":"Simple Past Excercises","coinsAddedForCorrectAnswer":30,"questions":[
+		{"questionText":"He _______ much water yesterday.","answers":[
+				{"answerText":"drinked","isCorrect":false},
+				{"answerText":"drank","isCorrect":true}]
+		},
+		{"questionText":" I _____ my car last week.","answers":[
+				{"answerText":"did wash","isCorrect":false},
+				{"answerText":"washed","isCorrect":true}]
+		},
+		{"questionText":"____ you at home yesterday?","answers":[
+				{"answerText":"Were","isCorrect":true},
+				{"answerText":"Was","isCorrect":false}]
+		},
+		{"questionText":"____ you go to the concert last week?","answers":[
+				{"answerText":"Did","isCorrect":true},
+				{"answerText":"Do","isCorrect":false}]
+		},
+		{"questionText":"He _____  to school yesterday. He was ill.","answers":[
+				{"answerText":"didn't go","isCorrect":true},
+				{"answerText":"went","isCorrect":false}]
+		},
+		{"questionText":"There ______ smartphones in 1920.","answers":[
+				{"answerText":"wasn't","isCorrect":false},
+				{"answerText":"weren't","isCorrect":true}]
+		}]},
+
+		{"theme":"Present perfect continuous","coinsAddedForCorrectAnswer":30,"questions":[
+		{"questionText":"___ you ___ waiting long?","answers":[
+				{"answerText":"Have, been","isCorrect":true},
+				{"answerText":"Have, went","isCorrect":false}]
+		},
+		{"questionText":"___ you been ____ guitar much recently?","answers":[
+				{"answerText":"Have, play","isCorrect":false},
+				{"answerText":"Have,  playing","isCorrect":true}]
+		},
+		{"questionText":"John __been __ the house all this weekend.","answers":[
+				{"answerText":"has, painting","isCorrect":true},
+				{"answerText":"have, painting","isCorrect":false}]
+		},
+		{"questionText":"I ____ crying. She hit me.","answers":[
+				{"answerText":"have been","isCorrect":true},
+				{"answerText":"has been","isCorrect":false}]
+		},
+		{"questionText":"I ___ been for my uncle","answers":[
+				{"answerText":"have, working","isCorrect":true},
+				{"answerText":"have, work","isCorrect":false}]
+		},
+		{"questionText":"They hadn’t ___ when the phone cut out","answers":[
+					{"answerText":"been talking","isCorrect":true},
+					{"answerText":"be talking","isCorrect":false}]
+		}]
+			},
+		{"theme":"Prepositions","coinsAddedForCorrectAnswer":30,"questions":[
+		{"questionText":"What are you doing ______ the weekend?","answers":[
+				{"answerText":"in","isCorrect":false},
+				{"answerText":"at","isCorrect":true}]
+		},
+		{"questionText":"I don't know yet. Maybe I'll go to the cinema ______ Saturday.","answers":[
+				{"answerText":"in","isCorrect":false},
+				{"answerText":"on","isCorrect":true}]
+		},
+		{"questionText":"That's interesting. I haven't been to the cinema ______ so many years.","answers":[
+				{"answerText":"for","isCorrect":true},
+				{"answerText":"since","isCorrect":false}]
+		},
+		{"questionText":"We could go there together ______ the afternoon.","answers":[
+				{"answerText":"in","isCorrect":true},
+				{"answerText":"on","isCorrect":false}]
+		},
+		{"questionText":"That's okay. The film starts ______ eight o'clock.","answers":[
+				{"answerText":"at","isCorrect":true},
+				{"answerText":"on","isCorrect":false}]
+		},
+		{"questionText":"It lasts ______ two hours and forty-five minutes.","answers":[
+				{"answerText":"until","isCorrect":false},
+				{"answerText":"for","isCorrect":true}]
+		}]},
+		{"theme":"Comparativo","coinsAddedForCorrectAnswer":30,"questions":[
+		{"questionText":"It’s too noisy here. Can we go to a ___ (quiet) place?","answers":[
+				{"answerText":"quieter","isCorrect":true},
+				{"answerText":"quietest","isCorrect":false}]
+		},
+		{"questionText":" The hotel was __ (big) than that in which we stayed last year.","answers":[
+				{"answerText":"biger","isCorrect":false},
+				{"answerText":"bigger","isCorrect":true}]
+		},
+		{"questionText":"Your work is ___ (good) than mine.","answers":[
+				{"answerText":"better","isCorrect":true},
+				{"answerText":"gooder","isCorrect":false}]
+		},
+		{"questionText":"The accident could have been ___ (bad) than it was.","answers":[
+				{"answerText":"badder","isCorrect":false},
+				{"answerText":"worse","isCorrect":true}]
+		},
+		{"questionText":"I was ___ (nervous) in my exam yesterday than Mark.","answers":[
+				{"answerText":"nervouser","isCorrect":false},
+				{"answerText":"more nervous","isCorrect":true}]
+		},
+		{"questionText":"I’d like to have a ___ (fast) car. The one i have now is really old.","answers":[
+				{"answerText":"faster","isCorrect":true},
+				{"answerText":"more fast","isCorrect":false}]
+		}]}
+		]
+}

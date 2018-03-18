@@ -1,0 +1,507 @@
+{
+	"allBattlesData": [
+	{
+			"theme": "Temas combinados",
+			"coinsAddedForCorrectAnswer": 30,
+			"questions":[
+				{
+						"questionDescription":"(Simple Present) Turn the following sentence into negative",
+						"phraseType": true,
+						"questionPart1":"She lives in France",
+						"questionPart2":"",
+						"answer":"she does not live in france",
+						"contractions":true
+				},
+				{
+						"questionDescription":"Complete the following sentence writing the simple past of the verb",
+						"phraseType": false,
+						"questionPart1":"I",
+						"questionPart2":"(write) a letter last week",
+						"answer":"wrote",
+						"contractions":false
+				},
+				{
+						"questionDescription":"(Simple Future) Put the words in the correct order",
+						"phraseType": true,
+						"questionPart1":"will/take/Jhon/brother/his/zoo/to/the",
+						"questionPart2":"",
+						"answer":"jhon will take his brother to the zoo",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence using present continuous",
+						"phraseType": false,
+						"questionPart1":"They",
+						"questionPart2":"(speak) Italian",
+						"answer":"are speaking",
+						"contractions":false
+				},
+				{
+						"questionDescription":"(Past Continuous) Turn the sentence into interrogative form",
+						"phraseType": true,
+						"questionPart1":"She was playing basketball yesterday at five o'clock.",
+						"questionPart2":"",
+						"answer":"was she playing basketball yesterday at five o'clock?",
+						"contractions":false
+				},
+				{
+						"questionDescription":"(Future Progressive) Put the verbs into the correct form",
+						"phraseType": false,
+						"questionPart1":"This time next week we (sit).",
+						"questionPart2":"at the beach",
+						"answer":"will be sitting",
+						"contractions":false
+				},
+				{
+						"questionDescription":"(Simple Present) Turn the following statement into question",
+						"phraseType": true,
+						"questionPart1":"Paul and Tom like pop music",
+						"questionPart2":"",
+						"answer":"do paul and tom like pop music?",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence writing the simple past of the verb",
+						"phraseType": false,
+						"questionPart1":"We",
+						"questionPart2":"(not like) that pizza",
+						"answer":"did not like",
+						"contractions":true
+				},
+				{
+						"questionDescription":"(Simple Future) Complete the sentence using will or going to",
+						"phraseType": false,
+						"questionPart1":"My mum thinks it",
+						"questionPart2":"(snow) tomorrow",
+						"answer":"will snow",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Put the words in the correct order using present continuous",
+						"phraseType": true,
+						"questionPart1":"playing/guitar/susan/is/the/?",
+						"questionPart2":"",
+						"answer":"is susan playing the guitar?",
+						"contractions":false
+				},
+				{
+						"questionDescription":"(Pasado Continuo) Complete the following sentence with past continuous affirmative",
+						"phraseType": false,
+						"questionPart1":"We",
+						"questionPart2":"(study) hard yesterday afternoon",
+						"answer":"were studying",
+						"contractions":false
+				},
+				{
+						"questionDescription":"(Future Progressive) Put the verb into the correct form",
+						"phraseType": false,
+						"questionPart1":"He (not/play)",
+						"questionPart2":"all afternoon",
+						"answer":"will not be playing",
+						"contractions":true
+				},
+				{
+						"questionDescription":"(Future Progressive) Put the verbs into the correct form",
+						"phraseType": false,
+						"questionPart1":"(eat / you)",
+						"questionPart2":"at six?",
+						"answer":"will you be eating",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the sentence with past continuous",
+						"phraseType": false,
+						"questionPart1":"I left the cinema before the film ended. I",
+						"questionPart2":"(not enjoy) it",
+						"answer":"was not enjoying",
+						"contractions":true
+				},
+				{
+						"questionDescription":"Put the words in the correct order using present continuous",
+						"phraseType": true,
+						"questionPart1":"the/taking/walk/aren't/for/dog/the/a/boys",
+						"questionPart2":"",
+						"answer":"the boys are not taking the dog for a walk",
+						"contractions":true
+				},
+				{
+						"questionDescription":"Complete the sentence using will or going to",
+						"phraseType": false,
+						"questionPart1":"He",
+						"questionPart2":"(play) tennis on Thursday morning",
+						"answer":"is going to play",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Make past simple question using the following word",
+						"phraseType": true,
+						"questionPart1":"Who / you /? /phone / last night",
+						"questionPart2":"",
+						"answer":"who did you phone last night?",
+						"contractions":true
+				},
+				{
+						"questionDescription":"Complete the sentence using present simple tense",
+						"phraseType": false,
+						"questionPart1":"She",
+						"questionPart2":"(teach) English at this highschool",
+						"answer":"teaches",
+						"contractions":false
+				}
+			]
+		},
+		{
+			"theme": "Temas combinados para bosque",
+			"coinsAddedForCorrectAnswer": 30,
+			"questions":[
+				{
+						"questionDescription":"complete the following sentences in Present perfect continuous",
+						"phraseType": true,
+						"questionPart1":"had Toni and Julie",
+						"questionPart2":"(date) long when they broke up?",
+						"answer":"been dating",
+						"contractions":false
+				},
+				{
+						"questionDescription":"complete the following sentences in Present perfect continuous",
+						"phraseType": true,
+						"questionPart1":"I",
+						"questionPart2":"(cook) something special for you.",
+						"answer":"have been cooking",
+						"contractions":false
+				},
+				{
+						"questionDescription":"complete the following sentences in Present perfect continuous",
+						"phraseType": true,
+						"questionPart1":"Spain",
+						"questionPart2":"hoping to win the Soccer World Cup",
+						"answer":"had been",
+						"contractions":false
+				},
+				{
+						"questionDescription":"complete the following sentences in Present perfect continuous",
+						"phraseType": true,
+						"questionPart1":"I have",
+						"questionPart2":"(work) in that firm for many years.",
+						"answer":"been working",
+						"contractions":false
+				},
+				{
+						"questionDescription":"complete the following sentences in Present perfect continuous",
+						"phraseType": false,
+						"questionPart1":"I have not been",
+						"questionPart2":"(lose) my mind for her since we were at university",
+						"answer":"losing",
+						"contractions":false
+				},
+				{
+						"questionDescription":"complete the following sentences in Present perfect continuous",
+						"phraseType": false,
+						"questionPart1":"She has not been (work)",
+						"questionPart2":"",
+						"answer":"working",
+						"contractions":false
+				},
+				{
+						"questionDescription":"complete the following sentences in Present perfect continuous",
+						"phraseType": true,
+						"questionPart1":"I have",
+						"questionPart2":"(watch) this T.V. show for hours.",
+						"answer":"been watching",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":"the book /He/reading /yesterday/has been/ that you/ gave me",
+						"questionPart2":"",
+						"answer":"he has been reading the book that you gave me yesterday",
+						"contractions":true
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":"working /I have/ in that firm/ not been/ / for many/ years.",
+						"questionPart2":"",
+						"answer":"i have not been working in that firm for many years.",
+						"contractions":true
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":"studying /She /been/German/has not",
+						"questionPart2":"",
+						"answer":"she has not been studying german",
+						"contractions":true
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":"been / lending money/ We/ have /to you/ for years.",
+						"questionPart2":"",
+						"answer":"we have been lending money to you for years.",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":"have been/ We/ years/ here/ living / for two.",
+						"questionPart2":"",
+						"answer":"we have been living here for two years.",
+						"contractions":true
+				}
+			]
+		},
+		{
+			"theme": "Temas combinados para cueva",
+			"coinsAddedForCorrectAnswer": 30,
+			"questions":[
+				{
+						"questionDescription":"Complete the following sentence",
+						"phraseType": false,
+						"questionPart1":"The flight from Leipzig to London was (preposition) Frankfurt",
+						"questionPart2":"",
+						"answer":"via",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence",
+						"phraseType": false,
+						"questionPart1":"(preposition) my wall, there are many picture postcards.",
+						"questionPart2":"",
+						"answer":"on",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence",
+						"phraseType": false,
+						"questionPart1":"Who is the person (preposition) this picture?",
+						"questionPart2":"",
+						"answer":"in",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence",
+						"phraseType": false,
+						"questionPart1":"Come (preposition) the sitting room, we want to watch TV.",
+						"questionPart2":"",
+						"answer":"into",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence",
+						"phraseType": false,
+						"questionPart1":"Munich lies 530 meters (preposition) sea level.",
+						"questionPart2":"",
+						"answer":"above",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence",
+						"phraseType": false,
+						"questionPart1":"The flight from Leipzig to London was (preposition) Frankfurt",
+						"questionPart2":"",
+						"answer":"via",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence",
+						"phraseType": false,
+						"questionPart1":"(preposition) my wall, there are many picture postcards.",
+						"questionPart2":"",
+						"answer":"on",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence",
+						"phraseType": false,
+						"questionPart1":"Who is the person (preposition) this picture?",
+						"questionPart2":"",
+						"answer":"in",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence",
+						"phraseType": false,
+						"questionPart1":"Come (preposition) the sitting room, we want to watch TV.",
+						"questionPart2":"",
+						"answer":"into",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Complete the following sentence",
+						"phraseType": false,
+						"questionPart1":"Munich lies 530 meters (preposition) sea level.",
+						"questionPart2":"",
+						"answer":"above",
+						"contractions":false
+				}
+			]
+		}, {
+			"theme": "Temas combinados Superlativo y Comparativo",
+			"coinsAddedForCorrectAnswer": 30,
+			"questions":[
+				{
+						"questionDescription":"Write the superlative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"She was a very intelligent student. She was ",
+						"questionPart2":"(intelligent) girl in her class.",
+						"answer":"the most intelligent",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the superlative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":" It’s a very old castle. Experts argued it is",
+						"questionPart2":"(old) in Britain.",
+						"answer":"the oldest",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":" sister / me / my / than / younger / is",
+						"questionPart2":"",
+						"answer":"my sister is younger than me",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the comparative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"I’m going to sleep on the sofa. The floor is",
+						"questionPart2":"(uncomfortable) than it.",
+						"answer":"more uncomfortable",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the comparative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"This new job is",
+						"questionPart2":"(important) for me than the last i had.",
+						"answer":"more important",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":"book / interesting / than / my / your / more / is / book",
+						"questionPart2":"",
+						"answer":"my book is more interesting than your book",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the comparative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"Living in the countryside is",
+						"questionPart2":"(healthy) than living in town.",
+						"answer":"healthier",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the superlative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"These instructions were",
+						"questionPart2":"(difficult) ones i have ever read.",
+						"answer":"the most difficult",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":"cheapest / buy / you / shop / in / the / the /did / watch / ?",
+						"questionPart2":"",
+						"answer":"did you buy the cheapest watch in the shop?",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":"weather / better / today / than / much / is / yesterday / the",
+						"questionPart2":"",
+						"answer":"the weather is much better today than yesterday",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the comparative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"Jane is as",
+						"questionPart2":"(smart) as her brother.",
+						"answer":"smart",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the comparative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"Fruits is",
+						"questionPart2":"(good) for you than sweets.",
+						"answer":"better",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the comparative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"Was the Tv programme",
+						"questionPart2":"(bad) than the film?",
+						"answer":"worse",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the superlative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"Barranquilla is the",
+						"questionPart2":"(nice) city we have ever visited.",
+						"answer":"nicest",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":"passenger / plane / is / Concorde / world / fatest / the / in / the",
+						"questionPart2":"",
+						"answer":"Concorde passenger plane is the fastest in the world",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the comparative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"Last week it was really hot. Today is",
+						"questionPart2":"(cold) than then.",
+						"answer":"colder",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the comparative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"Lucy is not as",
+						"questionPart2":"(pretty) as Mary.",
+						"answer":"pretty",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the comparative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"Harry thinks playing computer games is",
+						"questionPart2":"(exciting) than watching TV.",
+						"answer":"more exciting",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Put the words in the correct order:",
+						"phraseType": true,
+						"questionPart1":"family / the / am / my / in / I / oldest.",
+						"questionPart2":"",
+						"answer":"I am the oldest in my family",
+						"contractions":false
+				},
+				{
+						"questionDescription":"Write the superlative form if the adjectives in this sentence:",
+						"phraseType": false,
+						"questionPart1":"Colombia is one of the",
+						"questionPart2":"(beautiful) countries in the world.",
+						"answer":"most beautiful",
+						"contractions":false
+				}
+			]
+		}
+	]
+}

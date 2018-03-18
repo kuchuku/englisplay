@@ -1,0 +1,158 @@
+{"allRoundData":[
+{"theme":"Simple Future","timeLimitInSeconds":30,"coinsAddedForCorrectAnswer":30,"questions":[
+		{"questionText":"In two days, I _______ my results.","answers":[
+				{"answerText":"will know","isCorrect":true},
+				{"answerText":"would know","isCorrect":false},
+				{"answerText":"will knowing","isCorrect":false},
+				{"answerText":"are know","isCorrect":false},
+				{"answerText":"will knew","isCorrect":false},						
+				{"answerText":"going to knowing","isCorrect":false}]
+		},
+		{"questionText":"Someday I________a novel.","answers":[
+				{"answerText":"will be writing","isCorrect":false},
+				{"answerText":"will write","isCorrect":true},
+				{"answerText":"would write","isCorrect":false},
+				{"answerText":"will writing","isCorrect":false},
+				{"answerText":"write","isCorrect":false},						
+				{"answerText":"am writing","isCorrect":false}]
+		},
+		{"questionText":"He __________ the test.","answers":[
+				{"answerText":"cannot pass","isCorrect":false},
+				{"answerText":"will not pass","isCorrect":true},
+				{"answerText":"will not be passing","isCorrect":false},
+				{"answerText":"will passing","isCorrect":false},
+				{"answerText":"pass","isCorrect":false},						
+				{"answerText":"passing","isCorrect":false}]
+		},
+		{"questionText":"It is possible that in fifty years there ________ any tigers in the world","answers":[
+				{"answerText":"aren't going to be","isCorrect":false},
+				{"answerText":"won't be","isCorrect":true},
+				{"answerText":"isn't","isCorrect":false},
+				{"answerText":"aren't","isCorrect":false},
+				{"answerText":"itn't","isCorrect":false},						
+				{"answerText":"will are","isCorrect":false}]
+		},
+		{"questionText":"He __________ the test.","answers":[
+				{"answerText":"cannot pass","isCorrect":false},
+				{"answerText":"will not pass","isCorrect":true},
+				{"answerText":"will not be passing","isCorrect":false},
+				{"answerText":"will passing","isCorrect":false},
+				{"answerText":"pass","isCorrect":false},						
+				{"answerText":"passing","isCorrect":false}]
+		},
+		{"questionText":"When ______ you know your exam results?","answers":[
+				{"answerText":"are you going to","isCorrect":false},
+				{"answerText":"will be ","isCorrect":false},
+				{"answerText":"will","isCorrect":true},
+				{"answerText":"are","isCorrect":false},
+				{"answerText":"have","isCorrect":false},						
+				{"answerText":"is","isCorrect":false}]
+		}]},
+
+		{"theme":"Presente perfecto","timeLimitInSeconds":30,"coinsAddedForCorrectAnswer":40,"questions":[
+		{"questionText":"I __ a new car for a long time","answers":[
+				{"answerText":"Have wanted","isCorrect":true},
+				{"answerText":"Has wanted","isCorrect":false},
+				{"answerText":"Has wanting","isCorrect":false},
+				{"answerText":"Have been wanting","isCorrect":false},
+				{"answerText":"Haven’t been wanted","isCorrect":false},
+				{"answerText":"Has not wanted","isCorrect":false}]
+		},
+		{"questionText":"___ the bus ___ yet?","answers":[
+				{"answerText":"has, arrive","isCorrect":false},
+				{"answerText":"have, arrive","isCorrect":false},
+				{"answerText":"haven’t, arrive","isCorrect":false},
+				{"answerText":"has, arrived","isCorrect":true},
+				{"answerText":"hasn’t, arrive","isCorrect":false}]
+		},
+		{"questionText":"Adam and Emy ____ together for 3 years.","answers":[
+				{"answerText":"Has lived","isCorrect":false},
+				{"answerText":"have lived","isCorrect":true},
+				{"answerText":"living","isCorrect":false},
+				{"answerText":"has living","isCorrect":false}]
+		},
+		{"questionText":"__ she ____ with him several times?","answers":[
+				{"answerText":"Has, spoken","isCorrect":true},
+				{"answerText":"have, spoken","isCorrect":false},
+				{"answerText":"has, speek","isCorrect":false},
+				{"answerText":"has, speeking","isCorrect":false}]
+		},
+		{"questionText":"She __ ____her homework","answers":[
+				{"answerText":"have, finished","isCorrect":false},
+				{"answerText":"has, finished","isCorrect":true},
+				{"answerText":"hasn’t, finish","isCorrect":false},
+				{"answerText":"has, finishing","isCorrect":false},
+				{"answerText":"have, finishing","isCorrect":false},
+				{"answerText":"haven’t finish","isCorrect":false}]
+		}]},
+		{"theme":"otro tema","timeLimitInSeconds":5,"coinsAddedForCorrectAnswer":20,"questions":[
+		{"questionText":"pregunta 1 round 2","answers":[
+				{"answerText":"Yes","isCorrect":true},
+				{"answerText":"No","isCorrect":false}]
+		},
+		{"questionText":"pregunta 2 round 2","answers":[
+				{"answerText":"no","isCorrect":false},
+				{"answerText":"yes","isCorrect":true}]
+		},
+		{"questionText":"pregunta 3 round 2","answers":[
+				{"answerText":"no","isCorrect":false},
+				{"answerText":"yes","isCorrect":true}]
+		},
+		{"questionText":"pregunta 4 round 2","answers":[
+				{"answerText":"Yes","isCorrect":true},
+				{"answerText":"No","isCorrect":false}]
+		}]},
+	{"theme":"Superlative","timeLimitInSeconds":30,"coinsAddedForCorrectAnswer":30,"questions":[
+		{"questionText":"This apartment is___ of all the apartments I have seen.","answers":[
+				{"answerText":"the most convenient","isCorrect":true},
+				{"answerText":"the most convenientest","isCorrect":false},
+				{"answerText":"convenientest","isCorrect":false},
+				{"answerText":"convenienter","isCorrect":false},
+				{"answerText":"as convenient as","isCorrect":false},						
+				{"answerText":"most convenient","isCorrect":false},
+				{"answerText":"more convenient","isCorrect":false}
+		]
+		},
+		{"questionText":"Andew is ___ runner on the team.","answers":[
+				{"answerText":"fast","isCorrect":false},
+				{"answerText":"as fast as","isCorrect":false},
+				{"answerText":"faster","isCorrect":false},
+				{"answerText":"the faster","isCorrect":false},
+				{"answerText":"the fastest","isCorrect":true},						
+				{"answerText":"fastest","isCorrect":false},
+				{"answerText":"fasttest","isCorrect":false}
+	]
+		},
+		{"questionText":"December 21 is the ___ day of the year.","answers":[
+				{"answerText":"short","isCorrect":false},
+				{"answerText":"shoter","isCorrect":false},
+				{"answerText":"shortest","isCorrect":true},
+				{"answerText":"as short as","isCorrect":false},
+				{"answerText":"shorttest","isCorrect":false},						
+				{"answerText":"shortter","isCorrect":false},
+				{"answerText":"most short","isCorrect":false}
+]
+		},
+		{"questionText":"This is ___ dress I own.","answers":[
+				{"answerText":"the fancier","isCorrect":false},
+				{"answerText":"fancier than","isCorrect":false},
+				{"answerText":"the most fanciest","isCorrect":false},
+				{"answerText":"the fanciest","isCorrect":true},
+				{"answerText":"as fancy as","isCorrect":false},						
+				{"answerText":"fancy","isCorrect":false},
+				{"answerText":"fancier","isCorrect":false}
+]
+		},
+		{"questionText":"Bill gates is one of __ men en the world.","answers":[
+				{"answerText":"the richest","isCorrect":true},
+				{"answerText":"richert","isCorrect":false},
+				{"answerText":"the richer","isCorrect":false},
+				{"answerText":"richest than","isCorrect":false},
+				{"answerText":"as rich as","isCorrect":false},						
+				{"answerText":"more rich than","isCorrect":false},
+				{"answerText":"the most rich","isCorrect":false}
+	]
+		}]}
+
+		]
+}
