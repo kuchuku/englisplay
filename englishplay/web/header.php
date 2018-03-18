@@ -49,6 +49,7 @@
 					}
 					//EL ELSE IF ES LO DEL PROFESOR
 					elseif ($_SESSION["autenticado"] & !$_SESSION["estudiante"]) {
+						echo "<li><a id='enlaces' href='habilitarEstudiantes.php'>Excel</a></li>";
 						echo "<li><a id='enlaces' href='php/salir.php'>Salir</a></li>";
 					}
 
