@@ -227,44 +227,130 @@
 	 "coinsAddedForCorrectAnswer":10,
 	 "questions":[  
 	    {  
-	       "questionText":"'Make' is a verb?",
+	       "questionText":"Based on information in the passage, it can be inferred that which of the following statements is\nmost likely to be true?",
 	       "answers":[  
 	          {  
-	             "answerText":"True",
-	             "isCorrect":true
+	             "answerText":"Indoor environments are unsuitable for pitcher plants.",
+	             "isCorrect":false
 	          },
 	          {  
-	             "answerText":"False",
+	             "answerText":"Terrariums and clay pots can successfully simulate greenhouse conditions.",
 	             "isCorrect":false
-	          }
+	          },
+             {  
+                "answerText":"Only professional gardeners can successfully grow pitcher plants.",
+                "isCorrect":false
+             },
+             {  
+                "answerText":"The many needs of a pitcher plant make survival in the wild difficult.",
+                "isCorrect":false
+             },
+             {  
+                "answerText":"Insects and plant fertilizer contain similar nutrients.",
+                "isCorrect":true
+             }
 	       ]
 	    },
 	    {  
-	       "questionText":"Blue is a color?",
+	       "questionText":"The primary purpose of paragraph 4 is to",
 	       "answers":[  
 	          {  
-	             "answerText":"No",
+	             "answerText":"describe how to meet the many needs of the pitcher plant",
 	             "isCorrect":false
 	          },
 	          {  
-	             "answerText":"Yes",
-	             "isCorrect":true
-	          }
+	             "answerText":"explain why pitcher plants require highly acidic soil",
+	             "isCorrect":false
+	          },
+             {  
+                "answerText":"provide the reader with background information about the pitcher plant’s annual growth cycle",
+                "isCorrect":false
+             },
+             {  
+                "answerText":"inform the reader about how to create the proper soil conditions for pitcher plants",
+                "isCorrect":true
+             },
+             {  
+                "answerText":"discourage the typical home gardener from attempting to grow pitcher plants",
+                "isCorrect":false
+             }
 	       ]
 	    },
 		{  
-	       "questionText":"Finish question",
+	       "questionText":"Based on information in the passage, it can be inferred that the best way to ensure the overall\ncare of your pitcher plant is to",
 	       "answers":[  
 	          {  
-	             "answerText":"Yes",
-	             "isCorrect":true
+	             "answerText":"keep it extremely wet",
+	             "isCorrect":false
 	          },
 	          {  
-	             "answerText":"No",
+	             "answerText":"feed it a combination of live bugs, dead bugs, and fertilizer",
 	             "isCorrect":false
-	          }
+	          },
+             {  
+                "answerText":"approximate its natural environment",
+                "isCorrect":true
+             },
+             {  
+                "answerText":"grow it in a greenhouse",
+                "isCorrect":false
+             },
+             {  
+                "answerText":"employ artificial boosts, such as fertilizer and light bulb 'sunlight'",
+                "isCorrect":false
+             }
 	       ]
-	    }
+	    },
+      {  
+          "questionText":"Based on information in the passage, it can be inferred that the pitcher plant can be divided and\nreplanted during",
+          "answers":[  
+             {  
+                "answerText":"April",
+                "isCorrect":true
+             },
+             {  
+                "answerText":"October",
+                "isCorrect":false
+             },
+             {  
+                "answerText":"March",
+                "isCorrect":false
+             },
+             {  
+                "answerText":"May",
+                "isCorrect":false
+             },
+             {  
+                "answerText":"June",
+                "isCorrect":false
+             }
+          ]
+       },
+      {  
+          "questionText":"Read the following sentence: 'The typical catch for a pitcher plant includes a range of foraging insects such as flies, moths,\nwasps, butterflies, beetles, and ants'\n\nImagine the author wanted to include this sentence in the passage. In which paragraph would it fit\nbest?",
+          "answers":[  
+             {  
+                "answerText":"paragraph 1",
+                "isCorrect":false
+             },
+             {  
+                "answerText":"paragraph 2",
+                "isCorrect":false
+             },
+             {  
+                "answerText":"paragraph 3",
+                "isCorrect":true
+             },
+             {  
+                "answerText":"paragraph 4",
+                "isCorrect":false
+             },
+             {  
+                "answerText":"paragraph 5",
+                "isCorrect":false
+             }
+          ]
+       }
 	 ]
 	},
 		{  
