@@ -18,9 +18,9 @@
 		if ($i >= 5 && $content[0] != '')
 		{
 			
-			$sql 		= "INSERT INTO usuario(codigoUsuario, nombreUsuario, tipoUsuario) VALUES('$content[1]', '$content[2]', 0)";
+			$sql	= "INSERT INTO usuario(codigoUsuario, nombreUsuario, tipoUsuario) VALUES('$content[1]', '$content[2]', 0)";
 			mysqli_query($conexion, $sql);
-			$sql 		= "INSERT INTO estudiante(codigoUsuario, idGrupo) VALUES('$content[1]', 50)";
+			$sql 	= "INSERT INTO estudiante(codigoUsuario, idGrupo) VALUES('$content[1]', 50)";
 			mysqli_query($conexion, $sql);
 		}
 	}
