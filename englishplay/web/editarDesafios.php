@@ -1,56 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Basic JSON Editor Example</title>
-    <script src="js/jsoneditor.min.js"></script>
-  </head>
-  <body>
-    <h1>Basic JSON Editor Example</h1>
-    
-    <div id='editor_holder'></div>
-    <button id='submit'>Submit (console.log)</button>
-    
-    <script>
-      // Initialize the editor with a JSON schema
-      var editor = new JSONEditor(document.getElementById('editor_holder'),{
-        schema: {
-          type: "object",
-          title: "Car",
-          properties: {
-            make: {
-              type: "string",
-              enum: [
-                "Toyota",
-                "BMW",
-                "Honda",
-                "Ford",
-                "Chevy",
-                "VW"
-              ]
-            },
-            model: {
-              type: "string"
-            },
-            year: {
-              type: "integer",
-              enum: [
-                1995,1996,1997,1998,1999,
-                2000,2001,2002,2003,2004,
-                2005,2006,2007,2008,2009,
-                2010,2011,2012,2013,2014
-              ],
-              default: 2008
-            }
-          }
-        }
-      });
-      
-      // Hook up the submit button to log to the console
-      document.getElementById('submit').addEventListener('click',function() {
-        // Get the value from the editor
-        console.log(editor.getValue());
-      });
-    </script>
-  </body>
-</html>
+<?php
+
+include 'header.php';
+
+//Leemos
+$json = file_get_contents('../juego/json/Shooter.json');
+$array = json_decode($json, true);
+
+//Modificamos
+$array[allRoundData][0][questions4][0][completeTrue]='hola';
+
+//Creamos 
+$json = json_encode($array);
+file_put_contents('../juego/json/Shooter_test.json', $json);
+
+?>
+
+<head>
+
+</head>
+
+<body>
+
+</body>
+
+<?php
+
+include 'footer.php';
+
+?>
