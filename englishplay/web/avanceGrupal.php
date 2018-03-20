@@ -4,7 +4,6 @@ include 'header.php';
 
 include '..\conexionDB.php';
 
-$numPersonajes = 0;
 $numPersonajesGuerrero = 0;
 $numPersonajesMago = 0;
 $numPersonajesArquero = 0;
@@ -20,9 +19,6 @@ $sql = "SELECT rolPersonaje, nivelPersonaje FROM personaje";
 $resultado = mysqli_query($conexion, $sql);
 while ($row = mysqli_fetch_assoc($resultado))
 {
-
-	//Contador personajes
-	$numPersonajes++;
 
 	//Contador roles
 	if ($row[rolPersonaje] == 0)
@@ -127,30 +123,54 @@ while ($row = mysqli_fetch_assoc($resultado))
       function drawChart() {
 
         // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
+        var dataPersonajes = new google.visualization.DataTable();
+        dataPersonajes.addColumn('string', 'Topping');
+        dataPersonajes.addColumn('number', 'Slices');
+        dataPersonajes.addRows([
           ['Guerrero', <?php echo $numPersonajesGuerrero ?>],
           ['Mago', <?php echo $numPersonajesArquero ?>],
           ['Arquero', <?php echo $numPersonajesMago ?>]
         ]);
 
         // Set chart options
-        var options = {'title':'Personajes',
+        var optionsPersonajes = {'title':'Personajes',
                        'width':400,
                        'height':300};
 
         // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
+        var chartPersonajes = new google.visualization.PieChart(document.getElementById('chart1_div'));
+        chartPersonajes.draw(dataPersonajes, optionsPersonajes);
+
+        // Create the data table.
+        var dataNiveles = new google.visualization.DataTable();
+        dataNiveles.addColumn('string', 'Topping');
+        dataNiveles.addColumn('number', 'Slices');
+        dataNiveles.addRows([
+          ['Nivel 1 a 5', <?php echo $numNiveles1a5 ?>],
+          ['Nivel 6 a 10', <?php echo $numNiveles6a10 ?>],
+          ['Nivel 11 a 15', <?php echo $numNiveles11a15 ?>],
+          ['Nivel 16 a 20', <?php echo $numNiveles16a20 ?>],
+          ['Nivel 21 a 25', <?php echo $numNiveles21a25 ?>],
+          ['Nivel 26 a 30', <?php echo $numNiveles26a30 ?>]
+        ]);
+
+        // Set chart options
+        var optionsNiveles = {'title':'Niveles',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chartNiveles = new google.visualization.PieChart(document.getElementById('chart2_div'));
+        chartNiveles.draw(dataNiveles, optionsNiveles);
+
       }
     </script>
   </head>
 
   <body>
     <!--Div that will hold the pie chart-->
-    <div id="chart_div"></div>
+    <div id="chart1_div"></div>
+    <div id="chart2_div"></div>
   </body>
 </html>
 
