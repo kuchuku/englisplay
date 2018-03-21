@@ -38,7 +38,7 @@
 			});
 		});
 	</script>
-  </head>
+
   <header>
 	 <h1 class="site-heading text-center text-white d-none d-lg-block">
       <span class="site-heading-upper text-primary mb-3">Learn while enjoying</span>
@@ -54,7 +54,7 @@
         </button>
          <div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav mx-auto">	
-		<li class='nav-item px-lg-4'><a href="index.php" id ="enlaces" class='nav-link text-uppercase text-expanded'>Inicio</a></li>		
+		<li class='nav-item px-lg-4'><a href="index.php" id ="enlaces" class='nav-link text-uppercase text-expanded'>Home</a></li>		
 				<?php
 					error_reporting(E_ALL ^ E_NOTICE);
 					session_start();
@@ -66,16 +66,16 @@
 						echo "<li class='nav-item px-lg-4'><a class='nav-link text-uppercase text-expanded' href='estadisticas.php'>Results</a></li>";
 						?>
 					<?php
-					echo "<li class='nav-item px-lg-4'><a class='nav-link text-uppercase text-expanded' href='php/salir.php'>Salir</a></li>";
+					echo "<li class='nav-item px-lg-4'><a class='nav-link text-uppercase text-expanded' href='php/salir.php'>Sing Out</a></li>";
 					}
 					//EL ELSE IF ES LO DEL PROFESOR
 					elseif ($_SESSION["autenticado"] & !$_SESSION["estudiante"]) {
-						echo "<li class='nav-item px-lg-4'><a class='nav-link text-uppercase text-expanded' href='php/salir.php'>Salir</a></li>";
+						echo "<li class='nav-item px-lg-4'><a class='nav-link text-uppercase text-expanded' href='php/salir.php'>Sing Out</a></li>";
 					}
 
 
 					else{
-						echo "<li class='nav-item px-lg-4'><a class='nav-link text-uppercase text-expanded'  href='login.php'>Login</a></li>";
+						echo "<li class='nav-item px-lg-4'><a class='nav-link text-uppercase text-expanded'  href='login.php'>Sing Out</a></li>";
 					}
 				?>
 				</ul>
@@ -83,3 +83,4 @@
 		</div>		
 	</nav>
 	</header>
+	  </head>
