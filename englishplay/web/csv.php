@@ -2,7 +2,7 @@
 
 	include("header.php");
 
-	include '..\conexionDB.php';
+	include '../conexionDB.php';
 
 	$tmpName = $_FILES['csv']['tmp_name'];
 	$file = fopen($tmpName, 'r');
