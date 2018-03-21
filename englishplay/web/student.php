@@ -510,7 +510,7 @@
 	 			<h2>Experiencia del personaje:</h2>
 	 				<p><?php echo $consulta2['expPersonaje']?></p>
 	 		<br>
-	 			<h2>Oro obtenido:</h2>
+	 			<h2>Oro disponible:</h2>
 	 				<p><?php echo $consulta2['oroPersonaje']?></p>
 	 		<br>
 	 			<h2>Mundo desbloqueado:</h2>

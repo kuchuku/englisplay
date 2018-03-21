@@ -162,6 +162,40 @@
               "isCorrect": true
             }
           ]
+        },
+        {
+          "questionText": "We hadn’t ____ the document",
+          "answers": [
+            {
+              "answerText": "finish",
+              "isCorrect": false
+            },
+            {
+              "answerText": "finishing",
+              "isCorrect": false
+            },
+            {
+              "answerText": "finished",
+              "isCorrect": true
+            }
+          ]
+        },
+        {
+          "questionText": "John ___ to London two weeks before",
+          "answers": [
+            {
+              "answerText": "had gone",
+              "isCorrect": true
+            },
+            {
+              "answerText": "have go",
+              "isCorrect": false
+            },
+            {
+              "answerText": "have gone",
+              "isCorrect": false
+            }
+          ]
         }
       ]
     },

@@ -166,7 +166,7 @@
 						"questionDescription":"complete the following sentences in Present perfect continuous",
 						"phraseType": true,
 						"questionPart1":"I",
-						"questionPart2":"(cook) something special for you.",
+						"questionPart2":"(cook) something special for you",
 						"answer":"have been cooking",
 						"contractions":false
 				},
@@ -182,7 +182,7 @@
 						"questionDescription":"complete the following sentences in Present perfect continuous",
 						"phraseType": true,
 						"questionPart1":"I have",
-						"questionPart2":"(work) in that firm for many years.",
+						"questionPart2":"(work) in that firm for many years",
 						"answer":"been working",
 						"contractions":false
 				},
@@ -221,9 +221,9 @@
 				{
 						"questionDescription":"Put the words in the correct order:",
 						"phraseType": true,
-						"questionPart1":"working /I have/ in that firm/ not been/ / for many/ years.",
+						"questionPart1":"working /I have/ in that firm/ not been/ / for many/ years",
 						"questionPart2":"",
-						"answer":"i have not been working in that firm for many years.",
+						"answer":"i have not been working in that firm for many years",
 						"contractions":true
 				},
 				{
@@ -239,7 +239,7 @@
 						"phraseType": true,
 						"questionPart1":"been / lending money/ We/ have /to you/ for years.",
 						"questionPart2":"",
-						"answer":"we have been lending money to you for years.",
+						"answer":"we have been lending money to you for years",
 						"contractions":false
 				},
 				{
@@ -247,7 +247,7 @@
 						"phraseType": true,
 						"questionPart1":"have been/ We/ years/ here/ living / for two.",
 						"questionPart2":"",
-						"answer":"we have been living here for two years.",
+						"answer":"we have been living here for two years",
 						"contractions":true
 				}
 			]
