@@ -75,7 +75,7 @@
 
 
 					else{
-						echo "<li class='nav-item px-lg-4'><a class='nav-link text-uppercase text-expanded'  href='login.php'>Sing Out</a></li>";
+						echo "<li class='nav-item px-lg-4'><a class='nav-link text-uppercase text-expanded'  href='login.php'>Login</a></li>";
 					}
 				?>
 				</ul>
