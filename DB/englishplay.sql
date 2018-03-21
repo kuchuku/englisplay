@@ -16,8 +16,6 @@ CREATE TABLE IF NOT EXISTS `avance` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40000 ALTER TABLE `avance` DISABLE KEYS */;
-INSERT INTO `avance` (`codigoEstudiante`, `mundoAvance`, `nivelAvance`) VALUES
-	(201513141, 4, 1);
 /*!40000 ALTER TABLE `avance` ENABLE KEYS */;
 
 CREATE TABLE IF NOT EXISTS `checkpoint` (
@@ -83,11 +81,6 @@ CREATE TABLE IF NOT EXISTS `estudiante` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40000 ALTER TABLE `estudiante` DISABLE KEYS */;
-INSERT INTO `estudiante` (`codigoUsuario`, `idGrupo`, `nickEstudiante`) VALUES
-	(201255218, 50, ''),
-	(201255229, 50, ''),
-	(201513141, 50, 'Leonard'),
-	(201663714, 50, '');
 /*!40000 ALTER TABLE `estudiante` ENABLE KEYS */;
 
 CREATE TABLE IF NOT EXISTS `grupo` (
@@ -98,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `grupo` (
 
 /*!40000 ALTER TABLE `grupo` DISABLE KEYS */;
 INSERT INTO `grupo` (`idGrupo`, `nombreGrupo`) VALUES
-	(50, 'TG 1');
+	(50, 'Grupo 1');
 /*!40000 ALTER TABLE `grupo` ENABLE KEYS */;
 
 CREATE TABLE IF NOT EXISTS `objeto` (
@@ -166,8 +159,6 @@ CREATE TABLE IF NOT EXISTS `personaje` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40000 ALTER TABLE `personaje` DISABLE KEYS */;
-INSERT INTO `personaje` (`codigoEstudiante`, `sexoPersonaje`, `rolPersonaje`, `expPersonaje`, `oroPersonaje`, `nivelPersonaje`, `skinGuerrero`, `skinMago`, `skinArquero`, `armaGuerrero`, `armaMago`, `armaArquero`) VALUES
-	(201513141, 'h', 1, 14, 166, 1, 0, 0, 0, 0, 0, 0);
 /*!40000 ALTER TABLE `personaje` ENABLE KEYS */;
 
 CREATE TABLE IF NOT EXISTS `pregunta` (
@@ -420,11 +411,6 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` (`codigoUsuario`, `contraseniaUsuario`, `nombreUsuario`, `tipoUsuario`) VALUES
-	(201255218, '', 'BUENO PEÑA ANDRES MAURICIO', 0),
-	(201255229, '', 'NARANJO HERRERA JAVIER SIMÓN', 0),
-	(201513141, '12345', 'ZAPATA CASTAÑO JORGE LEONARDO', 0),
-	(201663714, '', 'QUINTERO CASTAÑO LUIS FERNANDO', 0);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
