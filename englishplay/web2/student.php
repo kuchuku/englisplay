@@ -492,36 +492,39 @@
 		      }
 		    </script>
 
-		    <link rel="stylesheet" href="css/styleStudent.css">
+		   <link rel="stylesheet" href="css/styleStudent.css">
 </head>
 
 
 <body id="estudiante">
+
+
+	 	<div class="container">
 	 	
 	 		<h1> Bienvenido <?php echo $consulta['nickEstudiante'] ?></h1>
 
 			<br>
-	 			<h2>Personaje Seleccionado:</h2>
+	 			<h2>Personaje Seleccionado</h2>
 	 				<p><?php echo $skin ?></p>
 			<br>
-	 			<h2>Nivel del personaje:</h2>
+	 			<h2>Nivel del personaje</h2>
 	 				<p><?php echo $consulta2['nivelPersonaje']?></p>
 	 		<br>
-	 			<h2>Experiencia del personaje:</h2>
+	 			<h2>Experiencia del personaje</h2>
 	 				<p><?php echo $consulta2['expPersonaje']?></p>
 	 		<br>
-	 			<h2>Oro obtenido:</h2>
+	 			<h2>Oro obtenido</h2>
 	 				<p><?php echo $consulta2['oroPersonaje']?></p>
 	 		<br>
-	 			<h2>Mundo desbloqueado:</h2>
+	 			<h2>Mundo desbloqueado</h2>
 	 				<p><?php echo $nomMundo ?> </p><br>
 	 				<p><?php echo $imgMundo ?> </p> 
 
 	 		<br>
-	 			<h2>Avance del juego:</h2>
+	 			<h2>Avance del juego</h2>
 	 				<p><div id="barchart_material" style="width: 98%; height: 60px;"></div></p>
 	 		<br>
-				<h2>Compras realizadas:</h2>
+				<h2>Compras realizadas</h2>
 					<p><table id="compra" border="1">
 						 	<?php echo $table?>				 	
 						</table></p>
@@ -563,6 +566,7 @@
 								</tr>
 							 	<?php echo $table4?>				 	
 							</table></p>
+			</div>
 	 			
 
 </body>
