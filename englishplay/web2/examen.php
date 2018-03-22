@@ -47,7 +47,7 @@ include("php/sesion.php");
 				 			<br><br>
 				 			<p style="margin-bottom: 1rem;">
 	                		<em>
-				 				Selecciona el tema del examen
+				 				Select the test topic
 				 			</em>
 				 			</p> 
 				 			<select name="num_cap" style="font-style: italic;">
