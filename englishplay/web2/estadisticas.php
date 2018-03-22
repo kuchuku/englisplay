@@ -4,10 +4,16 @@ require('../conexionDB.php');
 include("php/sesion.php");
 ?>
 	<body>
-		<main>		
-			<div class="container"><br>
-				<div class="container2"><br>
-					<h2 id="titulo">Los resultados de tus examenes</h2><br><br>
+		<section style="padding-top: 0rem; padding-bottom: 0rem; background-color: rgba(230,167,86,.9);">
+	    <div class="container">
+			<div class="row">
+	          	<div class="col-xl-9 mx-auto">
+	            	<div class="cta text-center rounded" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 		
+					<br>
+					<h2 style="margin-bottom: 2rem;font-family: Raleway;    font-size: 2rem;">
+	                <span style="display: block;font-size: 1rem; font-weight: 800;text-transform: uppercase;"">You can now see all your scores </span>
+	                <span style="display: block; font-size: 3rem;font-weight: 100;text-transform: uppercase;">In each test</span>
+	              	</h2>	
 					<?php 
 						session_start();
 						//recibe el codigo del estudiante que inició sesión.
@@ -21,19 +27,19 @@ include("php/sesion.php");
 					 <?php switch ($i) {
 
 						case '1':
-					 		$tema = "Tiempos simples y compuestos";
+					 		$tema = "Simple and continuous tenses";
 					
 					 		break;
 					 	case '2':
-					 		$tema = "Tiempos perfectos y voz pasiva";
+					 		$tema = "Perfect verb tenses and passive voice";
 					 		break;
 					 
 					 	case '3':
-				 			$tema = "Preposiciones";
+				 			$tema = "Prepositions";
 					 		break;
 					 	
 					 	case '4':
-					 		$tema = "Comparativos y Superlativos";
+					 		$tema = "Comparative and sueprlative";
 				 			break;	
 				 	
 					 	default:
@@ -41,28 +47,28 @@ include("php/sesion.php");
 					 		break;
 
 					} ?>
-					<h3 id="titulo2"><?php echo $tema; ?></h3>
-					<table id="tablaPuntuacion" ">
-					<tr>
-						<th>Examen</th>
-						<th>Aciertos</th>
-						<th>Nota</th>
+					<h3 id="titulo2"><?php echo $tema; ?></h3><br>
+					<table id="tablaPuntuacion" style=" border-collapse: separate;border-spacing: 10px;    background: #f3c385;color: #131313;border: 1px solid #000;border-radius: 15px;display: inline-block;">
+					<tr ">
+						<th style="border-bottom: 1px solid #eee;">Test</th>
+						<th style="border-bottom: 1px solid #eee;">Score</th>
+						<th style="border-bottom: 1px solid #eee;">Note</th>
 					</tr>					
 					<?php while ($consulta = mysqli_fetch_array($resultado))  {
 						//obteniendo el tipo de examen
 					 if($consulta[2] == 0){
-						$examen = "Inicial";
+						$examen = "Initial";
 					} elseif ($consulta[2] == 1) {
 						$examen = "Final";
 					} ?>
-					<tr>
+					<tr style="color: #000;">
 					<?php $nota = $consulta[4] / 4 ?>						
-						<td><?php echo $examen ?></td>
-						<td><?php echo $consulta[4]?></td>
-						<td><?php echo $nota?></td>
+						<td style="color: #000; border-bottom: 1px solid #eee;"><?php echo $examen ?></td>
+						<td style="color: #000;border-bottom: 1px solid #eee;"><?php echo $consulta[4]?></td>
+						<td style="color: #000;border-bottom: 1px solid #eee;"><?php echo $nota?></td>
 					</tr>
 					<?php } ?>					
-					 </table><br>
+					 </table><br><br><br>
 					 
 			<?php
 
@@ -115,16 +121,16 @@ include("php/sesion.php");
 		      
 		      function drawChart() {
 		        var data = google.visualization.arrayToDataTable([
-		          ['Tema', 'Inicial', 'Final'],
-		          ['T.Simples/Compuestos',  <?php echo $puntuexamen[0]; ?>, <?php echo $puntuexamen1[0]; ?>],
-		          ['T.perfectos/Voz Pasiva',  <?php echo $puntuexamen2[0]; ?>, <?php echo $puntuexamen2f[0]; ?>],
-		          ['Preposiciones',  <?php echo $puntuexamen3[0]; ?>, <?php echo $puntuexamen3f[0]; ?>],
-		          ['Comparativos/Superlativos',  <?php echo $puntuexamen4[0]; ?>, <?php echo $puntuexamen4f[0]; ?>]
+		          ['Theme', 'Initial', 'Final'],
+		          ['Simple T/Continuous T',  <?php echo $puntuexamen[0]; ?>, <?php echo $puntuexamen1[0]; ?>],
+		          ['Perfect T/Passive V',  <?php echo $puntuexamen2[0]; ?>, <?php echo $puntuexamen2f[0]; ?>],
+		          ['Prepositions',  <?php echo $puntuexamen3[0]; ?>, <?php echo $puntuexamen3f[0]; ?>],
+		          ['Comparative/Superlative',  <?php echo $puntuexamen4[0]; ?>, <?php echo $puntuexamen4f[0]; ?>]
 		        ]);
 
 		        var options = {
 		          chart: {
-		            title: 'Resultado de examenes',
+		            title: 'Exam Results',
 		          }
 		        };
 
@@ -139,7 +145,9 @@ include("php/sesion.php");
 					
 				</div>
 			</div>
-		</main>
+		</div>
+	</div>
+</section>
 	</body>
 <?php 
 include("footer.php");

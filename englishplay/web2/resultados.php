@@ -11,9 +11,9 @@ include("php/sesion.php");
 	          	<div class="col-xl-9 mx-auto">
 	            	<div class="cta text-center rounded" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 		
 					<br>
-				<h2 class="section-heading mb-5">
-	                <span class="section-heading-upper">Congrats! You have completed the test</span>
-	                <span class="section-heading-lower">check your results</span>
+				<h2 style="margin-bottom: 2rem;font-family: Raleway;    font-size: 2rem;">
+	                <span style="display: block;font-size: 1rem; font-weight: 800;text-transform: uppercase;"">Congrats! You have completed the test</span>
+	                <span style="display: block; font-size: 3rem;font-weight: 100;text-transform: uppercase;">Check your results</span>
 	              </h2>	
 				<br>
 				<?php  
@@ -29,7 +29,8 @@ include("php/sesion.php");
 				 	$idprg = $row['id'];
 				 	$preg = $row['pregunta'];
 				 	$selected_choice = $_POST['choice'.$row['id']]; 	
-				 	
+				 	$num_pregunta;
+				 	$num_pregunta++;
 				    	if (!isset($_SESSION['score'])) {
 							$_SESSION['score'] = 0;
 						}
@@ -41,26 +42,26 @@ include("php/sesion.php");
 						 	$respuesta = mysqli_query($conexion,$query); 
 				 			$correct_choice = $row ['respuesta'];
 				 		}?>
-				 		<div id=comprobar><?php		 		
-				 		echo '<div id= "formchoices">';
-				 		echo '<span id="pregidform">'."(".$idprg.")".'</span>'." ".'<span id="pregidform2">'.$preg.'</span>';
+				 		<div style="text-align:left;"><?php		 		
+				 		echo '<div >';
+				 		echo '<span>'."(".$num_pregunta.")".'</span>'." ".'<span id="pregidform2">'.$preg.'</span>';
 				 		?>
 				 		<?php 
 				 		if ($correct_choice != $selected_choice) 
 				 		{				 	
 						 	//answer is incorrect				 	
-						 	echo '<br><span id="pregidform">'."incorrecto! tu respuesta fue: ".'</span>'.'<span id="wrong">'.$selected_choice.'</span>'.'<br>';
-						 	echo '<span id="pregidform">'." y la respuesta correcta es: ".'</span>'.'<span id="correct">'.$correct_choice.'</span>'.'<br><br>';
+						 	echo '<br><span style="margin-left:2rem;">'."Wrong! your answer was : ".'</span>'.'<span style="color:#dc3545;">'.$selected_choice.'</span>'.'<br>';
+						 	echo '<span style="margin-left:2rem;">'." The correct answer is : ".'</span>'.'<span style="color:#28a745;">'.$correct_choice.'</span>'.'<br><br>';
 				 		}		
 				 		if ($correct_choice == $selected_choice) 
 				 		{
 						 	//answer is correct
 						 	$_SESSION['score']++;
-						 	echo '<br><span id="pregidform">'."Felicidades acertaste! tu respuesta: ".'</span><span id="correct">'.$selected_choice.'</span>'." fue correcta".'<br><br>';
+						 	echo '<br><span style="margin-left:2rem;">'."Congratulations! Your answer: ".'</span><span style="color:#28a745;">'.$selected_choice.'</span>'." is correct".'<br><br>';
 				 		}	
 				 	}
 				 echo '</div>';	
-				?>	</div>		
+				?>	</div>	
 
 		
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -84,9 +85,9 @@ include("php/sesion.php");
       		}
       	</script>
 		<div id="piechart"></div>
-		<br><p id="score">Final Score: <?php echo $_SESSION['score']; ?></p>		
+		<br><p style="display: block;font-size: 1rem;font-weight: 800;text-align: center;    color: #ab4d30;">Final Score: <?php echo $_SESSION['score']; ?></p>		
 		<br>		
-		<a type="submit" href="index.php" class="boton">Continue</a>
+		<a type="submit" href="index.php" style="display: block;text-align: center;width: 15%;margin: auto;color: #ab4d30;">Continue</a>
 		<br>
 	</div>
 	</div>
