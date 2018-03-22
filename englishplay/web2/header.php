@@ -24,20 +24,7 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 	<script type=" text/javascript" src="js/modernizr.custom.28468.js"></script>
-    <script>
-		$(function () {
-			var pul = $('#pull');
-			menu = $('nav ul');
-			menuHeight = menu.height();
-
-			$(pull).on('click',function(e){
-				e.preventDefault();
-				menu.slideToggle();
-
-
-			});
-		});
-	</script>
+  
 
   <header>
 	 <h1 class="site-heading text-center text-white d-none d-lg-block">
