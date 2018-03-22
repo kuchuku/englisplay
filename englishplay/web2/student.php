@@ -492,77 +492,81 @@
 		      }
 		    </script>
 
-		    <link rel="stylesheet" href="css/styleStudent.css">
+		   <link rel="stylesheet" href="css/styleStudent.css">
 </head>
 
 
 <body id="estudiante">
+
+
+	 	<div class="container">
 	 	
-	 		<h1> Bienvenido <?php echo $consulta['nickEstudiante'] ?></h1>
+	 		<h1> Welcome <?php echo $consulta['nickEstudiante'] ?></h1>
 
 			<br>
-	 			<h2>Personaje Seleccionado:</h2>
+	 			<h2>Selected Character</h2>
 	 				<p><?php echo $skin ?></p>
 			<br>
-	 			<h2>Nivel del personaje:</h2>
+	 			<h2>Character Level</h2>
 	 				<p><?php echo $consulta2['nivelPersonaje']?></p>
 	 		<br>
-	 			<h2>Experiencia del personaje:</h2>
+	 			<h2>Character Experience</h2>
 	 				<p><?php echo $consulta2['expPersonaje']?></p>
 	 		<br>
-	 			<h2>Oro obtenido:</h2>
+	 			<h2>Gold Available</h2>
 	 				<p><?php echo $consulta2['oroPersonaje']?></p>
 	 		<br>
-	 			<h2>Mundo desbloqueado:</h2>
+	 			<h2>Unlocked World</h2>
 	 				<p><?php echo $nomMundo ?> </p><br>
 	 				<p><?php echo $imgMundo ?> </p> 
 
 	 		<br>
-	 			<h2>Avance del juego:</h2>
-	 				<p><div id="barchart_material" style="width: 98%; height: 60px;"></div></p>
+	 			<h2>Progres in the Game</h2>
+	 				<p><div id="barchart_material" style="width: 98%; height: 60px;" align="center"></div></p>
 	 		<br>
-				<h2>Compras realizadas:</h2>
-					<p><table id="compra" border="1">
+				<h2>Purchases</h2>
+					<p><table id="compra" border="1" align="center">
 						 	<?php echo $table?>				 	
 						</table></p>
 			<br>
-				<h1>Tablas de desafios</h1>
-					<h2>Aldea</h2>
-						<p><table border="1">
+				<h1>Challenges</h1>
+					<h2>Village</h2>
+						<p><table border="1" align="center">
 								<tr>
-									<th>Desafio</th>
-									<th>Preguntas Hechas</th>
-									<th>Respuestas Correctas</th>
+									<th>Challenge Name</th>
+									<th>Questions</th>
+									<th>Correct answers</th>
 								</tr>
 							 	<?php echo $table1?>				 	
 							</table></p>
-					<h2>Bosque</h2>
-						<p><table border="1">
+					<h2>Forest</h2>
+						<p><table border="1" align="center">
 								<tr>
-									<th>Desafio</th>
-									<th>Preguntas Hechas</th>
-									<th>Respuestas Correctas</th>
+									<th>Challenge Name</th>
+									<th>Questions</th>
+									<th>Correct answers</th>
 								</tr>
 							 	<?php echo $table2?>				 	
 							</table></p>
-					<h2>Cueva</h2>
-						<p><table border="1">
+					<h2>Cave</h2>
+						<p><table border="1" align="center">
 								<tr>
-									<th>Desafio</th>
-									<th>Preguntas Hechas</th>
-									<th>Respuestas Correctas</th>
+									<th>Challenge Name</th>
+									<th>Questions</th>
+									<th>Correct answers</th>
 								</tr>
 							 	<?php echo $table3?>				 	
 							</table></p>
-					<h2>Castillo</h2>
-						<p><table border="1">
+					<h2>Castle</h2>
+						<p><table border="1" align="center">
 								<tr>
-									<th>Desafio</th>
-									<th>Preguntas Hechas</th>
-									<th>Respuestas Correctas</th>
+									<th>Challenge Name</th>
+									<th>Questions</th>
+									<th>Correct answers</th>
 								</tr>
 							 	<?php echo $table4?>				 	
 							</table></p>
+			</div>
 	 			
 
 </body>
