@@ -207,112 +207,108 @@
          ]
       },
 		 {  
-         "text":"TEMA DE SIMÓN INSERTAR AQUÍ",
+         "text":"Conectores",
          "timeLimitInSeconds":0,
          "coinsAddedForCorrectAnswer":50,
          "questions":[              
 				{  
-               "questionText":"simón pregunta 1",
+               "questionText":"My father speaks many languages. He speaks English, French, Spanish _____ German. He _____ speaks some Japanese. ",
                "answers":[  
                   {  
-                     "answerText":"the nice",
-                     "isCorrect":false
-                  },
-                  {  
-                     "answerText":"the nicer",
-                     "isCorrect":false
-                  },
-				{  
-                     "answerText":"the nicest",
-                     "isCorrect":true
-                  }
-               ]
-            },
-				{  
-               "questionText":"simón pregunta 1",
-               "answers":[  
-                  {  
-                     "answerText":"as cheap as",
-                     "isCorrect":false
-                  },
-                  {  
-                     "answerText":"the cheapest",
+                     "answerText":"and / also",
                      "isCorrect":true
                   },
+                  {  
+                     "answerText":"and / due to the fact",
+                     "isCorrect":false
+                  },
 				{  
-                     "answerText":"cheaper",
+                     "answerText":"or / but",
                      "isCorrect":false
                   }
                ]
             },
 				{  
-               "questionText":"simón pregunta 1",
+               "questionText":"The company will have to declare bankruptcy _____ it has too much debt.",
                "answers":[  
                   {  
-                     "answerText":"the most valuablest",
-                     "isCorrect":false
-                  },
-                  {  
-                     "answerText":"the most valuable",
+                     "answerText":"due to the fact that",
                      "isCorrect":true
                   },
+                  {  
+                     "answerText":"owing fact that",
+                     "isCorrect":false
+                  },
 				{  
-                     "answerText":"the most valuabler",
+                     "answerText":"providing",
                      "isCorrect":false
                   }
                ]
             },
-			{  
-               "questionText":"simón pregunta 1",
+				{  
+               "questionText":"We can buy a new car, _____ I get the promotion. We just don't have enough money right now. ",
                "answers":[  
                   {  
-                     "answerText":"the best",
-                     "isCorrect":true
-                  },
-                  {  
-                     "answerText":"the better",
+                     "answerText":"as long is",
                      "isCorrect":false
                   },
+                  {  
+                     "answerText":"only if",
+                     "isCorrect":true
+                  },
 				{  
-                     "answerText":"the good",
+                     "answerText":"so long is",
                      "isCorrect":false
                   }
                ]
             },
 			{  
-               "questionText":"simón pregunta 1.",
+               "questionText":"_____ all his effort, he still lost.",
                "answers":[  
                   {  
-                     "answerText":"as dangerous as",
+                     "answerText":"Spite",
                      "isCorrect":false
                   },
                   {  
-                     "answerText":"the most dangerouser",
+                     "answerText":"Despite",
+                     "isCorrect":true
+                  },
+				{  
+                     "answerText":"Also",
+                     "isCorrect":false
+                  }
+               ]
+            },
+			{  
+               "questionText":"If Bill and Steve are going, I want to go _____.",
+               "answers":[  
+                  {  
+                     "answerText":"now",
+                     "isCorrect":false
+                  },
+                  {  
+                     "answerText":"despite",
                      "isCorrect":false
                   },
 				{  
-                     "answerText":"dangerousest",
-                     "isCorrect":false
-                  },
-				{  
-                     "answerText":"the most dangerous",
+                     "answerText":"too",
                      "isCorrect":true
                   }
                ]
             },
 			{  
-               "questionText":"simón pregunta 1",
+               "questionText":"_____ he is a good student, he finds it hard to take exams.",
                "answers":[  
                   {  
-                     "answerText":"beautifullest",
+                     "answerText":"Also",
                      "isCorrect":false
                   },
                   {  
-                     "answerText":"more beautiful than",
+                     "answerText":"Spite",
                      "isCorrect":false
                   },
 				{  
-                     "answerText":"the most beautiful",
+                     "answerText":"Although",
                      "isCorrect":true
                   }
                ]
