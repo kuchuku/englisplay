@@ -2,63 +2,77 @@
 include("header.php");
 require('../conexionDB.php');
 include("php/sesion.php");
-
-	// Get Total Questions
-	$query = "SELECT * FROM pregunta";
-	// Get result
-	$results =  mysqli_query($conexion,$query);
-	$total = $results->num_rows;
-
 ?>
 
-<body id="andres">
+<body>
+	<section style="padding-top: 0rem; padding-bottom: 0rem; background-color: rgba(230,167,86,.9);">
+	    <div class="container">
+	        <div class="row">
+	          <div class="col-xl-9 mx-auto">
+	            <div class="cta text-center rounded" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 
+	              <h2 class="section-heading mb-5">
+	                <span class="section-heading-upper">Test your knowledge in English</span>
+	                <span class="section-heading-lower">Each test contains</span>
+	              </h2>
+	              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+	                <li class="list-unstyled-item list-hours-item d-flex">
+	                  Number of questions:
+	                  <span class="ml-auto">15</span>
+	                </li>
+	                <li class="list-unstyled-item list-hours-item d-flex">
+	                  Type: 
+	                  <span class="ml-auto"> Multiple selection only response</span>
+	                </li>
+	                <li class="list-unstyled-item list-hours-item d-flex">
+	                  Estimated time
+	                  <span class="ml-auto">10 Min</span>
+	                </li>
+	              </ul>
+	             
 
-<main>
-	<div class="container">
-		<br>
-		<div class="container2">
-		<br>
-		<h2> EXAMEN DE CONOCIMIENTOS EN INGLÉS </h2><br>
-		<h2>Prueba tus conocimientos</h2>
-		<p id="eligetext"><strong>
-			Cada examen contiene:</strong>
-		</p>
-		
-		<ul id="cadatest">
-			<li>Número de preguntas: <strong> <?php echo $total; ?></strong></li>
-			<li>Tipo: selección múltiple única respuesta</li>
-			<li>Tiempo estimado: <strong><?php echo $total * .5 ?> min</strong></li>
-		<br>		
-			<li><strong>Para realizar el examen:</strong> </li><br>
-			<li>Selecciona el tipo de examen desees realizar:</li>
-		</ul>
-		<form method="post" class="formControl" action="preguntas.php">
- 			<!--<input type="number" name="num_test" min="0" max="1" required/>
- 			<ul id ="cadatest">
- 				<li>Digita el capítulo del cual vas a examinarte (del 1 al 4)</li><br>
- 			</ul>
- 			<input type="number" name="num_cap" min="1" max="4" required/>-->
- 			<select name="num_test">
- 				<option  value="0">Inicial</option>
- 				<option  value="1">Final</option>
- 			</select>
- 			<ul id="cadatest">
- 				<li>Selecciona el tema del examen</li>
- 			</ul>
- 			<select name="num_cap">
- 				<option  value="1">Tiempos simples y continuos</option>
- 				<option  value="2">Tiempos perfectos y voz pasiva</option>
- 				<option  value="3">Preposiciones</option>
- 				<option  value="4">Comparativos y superlativos</option>
- 			</select>
-			<br>
- 			<button type="submit" class="boton">Comenzar</button>
-		</form>	
-		<br>
-		</div>
-		<br>
-	</div>
-</main>
+	              <div style="background-color: rgba(249, 240, 229); width: 50%; display: inline-block;  margin-bottom: .5rem;">
+	              	 	                	
+	                  <strong>To perform the test you should</strong>
+	                  <p style="margin-bottom: 1rem;">
+	                  <em>
+	                  	<br>
+	                  Select the type of exam desired
+	                	</em>
+	             	 </p> 
+ 						<form method="post" action="preguntas.php">	
+	               	 			<select name="num_test" style="font-style: italic">
+				 				<option  value="0">Initial</option>
+				 				<option  value="1">Final</option>
+				 			</select>
+				 			<br><br>
+				 			<p style="margin-bottom: 1rem;">
+	                		<em>
+				 				Selecciona el tema del examen
+				 			</em>
+				 			</p> 
+				 			<select name="num_cap" style="font-style: italic;">
+				 				<option  value="1">Tiempos simples y continuos</option>
+				 				<option  value="2">Tiempos perfectos y voz pasiva</option>
+				 				<option  value="3">Preposiciones</option>
+				 				<option  value="4">Comparativos y superlativos</option>
+				 			</select>
+							<br><br><br>
+				 			<button type="submit" class="boton">Comenzar</button>
+						</form>	
+
+	              </div>
+	                                  
+	              <br>
+	            </div>
+	          </div>
+	        </div>
+	         			
+			
+	    </div> 
+
+	</section>
+	
+
 </body>
 <?php 
 include("footer.php");
