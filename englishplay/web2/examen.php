@@ -51,10 +51,10 @@ include("php/sesion.php");
 				 			</em>
 				 			</p> 
 				 			<select name="num_cap" style="font-style: italic;">
-				 				<option  value="1">Tiempos simples y continuos</option>
-				 				<option  value="2">Tiempos perfectos y voz pasiva</option>
-				 				<option  value="3">Preposiciones</option>
-				 				<option  value="4">Comparativos y superlativos</option>
+				 				<option  value="1">Simple and continuous tenses</option>
+				 				<option  value="2">Perfect verb tenses and passive voice</option>
+				 				<option  value="3">Prepositions</option>
+				 				<option  value="4">Comparative and sueprlative</option>
 				 			</select>
 							<br><br><br>
 				 			<button type="submit" class="boton">Comenzar</button>
