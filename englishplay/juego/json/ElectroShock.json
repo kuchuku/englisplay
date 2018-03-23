@@ -85,30 +85,48 @@
 				{"answerText":"haven’t finish","isCorrect":false}]
 		}]
 			},
-		{"theme":"mundo cave simon","timeLimitInSeconds":30,"coinsAddedForCorrectAnswer":30,"questions":[
-		{"questionText":"You look ______ the time table.","answers":[
-				{"answerText":"for","isCorrect":false},
-				{"answerText":"at","isCorrect":true}]
+		{"theme":"Conectores","timeLimitInSeconds":30,"coinsAddedForCorrectAnswer":30,"questions":[
+		{"questionText":"____ I was feeling ill, I went to work.","answers":[
+				{"answerText":"However","isCorrect":false},
+				{"answerText":"Despite","isCorrect":false},
+				{"answerText":"Even though","isCorrect":true},
+				{"answerText":"But","isCorrect":false},
+				{"answerText":"In spite of","isCorrect":false}]
 		},
-		{"questionText":"Then you wait ______ your bus","answers":[
-				{"answerText":"by","isCorrect":false},
-				{"answerText":"for","isCorrect":true}]
+		{"questionText":"_____ feeling ill, I went to work.","answers":[
+				{"answerText":"Despite","isCorrect":true},
+				{"answerText":"Despite the fact that","isCorrect":false},
+				{"answerText":"In spite of the fact that","isCorrect":false},
+				{"answerText":"Even though","isCorrect":false},
+				{"answerText":"Unless","isCorrect":false}]
 		},
-		{"questionText":"When the bus arrives, you get ______ the bus.","answers":[
-				{"answerText":"on","isCorrect":true},
-				{"answerText":"in","isCorrect":false}]
+		{"questionText":"You will pass the exam _____ you study.","answers":[
+				{"answerText":"unless","isCorrect":false},
+				{"answerText":"while","isCorrect":false},
+				{"answerText":"as long as ","isCorrect":true},
+				{"answerText":"however","isCorrect":false},
+				{"answerText":"providing","isCorrect":false}]
 		},
-		{"questionText":"Sometimes you even have to change buses ______ another bus stop.","answers":[
-				{"answerText":"at","isCorrect":true},
-				{"answerText":"for","isCorrect":false}]
+		{"questionText":"You won't pass the exam _____ you study.","answers":[
+				{"answerText":"providing","isCorrect":false},
+				{"answerText":"unless","isCorrect":true},
+				{"answerText":"only if ","isCorrect":false},
+				{"answerText":"as long as","isCorrect":false},
+				{"answerText":"despite","isCorrect":false}]
 		},
-		{"questionText":"Look ______ this painting.","answers":[
-				{"answerText":"at","isCorrect":true},
-				{"answerText":"for","isCorrect":false}]
+		{"questionText":"The employees are earning less money _____ they are working more hours.","answers":[
+				{"answerText":"in spite of ","isCorrect":false},
+				{"answerText":"despite","isCorrect":false},
+				{"answerText":"in spite of the fact that ","isCorrect":true},
+				{"answerText":"nevertheless","isCorrect":false},
+				{"answerText":"also","isCorrect":false}]
 		},
-		{"questionText":"A famous painter painted it. So it is a painting ______ a famous painter","answers":[
-				{"answerText":"of","isCorrect":false},
-				{"answerText":"by","isCorrect":true}]
+		{"questionText":"My daughter is allergic to peanuts, eggs _____ fish.","answers":[
+				{"answerText":"in addition ","isCorrect":false},
+				{"answerText":"also","isCorrect":false},
+				{"answerText":"furthermore","isCorrect":false},
+				{"answerText":"and","isCorrect":true},
+				{"answerText":"despite","isCorrect":false}]
 		}]},
 		{"theme":"Superlative","timeLimitInSeconds":30,"coinsAddedForCorrectAnswer":30,"questions":[
 		{"questionText":"This apartment is___ of all the apartments I have seen.","answers":[
