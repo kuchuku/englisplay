@@ -87,7 +87,7 @@ include("php/sesion.php");
 		<div id="piechart"></div>
 		<br><p style="display: block;font-size: 1rem;font-weight: 800;text-align: center;    color: #ab4d30;">Final Score: <?php echo $_SESSION['score']; ?></p>		
 		<br>		
-		<a type="submit" href="index.php" style="display: block;text-align: center;width: 15%;margin: auto;color: #ab4d30;">Continue</a>
+		<a type="submit" href="index.php" style="display: block;text-align: center;width: 15%;margin: auto;color: #0c0c0c;background: #d49b51;">Continue</a>
 		<br>
 	</div>
 	</div>

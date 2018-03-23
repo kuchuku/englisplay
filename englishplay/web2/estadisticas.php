@@ -51,7 +51,7 @@ include("php/sesion.php");
 					<table id="tablaPuntuacion" style=" border-collapse: separate;border-spacing: 10px;    background: #f3c385;color: #131313;border: 1px solid #000;border-radius: 15px;display: inline-block;">
 					<tr ">
 						<th style="border-bottom: 1px solid #eee;">Test</th>
-						<th style="border-bottom: 1px solid #eee;">Score</th>
+						<th style="border-bottom: 1px solid #eee;">Correct Answers</th>
 						<th style="border-bottom: 1px solid #eee;">Note</th>
 					</tr>					
 					<?php while ($consulta = mysqli_fetch_array($resultado))  {
@@ -64,7 +64,7 @@ include("php/sesion.php");
 					<tr style="color: #000;">
 					<?php $nota = $consulta[4] / 4 ?>						
 						<td style="color: #000; border-bottom: 1px solid #eee;"><?php echo $examen ?></td>
-						<td style="color: #000;border-bottom: 1px solid #eee;"><?php echo $consulta[4]?></td>
+						<td style="color: #000;border-bottom: 1px solid #eee;"><?php echo $consulta[4],"/15"?></td>
 						<td style="color: #000;border-bottom: 1px solid #eee;"><?php echo $nota?></td>
 					</tr>
 					<?php } ?>					

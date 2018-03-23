@@ -46,7 +46,7 @@ include("php/sesion.php");
 		 			?>
 		
 					<br>
-					<input type="submit" class="boton" value="Finalizar" />
+					<input type="submit" class="boton" value="Finish" style="display: block;text-align: center;width: 15%;margin: auto;color: #0c0c0c;background: #d49b51;" />
 					<br>
 				</form>
 				</div>
