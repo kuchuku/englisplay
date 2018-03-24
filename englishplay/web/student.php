@@ -20,68 +20,68 @@
 				if ($consulta2['rolPersonaje'] == '0') {
 					switch ($consulta2['skinGuerrero']) {
 						case '1':
-								$skin = "<img id=imag src=images/Guerrero1.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Guerrero1.png width=130 height=200 border=2px>";
 							break;
 						case '2':
-								$skin = "<img id=imag src=images/Guerrero2.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Guerrero2.png width=130 height=200 border=2px>";
 							break;
 						case '3':
-								$skin = "<img id=imag src=images/Guerrero3.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Guerrero3.png width=130 height=200 border=2px>";
 							break;
 						case '4':
-								$skin = "<img id=imag src=images/Guerrero4.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Guerrero4.png width=130 height=200 border=2px>";
 							break;
 						case '5':
-								$skin = "<img id=imag src=images/Guerrero5.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Guerrero5.png width=130 height=200 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img id=imag src=images/Guerrero0.png width=140 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Guerrero0.png width=140 height=200 border=2px>";
 							break;
 					}
 				}else if ($consulta2['rolPersonaje'] == '1') {
 					switch ($consulta2['skinMago']) {
 						case '1':
-								$skin = "<img id=imag src=images/Mago1.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Mago1.png width=130 height=200 border=2px>";
 							break;
 						case '2':
-								$skin = "<img id=imag src=images/Mago2.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Mago2.png width=130 height=200 border=2px>";
 							break;
 						case '3':
-								$skin = "<img id=imag src=images/Mago3.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Mago3.png width=130 height=200 border=2px>";
 							break;
 						case '4':
-								$skin = "<img id=imag src=images/Mago4.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Mago4.png width=130 height=200 border=2px>";
 							break;
 						case '5':
-								$skin = "<img id=imag src=images/Mago5.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Mago5.png width=130 height=200 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img id=imag src=images/Mago0.png width=120 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Mago0.png width=120 height=200 border=2px>";
 							break;
 					}
 					
 				}else{
 					switch ($consulta2['skinArquero']) {
 						case '1':
-								$skin = "<img id=imag src=images/Arquero1.png width=150 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Arquero1.png width=150 height=200 border=2px>";
 							break;
 						case '2':
-								$skin = "<img id=imag src=images/Arquero2.png width=150 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Arquero2.png width=150 height=200 border=2px>";
 							break;
 						case '3':
-								$skin = "<img id=imag src=images/Arquero3.png width=150 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Arquero3.png width=150 height=200 border=2px>";
 							break;
 						case '4':
-								$skin = "<img id=imag src=images/Arquero4.png width=150 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Arquero4.png width=150 height=200 border=2px>";
 							break;
 						case '5':
-								$skin = "<img id=imag src=images/Arquero5.png width=150 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Arquero5.png width=150 height=200 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img id=imag src=images/Arquero0.png width=140 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Arquero0.png width=140 height=200 border=2px>";
 							break;
 					}
 
@@ -91,68 +91,68 @@
 				if ($consulta2['rolPersonaje'] == '0') {
 					switch ($consulta2['skinGuerrero']) {
 						case '1':
-								$skin = "<img id=imag src=images/Guerrera1.png width=160 height=230 border=2px>";
+								$skin = "<img class=imag src=images/Guerrera1.png width=160 height=230 border=2px>";
 							break;
 						case '2':
-								$skin = "<img id=imag src=images/Guerrera2.png width=160 height=230 border=2px>";
+								$skin = "<img class=imag src=images/Guerrera2.png width=160 height=230 border=2px>";
 							break;
 						case '3':
-								$skin = "<img id=imag src=images/Guerrera3.png width=160 height=230 border=2px>";
+								$skin = "<img class=imag src=images/Guerrera3.png width=160 height=230 border=2px>";
 							break;
 						case '4':
-								$skin = "<img id=imag src=images/Guerrera4.png width=160 height=230 border=2px>";
+								$skin = "<img class=imag src=images/Guerrera4.png width=160 height=230 border=2px>";
 							break;
 						case '5':
-								$skin = "<img id=imag src=images/Guerrera5.png width=160 height=230 border=2px>";
+								$skin = "<img class=imag src=images/Guerrera5.png width=160 height=230 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img id=imag src=images/Guerrera0.png width=140 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Guerrera0.png width=140 height=200 border=2px>";
 							break;
 					}
 				}else if ($consulta2['rolPersonaje'] == '1') {
 					switch ($consulta2['skinMago']) {
 						case '1':
-								$skin = "<img id=imag src=images/Maga1.png width=150 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Maga1.png width=150 height=200 border=2px>";
 							break;
 						case '2':
-								$skin = "<img id=imag src=images/Maga2.png width=150 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Maga2.png width=150 height=200 border=2px>";
 							break;
 						case '3':
-								$skin = "<img id=imag src=images/Maga3.png width=150 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Maga3.png width=150 height=200 border=2px>";
 							break;
 						case '4':
-								$skin = "<img id=imag src=images/Maga4.png width=150 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Maga4.png width=150 height=200 border=2px>";
 							break;
 						case '5':
-								$skin = "<img id=imag src=images/Maga5.png width=150 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Maga5.png width=150 height=200 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img id=imag src=images/Maga0.png width=130 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Maga0.png width=130 height=200 border=2px>";
 							break;
 					}
 					
 				}else{
 					switch ($consulta2['skinArquero']) {
 						case '1':
-								$skin = "<img id=imag src=images/Arquera1.png width=150 height=230 border=2px>";
+								$skin = "<img class=imag src=images/Arquera1.png width=150 height=230 border=2px>";
 							break;
 						case '2':
-								$skin = "<img id=imag src=images/Arquera2.png width=150 height=230 border=2px>";
+								$skin = "<img class=imag src=images/Arquera2.png width=150 height=230 border=2px>";
 							break;
 						case '3':
-								$skin = "<img id=imag src=images/Arquera3.png width=150 height=230 border=2px>";
+								$skin = "<img class=imag src=images/Arquera3.png width=150 height=230 border=2px>";
 							break;
 						case '4':
-								$skin = "<img id=imag src=images/Arquera4.png width=150 height=230 border=2px>";
+								$skin = "<img class=imag src=images/Arquera4.png width=150 height=230 border=2px>";
 							break;
 						case '5':
-								$skin = "<img id=imag src=images/Arquera5.png width=150 height=230 border=2px>";
+								$skin = "<img class=imag src=images/Arquera5.png width=150 height=230 border=2px>";
 							break;
 						
 						default:
-								$skin = "<img id=imag src=images/Arquera0.png width=140 height=200 border=2px>";
+								$skin = "<img class=imag src=images/Arquera0.png width=140 height=200 border=2px>";
 							break;
 					}
 
@@ -492,78 +492,82 @@
 		      }
 		    </script>
 
-		    <link rel="stylesheet" href="css/styleStudent.css">
+		   <link rel="stylesheet" href="css/styleStudent.css">
 </head>
 
 
 <body id="estudiante">
+
+	<section style="padding-top: 0rem; padding-bottom: 20px; background-color: rgba(230,167,86,.2);">
+	 	<div class="container">
 	 	
-	 		<h1> Bienvenido <?php echo $consulta['nickEstudiante'] ?></h1>
+	 		<h1 class="titulito"> Welcome <?php echo $consulta['nickEstudiante'] ?></h1>
 
 			<br>
-	 			<h2>Personaje Seleccionado:</h2>
+	 			<h2>Selected Character</h2>
 	 				<p><?php echo $skin ?></p>
 			<br>
-	 			<h2>Nivel del personaje:</h2>
+	 			<h2>Character Level</h2>
 	 				<p><?php echo $consulta2['nivelPersonaje']?></p>
 	 		<br>
-	 			<h2>Experiencia del personaje:</h2>
+	 			<h2>Character Experience</h2>
 	 				<p><?php echo $consulta2['expPersonaje']?></p>
 	 		<br>
-	 			<h2>Oro disponible:</h2>
+	 			<h2>Gold Available</h2>
 	 				<p><?php echo $consulta2['oroPersonaje']?></p>
 	 		<br>
-	 			<h2>Mundo desbloqueado:</h2>
+	 			<h2>Unlocked World</h2>
 	 				<p><?php echo $nomMundo ?> </p><br>
 	 				<p><?php echo $imgMundo ?> </p> 
 
 	 		<br>
-	 			<h2>Avance del juego:</h2>
-	 				<p><div id="barchart_material" style="width: 98%; height: 60px;"></div></p>
+	 			<h2>Progress in the Game</h2>
+	 				<p><div id="barchart_material" style="width: 98%; height: 60px;" align="center"></div></p>
 	 		<br>
-				<h2>Compras realizadas:</h2>
-					<p><table id="compra" border="1">
+				<h2>Purchases</h2>
+					<p><table id="compra" border="1" align="center">
 						 	<?php echo $table?>				 	
 						</table></p>
 			<br>
-				<h1>Tablas de desafios</h1>
-					<h2>Aldea</h2>
-						<p><table border="1">
+				<h1 class="titulito">Challenges</h1>
+					<h2>Village</h2>
+						<p><table border="1" align="center">
 								<tr>
-									<th>Desafio</th>
-									<th>Preguntas Hechas</th>
-									<th>Respuestas Correctas</th>
+									<th>Challenge</th>
+									<th>Questions</th>
+									<th>Correct answers</th>
 								</tr>
 							 	<?php echo $table1?>				 	
 							</table></p>
-					<h2>Bosque</h2>
-						<p><table border="1">
+					<h2>Forest</h2>
+						<p><table border="1" align="center">
 								<tr>
-									<th>Desafio</th>
-									<th>Preguntas Hechas</th>
-									<th>Respuestas Correctas</th>
+									<th>Challenge</th>
+									<th>Questions</th>
+									<th>Correct answers</th>
 								</tr>
 							 	<?php echo $table2?>				 	
 							</table></p>
-					<h2>Cueva</h2>
-						<p><table border="1">
+					<h2>Cave</h2>
+						<p><table border="1" align="center">
 								<tr>
-									<th>Desafio</th>
-									<th>Preguntas Hechas</th>
-									<th>Respuestas Correctas</th>
+									<th>Challenge</th>
+									<th>Questions</th>
+									<th>Correct answers</th>
 								</tr>
 							 	<?php echo $table3?>				 	
 							</table></p>
-					<h2>Castillo</h2>
-						<p><table border="1">
+					<h2>Castle</h2>
+						<p><table border="1" align="center">
 								<tr>
-									<th>Desafio</th>
-									<th>Preguntas Hechas</th>
-									<th>Respuestas Correctas</th>
+									<th>Challenge</th>
+									<th>Questions</th>
+									<th>Correct answers</th>
 								</tr>
 							 	<?php echo $table4?>				 	
 							</table></p>
-	 			
+			</div>
+	</section> 			
 
 </body>
 <!-- Fin HTML -->

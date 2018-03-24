@@ -1,47 +1,48 @@
 body{
-	background-color: #d0cece;
-	color: #9c7d25;
+	color: #e6a756;
+    font-weight: 800;
+    text-align: center;
 }
 
 p{
-	color: #000;
-	text-shadow: 1px 1px 1px #e4b42d;
-	padding-left: 5px;
+	color: #F6D353;
+	font-size: 34px;
+    font-style: italic;
+	text-shadow: 1px 1px 1px #000;
 }
 
 h2{
-	background: #aaa;
-	text-shadow: 1px 1px 1px #e4b42d;
+	background: rgba(255,255,255,.85);
 	font-family: arial;
 	padding-left: 8px;
+	text-shadow: 1px 1px 1px #000;
 }
-
-div, p{
-	padding-top: 10px;
-	padding-left: 0px;
-}
-
 table, td{
 	color:#000;
 	background-color: #F6D353;
-	border-color: #000; 
+	border-color: #e6a756;
+	border-width: 2px;
 }
 
 table th{
-	background-color: #C89113;
+	color: rgba(255,255,255,.7);
+	background-color: rgba(47,23,15,.9);
+	border-width: 2px;
 }
 
-#imag{
+.imag{
 	border-color: #C89113;
-	background-color: #F6D353;
-	height: 180px;
-	width: 130px;
+	height: 200px;
+	width: 150px;
 }
 
 #compra{
-	border-spacing: 5px;
-	border-color: #000;
-	background-image: url("../images/tabla.jpg");
-	background-repeat: repeat;
+	border-color: #e6a756;
+	border-width: 5px;
 }
 
+.titulito{
+	font-size: 70px;
+	padding-top: 20px;
+	text-shadow: 1px 1px 1px #000;
+}

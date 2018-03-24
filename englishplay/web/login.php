@@ -12,7 +12,7 @@ isset($_POST["codigo"]);
  			</li>
  			<h5>Código</h5>
  			<li>
- 				<input type="number" name="codigo" placeholder="codigo" value="<?php echo $email;?>" required/>
+ 				<input type="number" name="codigo" placeholder="Código" value="<?php echo $email;?>" required/>
  			</li>
  			<h5>Contraseña</h5>
  			<li>
@@ -26,8 +26,6 @@ isset($_POST["codigo"]);
  			 ?>
  			 <li>
  			 	<input type="submit" class="submit" value="Iniciar"></input>
- 			 </li>
- 			 <a id="paginas1" href="javascript:window.history.back();">&laquo; Volver atrás</a>
  		</ul>
  	</form>
  </section>
