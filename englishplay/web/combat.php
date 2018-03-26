@@ -9,7 +9,7 @@ include 'header.php';
 	<script>
 
 		var jsonDesafio;
-		var desafio = "Shooter";
+		var desafio = "Combat";
 
 		function cargarJson() {
 			$.getJSON("../juego/json/"+desafio+".json")
@@ -23,67 +23,14 @@ include 'header.php';
 			var mundo = document.getElementById("mundo").value;
     		var ronda = document.getElementById("ronda").value;
 
-    		if(ronda == 1) {
-    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions1[0].sentence;
-			document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeTrue;
-			document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse1;
-			document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse2;
-			document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse3;
-			document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse4;
-			document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse5;
-			document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse6;
-			document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse7;
-			document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse8;
-			document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse9;
-    		}else if(ronda == 2) {
-    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions2[0].sentence;
-			document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeTrue;
-			document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse1;
-			document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse2;
-			document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse3;
-			document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse4;
-			document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse5;
-			document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse6;
-			document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse7;
-			document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse8;
-			document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse9;
-    		}else if(ronda == 3) {
-    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions3[0].sentence;
-			document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeTrue;
-			document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse1;
-			document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse2;
-			document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse3;
-			document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse4;
-			document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse5;
-			document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse6;
-			document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse7;
-			document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse8;
-			document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse9;
-    		}else if(ronda == 4) {
-    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions4[0].sentence;
-			document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeTrue;
-			document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse1;
-			document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse2;
-			document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse3;
-			document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse4;
-			document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse5;
-			document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse6;
-			document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse7;
-			document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse8;
-			document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse9;
-    		}else if(ronda == 5) {
-    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions5[0].sentence;
-			document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeTrue;
-			document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse1;
-			document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse2;
-			document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse3;
-			document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse4;
-			document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse5;
-			document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse6;
-			document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse7;
-			document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse8;
-			document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse9;
-    		}
+    		document.getElementById("theme").value = jsonDesafio.allBattlesData[mundo-1].theme;
+			document.getElementById("question").value = jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].questionDescription;
+			document.getElementById("phraseType").value = jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].phraseType;
+			document.getElementById("questionP1").value = jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].questionPart1;
+			document.getElementById("questionP2").value = jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].questionPart2;
+			document.getElementById("answer").value = jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].answer;
+			document.getElementById("contractions").value = jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].contractions;
+
 		}
 
 		function guardarJson() {
@@ -111,17 +58,19 @@ include 'header.php';
   		<option value="5">Round 5
 	</select><br>
 
-	Sentence: <input type="text" id="sentence" size="100"><br>
-	Correct Answer: <input type="text" id="corectA"><br>
-	Wrong Answer: <input type="text" id="wrongA1"><br>
-	Wrong Answer: <input type="text" id="wrongA2"><br>
-	Wrong Answer: <input type="text" id="wrongA3"><br>
-	Wrong Answer: <input type="text" id="wrongA4"><br>
-	Wrong Answer: <input type="text" id="wrongA5"><br>
-	Wrong Answer: <input type="text" id="wrongA6"><br>
-	Wrong Answer: <input type="text" id="wrongA7"><br>
-	Wrong Answer: <input type="text" id="wrongA8"><br>
-	Wrong Answer: <input type="text" id="wrongA9"><br>
+	Theme: <input type="text" id="theme" size="100"><br>
+	Question: <input type="text" id="question" size="100"><br>
+	Phrase Type: <select id="phraseType">
+ 		<option value="false">False
+		<option value="true">True
+	</select><br>
+	Question Part 1: <input type="text" id="questionP1" size="50"><br>
+	Question Part 2: <input type="text" id="questionP2" size="50"><br>
+	Answer: <input type="text" id="answer"><br>
+	Contractions: <select id="contractions">
+ 		<option value="false">False
+		<option value="true">True
+	</select><br>
 
 	<button onclick="guardarJson()">Save Changes</button>
 
