@@ -81,17 +81,25 @@ CREATE TABLE IF NOT EXISTS `estudiante` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40000 ALTER TABLE `estudiante` DISABLE KEYS */;
+INSERT INTO `estudiante` (`codigoUsuario`, `idGrupo`, `nickEstudiante`) VALUES
+	(201255218, 1, ''),
+	(201255229, 1, ''),
+	(201513141, 1, ''),
+	(201663714, 1, '');
 /*!40000 ALTER TABLE `estudiante` ENABLE KEYS */;
 
 CREATE TABLE IF NOT EXISTS `grupo` (
   `idGrupo` int(11) NOT NULL AUTO_INCREMENT,
+  `docente` double DEFAULT NULL,
   `nombreGrupo` varchar(50) NOT NULL,
-  PRIMARY KEY (`idGrupo`)
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`idGrupo`),
+  KEY `Usuario_Grupo_codigoUsuario` (`docente`),
+  CONSTRAINT `Usuario_Grupo_codigoUsuario` FOREIGN KEY (`docente`) REFERENCES `usuario` (`codigoUsuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 /*!40000 ALTER TABLE `grupo` DISABLE KEYS */;
-INSERT INTO `grupo` (`idGrupo`, `nombreGrupo`) VALUES
-	(50, 'Grupo 1');
+INSERT INTO `grupo` (`idGrupo`, `docente`, `nombreGrupo`) VALUES
+	(1, 201255229, 'TG 1');
 /*!40000 ALTER TABLE `grupo` ENABLE KEYS */;
 
 CREATE TABLE IF NOT EXISTS `objeto` (
@@ -411,6 +419,11 @@ CREATE TABLE IF NOT EXISTS `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
+INSERT INTO `usuario` (`codigoUsuario`, `contraseniaUsuario`, `nombreUsuario`, `tipoUsuario`) VALUES
+	(201255218, '', 'BUENO PEÑA ANDRES MAURICIO', 0),
+	(201255229, '', 'NARANJO HERRERA JAVIER SIMÓN', 1),
+	(201513141, '', 'ZAPATA CASTAÑO JORGE LEONARDO', 0),
+	(201663714, '', 'QUINTERO CASTAÑO LUIS FERNANDO', 0);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
