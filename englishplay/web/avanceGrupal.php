@@ -103,24 +103,27 @@ while ($row = mysqli_fetch_assoc($resultado))
 	$numCorrectas += $row[correctas];
 }
 
+
+
 ?>
 
 <html>
   <head>
+  	<link rel="stylesheet" type="text/css" href="css/styleProfessor.css">
     <!--Load the AJAX API-->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/loader.js"></script>
     <script type="text/javascript">
 
       // Load the Visualization API and the corechart package.
       google.charts.load('current', {'packages':['corechart']});
 
       // Set a callback to run when the Google Visualization API is loaded.
-      google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawCharts);
 
       // Callback that creates and populates a data table,
       // instantiates the pie chart, passes in the data and
       // draws it.
-      function drawChart() {
+      function drawCharts() {
 
         // Create the data table.
         var dataPersonajes = new google.visualization.DataTable();
@@ -163,14 +166,38 @@ while ($row = mysqli_fetch_assoc($resultado))
         var chartNiveles = new google.visualization.PieChart(document.getElementById('chart2_div'));
         chartNiveles.draw(dataNiveles, optionsNiveles);
 
+        // Create the data table.
+        var dataNiveles = new google.visualization.DataTable();
+        dataNiveles.addColumn('string', 'Topping');
+        dataNiveles.addColumn('number', 'Slices');
+        dataNiveles.addRows([
+          ['Nivel 1 a 5', <?php echo $numNiveles1a5 ?>],
+          ['Nivel 6 a 10', <?php echo $numNiveles6a10 ?>],
+          ['Nivel 11 a 15', <?php echo $numNiveles11a15 ?>],
+          ['Nivel 16 a 20', <?php echo $numNiveles16a20 ?>],
+          ['Nivel 21 a 25', <?php echo $numNiveles21a25 ?>],
+          ['Nivel 26 a 30', <?php echo $numNiveles26a30 ?>]
+        ]);
+
+        // Set chart options
+        var optionsNiveles = {'title':'Niveles',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chartNiveles = new google.visualization.PieChart(document.getElementById('chart2_div'));
+        chartNiveles.draw(dataNiveles, optionsNiveles);
+
       }
     </script>
   </head>
 
   <body>
     <!--Div that will hold the pie chart-->
-    <div id="chart1_div"></div>
-    <div id="chart2_div"></div>
+    <div>
+    	<div id="chart1_div" class="divInterno"></div>
+    	<div id="chart2_div" class="divInterno"></div>
+    </div>
   </body>
 </html>
 
