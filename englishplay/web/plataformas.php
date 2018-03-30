@@ -33,7 +33,18 @@ include 'header.php';
 		}
 
 		function guardarJson() {
+			var mundo = document.getElementById("mundo").value;
+    		var ronda = document.getElementById("ronda").value;
+
+			jsonDesafio.allRoundData[mundo-1].theme = document.getElementById("theme").value;
+			jsonDesafio.allRoundData[mundo-1].questions[ronda-1].questionText = document.getElementById("question").value;
+			jsonDesafio.allRoundData[mundo-1].questions[ronda-1].answers[0].answerText = document.getElementById("answer1").value;
+			jsonDesafio.allRoundData[mundo-1].questions[ronda-1].answers[0].isCorrect = document.getElementById("answerBool1").value;
+			jsonDesafio.allRoundData[mundo-1].questions[ronda-1].answers[1].answerText = document.getElementById("answer2").value;
+			jsonDesafio.allRoundData[mundo-1].questions[ronda-1].answers[1].isCorrect = document.getElementById("answerBool2").value;
+
 			$.post("saveJson.php", {json : JSON.stringify(jsonDesafio), archivo : desafio+".json"});
+			alert("Saved");
 		}   
 
 	</script>

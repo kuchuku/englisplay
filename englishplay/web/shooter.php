@@ -24,71 +24,137 @@ include 'header.php';
     		var ronda = document.getElementById("ronda").value;
 
     		if(ronda == 1) {
-    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions1[0].sentence;
-			document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeTrue;
-			document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse1;
-			document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse2;
-			document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse3;
-			document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse4;
-			document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse5;
-			document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse6;
-			document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse7;
-			document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse8;
-			document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse9;
+	    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions1[0].sentence;
+				document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeTrue;
+				document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse1;
+				document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse2;
+				document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse3;
+				document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse4;
+				document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse5;
+				document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse6;
+				document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse7;
+				document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse8;
+				document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse9;
     		}else if(ronda == 2) {
-    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions2[0].sentence;
-			document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeTrue;
-			document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse1;
-			document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse2;
-			document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse3;
-			document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse4;
-			document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse5;
-			document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse6;
-			document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse7;
-			document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse8;
-			document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse9;
+	    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions2[0].sentence;
+				document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeTrue;
+				document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse1;
+				document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse2;
+				document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse3;
+				document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse4;
+				document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse5;
+				document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse6;
+				document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse7;
+				document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse8;
+				document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse9;
     		}else if(ronda == 3) {
-    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions3[0].sentence;
-			document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeTrue;
-			document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse1;
-			document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse2;
-			document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse3;
-			document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse4;
-			document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse5;
-			document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse6;
-			document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse7;
-			document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse8;
-			document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse9;
+	    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions3[0].sentence;
+				document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeTrue;
+				document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse1;
+				document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse2;
+				document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse3;
+				document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse4;
+				document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse5;
+				document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse6;
+				document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse7;
+				document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse8;
+				document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse9;
     		}else if(ronda == 4) {
-    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions4[0].sentence;
-			document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeTrue;
-			document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse1;
-			document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse2;
-			document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse3;
-			document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse4;
-			document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse5;
-			document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse6;
-			document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse7;
-			document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse8;
-			document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse9;
+	    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions4[0].sentence;
+				document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeTrue;
+				document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse1;
+				document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse2;
+				document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse3;
+				document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse4;
+				document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse5;
+				document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse6;
+				document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse7;
+				document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse8;
+				document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse9;
     		}else if(ronda == 5) {
-    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions5[0].sentence;
-			document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeTrue;
-			document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse1;
-			document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse2;
-			document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse3;
-			document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse4;
-			document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse5;
-			document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse6;
-			document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse7;
-			document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse8;
-			document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse9;
+	    		document.getElementById("sentence").value = jsonDesafio.allRoundData[mundo-1].questions5[0].sentence;
+				document.getElementById("corectA").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeTrue;
+				document.getElementById("wrongA1").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse1;
+				document.getElementById("wrongA2").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse2;
+				document.getElementById("wrongA3").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse3;
+				document.getElementById("wrongA4").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse4;
+				document.getElementById("wrongA5").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse5;
+				document.getElementById("wrongA6").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse6;
+				document.getElementById("wrongA7").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse7;
+				document.getElementById("wrongA8").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse8;
+				document.getElementById("wrongA9").value = jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse9;
     		}
 		}
 
 		function guardarJson() {
+			var mundo = document.getElementById("mundo").value;
+    		var ronda = document.getElementById("ronda").value;
+
+			if(ronda == 1) {
+	    		jsonDesafio.allRoundData[mundo-1].questions1[0].sentence = document.getElementById("sentence").value;
+				jsonDesafio.allRoundData[mundo-1].questions1[0].completeTrue = document.getElementById("corectA").value;
+				jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse1 = document.getElementById("wrongA1").value;
+				jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse2 = document.getElementById("wrongA2").value;
+				jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse3 = document.getElementById("wrongA3").value;
+				jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse4 = document.getElementById("wrongA4").value;
+				jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse5 = document.getElementById("wrongA5").value;
+				jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse6 = document.getElementById("wrongA6").value;
+				jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse7 = document.getElementById("wrongA7").value;
+				jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse8 = document.getElementById("wrongA8").value;
+				jsonDesafio.allRoundData[mundo-1].questions1[0].completeFalse9 = document.getElementById("wrongA9").value;
+    		}else if(ronda == 2) {
+	    		jsonDesafio.allRoundData[mundo-1].questions2[0].sentence = document.getElementById("sentence").value;
+				jsonDesafio.allRoundData[mundo-1].questions2[0].completeTrue = document.getElementById("corectA").value;
+				jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse1 = document.getElementById("wrongA1").value;
+				jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse2 = document.getElementById("wrongA2").value;
+				jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse3 = document.getElementById("wrongA3").value;
+				jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse4 = document.getElementById("wrongA4").value;
+				jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse5 = document.getElementById("wrongA5").value;
+				jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse6 = document.getElementById("wrongA6").value;
+				jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse7 = document.getElementById("wrongA7").value;
+				jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse8 = document.getElementById("wrongA8").value;
+				jsonDesafio.allRoundData[mundo-1].questions2[0].completeFalse9 = document.getElementById("wrongA9").value;
+    		}else if(ronda == 3) {
+	    		jsonDesafio.allRoundData[mundo-1].questions3[0].sentence = document.getElementById("sentence").value;
+				jsonDesafio.allRoundData[mundo-1].questions3[0].completeTrue = document.getElementById("corectA").value;
+				jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse1 = document.getElementById("wrongA1").value;
+				jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse2 = document.getElementById("wrongA2").value;
+				jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse3 = document.getElementById("wrongA3").value;
+				jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse4 = document.getElementById("wrongA4").value;
+				jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse5 = document.getElementById("wrongA5").value;
+				jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse6 = document.getElementById("wrongA6").value;
+				jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse7 = document.getElementById("wrongA7").value;
+				jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse8 = document.getElementById("wrongA8").value;
+				jsonDesafio.allRoundData[mundo-1].questions3[0].completeFalse9 = document.getElementById("wrongA9").value;
+    		}else if(ronda == 4) {
+	    		jsonDesafio.allRoundData[mundo-1].questions4[0].sentence = document.getElementById("sentence").value;
+				jsonDesafio.allRoundData[mundo-1].questions4[0].completeTrue = document.getElementById("corectA").value;
+				jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse1 = document.getElementById("wrongA1").value;
+				jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse2 = document.getElementById("wrongA2").value;
+				jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse3 = document.getElementById("wrongA3").value;
+				jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse4 = document.getElementById("wrongA4").value;
+				jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse5 = document.getElementById("wrongA5").value;
+				jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse6 = document.getElementById("wrongA6").value;
+				jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse7 = document.getElementById("wrongA7").value;
+				jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse8 = document.getElementById("wrongA8").value;
+				jsonDesafio.allRoundData[mundo-1].questions4[0].completeFalse9 = document.getElementById("wrongA9").value;
+    		}else if(ronda == 5) {
+	  			jsonDesafio.allRoundData[mundo-1].questions5[0].sentence = document.getElementById("sentence").value;
+				jsonDesafio.allRoundData[mundo-1].questions5[0].completeTrue = document.getElementById("corectA").value;
+				jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse1 = document.getElementById("wrongA1").value;
+				jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse2 = document.getElementById("wrongA2").value;
+				jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse3 = document.getElementById("wrongA3").value;
+				jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse4 = document.getElementById("wrongA4").value;
+				jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse5 = document.getElementById("wrongA5").value;
+				jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse6 = document.getElementById("wrongA6").value;
+				jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse7 = document.getElementById("wrongA7").value;
+				jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse8 = document.getElementById("wrongA8").value;
+				jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse9 = document.getElementById("wrongA9").value;
+    		}
+
 			$.post("saveJson.php", {json : JSON.stringify(jsonDesafio), archivo : desafio+".json"});
-		}   
+			alert("Saved");
+		} 
 
 	</script>
 

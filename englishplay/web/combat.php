@@ -34,8 +34,20 @@ include 'header.php';
 		}
 
 		function guardarJson() {
+			var mundo = document.getElementById("mundo").value;
+    		var ronda = document.getElementById("ronda").value;
+
+			jsonDesafio.allBattlesData[mundo-1].theme = document.getElementById("theme").value;
+			jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].questionDescription = document.getElementById("question").value;
+			jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].phraseType = document.getElementById("phraseType").value;
+			jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].questionPart1 = document.getElementById("questionP1").value;
+			jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].questionPart2 = document.getElementById("questionP2").value;
+			jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].answer = document.getElementById("answer").value;
+			jsonDesafio.allBattlesData[mundo-1].questions[ronda-1].contractions = document.getElementById("contractions").value;
+
 			$.post("saveJson.php", {json : JSON.stringify(jsonDesafio), archivo : desafio+".json"});
-		}   
+			alert("Saved");
+		}  
 
 	</script>
 
