@@ -18,16 +18,19 @@ include 'header.php';
 			$.getJSON("../juego/json/Village.json")
  			.done(function(json) {
  				jsonVillage = json;
+ 				actualizarFormulario();
  			});
 
  			$.getJSON("../juego/json/Forest.json")
  			.done(function(json) {
  				jsonForest = json;
+ 				actualizarFormulario();
  			});
 
  			$.getJSON("../juego/json/Cave.json")
  			.done(function(json) {
  				jsonCave = json;
+ 				actualizarFormulario();
  			});
 
  			$.getJSON("../juego/json/Castle.json")

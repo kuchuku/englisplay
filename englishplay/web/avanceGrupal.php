@@ -138,7 +138,8 @@ while ($row = mysqli_fetch_assoc($resultado))
         // Set chart options
         var optionsPersonajes = {'title':'Personajes',
                        'width':400,
-                       'height':300};
+                       'height':300,
+                       'backgroundColor': 'transparent'};
 
         // Instantiate and draw our chart, passing in some options.
         var chartPersonajes = new google.visualization.PieChart(document.getElementById('chart1_div'));
@@ -193,11 +194,18 @@ while ($row = mysqli_fetch_assoc($resultado))
   </head>
 
   <body>
-    <!--Div that will hold the pie chart-->
-    <div>
-    	<div id="chart1_div" class="divInterno"></div>
-    	<div id="chart2_div" class="divInterno"></div>
-    </div>
+    <section style="padding-top: 0rem; padding-bottom: 0rem; background-color: rgba(230,167,86,.9);">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta text-center rounded" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 
+              	<div id="chart1_div" class="divInterno"></div>
+              	<div id="chart2_div" class="divInterno"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 
