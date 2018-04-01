@@ -1,14 +1,13 @@
 <?php 
 include("header.php");
 require('../../conexionDB.php');
-include("../controlador/sesion.php");
+include("../negocio/sesion.php");
+include("../negocio/pregunta.php");
 ?>
 <?php 
 	$num_test = $_POST['num_test'];
-	$num_cap = $_POST['num_cap'];
-		$query ="SELECT id,pregunta,respuesta,elec1,elec2,test FROM pregunta WHERE test =".$num_test." AND capitulo =".$num_cap;
-		 	//Get result
-		 	$consulta = mysqli_query($conexion,$query);	
+	$num_cap = $_POST['num_cap'];	
+	$consulta = tipoExamen($num_test, $num_cap);
 
  ?>
 
@@ -22,27 +21,8 @@ include("../controlador/sesion.php");
 					<form method="post" class="formControl" action="resultados.php">
 						<input type="hidden" name="exam" value="<?php echo $num_test ?>">
 						<input type="hidden" name="cap" value="<?php echo $num_cap ?>">
-					<?php while ($row = mysqli_fetch_array($consulta))  {
-					 	$idPregunta = $row["id"];
-					 	$textoPregunta = $row["pregunta"];
-					 	$num_pregunta;		 	
-					 	$ans_array = array($row['elec1'], $row['elec2'], $row['respuesta']); 
-					 	shuffle($ans_array);
-					 	$num_pregunta++;
-					 ?>
-				
-					<p class="question">
-					<?php echo '</p>
-						<div class="preguntas_text" align="justify"> 			
-						<label name="preguntaText">'."(".$num_pregunta.") ".$textoPregunta.'</label>
-						</div>
-						<ul class="choices">
-							<li class="list-unstyled-item list-hours-item d-flex"><input name="choice'.$idPregunta.'" type="radio"  style="margin:0px;" value="'.$ans_array[0].'" required/>'.$ans_array[0].'</li>
-							<li class="list-unstyled-item list-hours-item d-flex"><input name="choice'.$idPregunta.'" type="radio" style="margin:0px;" value="'.$ans_array[1].'"/>'.$ans_array[1].'</li>
-							<li class="list-unstyled-item list-hours-item d-flex"><input name="choice'.$idPregunta.'" type="radio" style="margin:0px;" value="'.$ans_array[2].'"/>'.$ans_array[2].'</li> 
-						</ul><br>	
-						';	
-					} 
+					<?php 
+					preguntasExamen($consulta);
 		 			?>
 		
 					<br>
