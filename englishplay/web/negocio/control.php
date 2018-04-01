@@ -3,7 +3,7 @@
 		include ('../datos/usuario.php');
 	$codigoEst = $_POST["codigo"];
 	
-	consultarUsuario();
+	$consulta = consultarUsuario();
 	
 	//el mysql_fetch_array (9 devuelve los registros de la tabla usuarios)
 	while($filas=mysqli_fetch_array($consulta)){
