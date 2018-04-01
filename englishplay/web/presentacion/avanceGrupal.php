@@ -137,7 +137,7 @@ while ($row = mysqli_fetch_assoc($resultado))
 
         // Set chart options
         var optionsPersonajes = {'title':'Personajes',
-                       'width':400,
+                       'width':350,
                        'height':300,
                        'backgroundColor': 'transparent'};
 
@@ -160,8 +160,9 @@ while ($row = mysqli_fetch_assoc($resultado))
 
         // Set chart options
         var optionsNiveles = {'title':'Niveles',
-                       'width':400,
-                       'height':300};
+                       'width':350,
+                       'height':300,
+                       'backgroundColor': 'transparent'};
 
         // Instantiate and draw our chart, passing in some options.
         var chartNiveles = new google.visualization.PieChart(document.getElementById('chart2_div'));
@@ -172,21 +173,41 @@ while ($row = mysqli_fetch_assoc($resultado))
         dataNiveles.addColumn('string', 'Topping');
         dataNiveles.addColumn('number', 'Slices');
         dataNiveles.addRows([
-          ['Nivel 1 a 5', <?php echo $numNiveles1a5 ?>],
-          ['Nivel 6 a 10', <?php echo $numNiveles6a10 ?>],
-          ['Nivel 11 a 15', <?php echo $numNiveles11a15 ?>],
-          ['Nivel 16 a 20', <?php echo $numNiveles16a20 ?>],
-          ['Nivel 21 a 25', <?php echo $numNiveles21a25 ?>],
-          ['Nivel 26 a 30', <?php echo $numNiveles26a30 ?>]
+          ['Village', <?php echo $numAvance1 ?>],
+          ['Forest', <?php echo $numAvance2 ?>],
+          ['Cave', <?php echo $numAvance3 ?>],
+          ['Castle', <?php echo $numAvance4 ?>]
         ]);
 
         // Set chart options
-        var optionsNiveles = {'title':'Niveles',
-                       'width':400,
-                       'height':300};
+        var optionsNiveles = {'title':'Avance',
+                       'width':350,
+                       'height':300,
+                       'backgroundColor': 'transparent'};
 
         // Instantiate and draw our chart, passing in some options.
-        var chartNiveles = new google.visualization.PieChart(document.getElementById('chart2_div'));
+        var chartNiveles = new google.visualization.PieChart(document.getElementById('chart3_div'));
+        chartNiveles.draw(dataNiveles, optionsNiveles);
+
+        // Create the data table.
+        var dataNiveles = new google.visualization.DataTable();
+        dataNiveles.addColumn('string', 'Topping');
+        dataNiveles.addColumn('number', 'Slices');
+        dataNiveles.addRows([
+          ['Village', <?php echo $numAvance1 ?>],
+          ['Forest', <?php echo $numAvance2 ?>],
+          ['Cave', <?php echo $numAvance3 ?>],
+          ['Castle', <?php echo $numAvance4 ?>]
+        ]);
+
+        // Set chart options
+        var optionsNiveles = {'title':'Avance',
+                       'width':350,
+                       'height':300,
+                       'backgroundColor': 'transparent'};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chartNiveles = new google.visualization.PieChart(document.getElementById('chart4_div'));
         chartNiveles.draw(dataNiveles, optionsNiveles);
 
       }
@@ -198,9 +219,11 @@ while ($row = mysqli_fetch_assoc($resultado))
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <div class="cta text-center rounded" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 
+            <div class="cta text-center rounded" id="contenedor" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 
               	<div id="chart1_div" class="divInterno"></div>
               	<div id="chart2_div" class="divInterno"></div>
+                <div id="chart3_div" class="divInterno"></div>
+                <div id="chart4_div" class="divInterno"></div>
             </div>
           </div>
         </div>

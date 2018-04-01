@@ -1,3 +1,7 @@
+div#contenedor {
+	overflow: auto;	
+}
+
 div.divInterno {
-	
+	float: left;
 }

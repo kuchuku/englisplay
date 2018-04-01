@@ -21,7 +21,7 @@
 						    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
 						    <!-- El nombre del elemento de entrada determina el nombre en el array $_FILES -->
 						    <input name="csv" type="file" /><br>
-						   	<strong>Only CSV format is accepted.</strong><br><br><br><br>
+						   	<strong>Note: Only CSV format is accepted.</strong><br><br><br><br>
 						    <input type="submit" value="Load Group" />
 						</form>
 					</div>
