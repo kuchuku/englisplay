@@ -35,7 +35,7 @@
 			$_SESSION["autenticado"] = true;
 			$_SESSION["codEst"] = $codigoEst;	 			
 			$_SESSION["usuario"] = $_POST['email'];
-			header("Location: ../index.php");
+			header("Location: ../vista/index.php");
 		}
 	}			
  ?>
