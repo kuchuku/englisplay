@@ -15,7 +15,7 @@ include 'header.php';
 
 		function cargarJson() {
 
-			$.getJSON("../juego/json/Village.json")
+			$.getJSON("../../juego/json/Village.json")
  			.done(function(json) {
  				jsonVillage = json;
  				actualizarFormulario();
