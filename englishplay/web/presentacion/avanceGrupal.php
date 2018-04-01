@@ -109,7 +109,7 @@ while ($row = mysqli_fetch_assoc($resultado))
 
 <html>
   <head>
-  	<link rel="stylesheet" type="text/css" href="css/styleProfessor.css">
+  	<link rel="stylesheet" type="text/css" href="css/styleGroupStatistics.css">
     <!--Load the AJAX API-->
     <script type="text/javascript" src="js/loader.js"></script>
     <script type="text/javascript">
