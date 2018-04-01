@@ -43,20 +43,20 @@ include("../negocio/estudiante.php");
 	<section style="padding-top: 0rem; padding-bottom: 20px; background-color: rgba(230,167,86,.2);">
 	 	<div class="container">
 	 	
-	 		<h1 class="titulito"> Welcome <?php echo $consulta['nickEstudiante'] ?></h1>
+	 		<h1 class="titulito"> Welcome <?php echo $nick ?></h1>
 
 			<br>
 	 			<h2>Selected Character</h2>
 	 				<p><?php echo $skin ?></p>
 			<br>
 	 			<h2>Character Level</h2>
-	 				<p><?php echo $consulta2['nivelPersonaje']?></p>
+	 				<p><?php echo $nivel ?></p>
 	 		<br>
 	 			<h2>Character Experience</h2>
-	 				<p><?php echo $consulta2['expPersonaje']?></p>
+	 				<p><?php echo $experiencia ?></p>
 	 		<br>
 	 			<h2>Gold Available</h2>
-	 				<p><?php echo $consulta2['oroPersonaje']?></p>
+	 				<p><?php echo $oro ?></p>
 	 		<br>
 	 			<h2>Unlocked World</h2>
 	 				<p><?php echo $nomMundo ?> </p><br>

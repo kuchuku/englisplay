@@ -14,4 +14,12 @@
 		mysqli_query($conexion, $sql);
 	}
 
+	function consultarNickEstudiante($codigoUsuario){
+		global $conexion;
+		$resultados = mysqli_query($conexion, "SELECT nickEstudiante FROM estudiante WHERE codigoUsuario = '$codigoUsuario'");
+		$consulta = mysqli_fetch_array($resultados);
+
+		return $consulta['nickEstudiante'];
+	}
+
 ?>

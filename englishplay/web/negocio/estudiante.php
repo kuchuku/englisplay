@@ -1,12 +1,41 @@
 <?php
-	require ("../datos/EstudiantesConsultas.php");
 	include("header.php");
+	include ("../datos/estudiante.php");
+	include ("../datos/personaje.php");
+	include ("../datos/mundo.php");
+	include ("../datos/checkpoint.php");
+	include ("../datos/compra.php");
+	include ("../datos/desafios.php");
 
-//Mostrar el personaje, seleccionado en el juego, por pantalla
-	if ($consulta2['sexoPersonaje'] =='h') {//es hombre
 
-		if ($consulta2['rolPersonaje'] == '0') {
-			switch ($consulta2['skinGuerrero']) {
+//recibe el codigo del estudiante que inició sesión.
+	
+	session_start();	
+	$cod = $_SESSION["codEst"];
+
+//información del estudiante
+	
+	$nick = consultarNickEstudiante($cod);
+
+//Informacion del personaje
+
+	$nivel = ConsultarNivelPersonaje($cod);
+	$experiencia = ConsultarExperienciaPersonaje($cod);
+	$oro = ConsultarOroPersonaje($cod); 
+
+
+//Mostrar, por pantalla, el personaje seleccionado en el juego
+
+	$sexoP = ConsultarSexoPersonaje($cod);
+	$rol = ConsultarRolPersonaje($cod);
+	$skinG = ConsultarskinGuerrero($cod);
+	$skinM = ConsultarskinMago($cod);
+	$skinA = ConsultarskinArquero($cod);
+
+	if ($sexoP =='h') {//es hombre
+
+		if ($rol == '0') {
+			switch ($skinG) {
 				case '1':
 						$skin = "<img class=imag src=images/Guerrero1.png width=130 height=200 border=2px>";
 					break;
@@ -27,8 +56,8 @@
 						$skin = "<img class=imag src=images/Guerrero0.png width=140 height=200 border=2px>";
 					break;
 			}
-		}else if ($consulta2['rolPersonaje'] == '1') {
-			switch ($consulta2['skinMago']) {
+		}else if ($rol == '1') {
+			switch ($skinM) {
 				case '1':
 						$skin = "<img class=imag src=images/Mago1.png width=130 height=200 border=2px>";
 					break;
@@ -51,7 +80,7 @@
 			}
 			
 		}else{
-			switch ($consulta2['skinArquero']) {
+			switch ($skinA) {
 				case '1':
 						$skin = "<img class=imag src=images/Arquero1.png width=150 height=200 border=2px>";
 					break;
@@ -76,8 +105,8 @@
 		}
 	}else{//es mujer
 
-		if ($consulta2['rolPersonaje'] == '0') {
-			switch ($consulta2['skinGuerrero']) {
+		if ($rol == '0') {
+			switch ($skinG) {
 				case '1':
 						$skin = "<img class=imag src=images/Guerrera1.png width=160 height=230 border=2px>";
 					break;
@@ -98,8 +127,8 @@
 						$skin = "<img class=imag src=images/Guerrera0.png width=140 height=200 border=2px>";
 					break;
 			}
-		}else if ($consulta2['rolPersonaje'] == '1') {
-			switch ($consulta2['skinMago']) {
+		}else if ($rol == '1') {
+			switch ($skinM) {
 				case '1':
 						$skin = "<img class=imag src=images/Maga1.png width=150 height=200 border=2px>";
 					break;
@@ -122,7 +151,7 @@
 			}
 			
 		}else{
-			switch ($consulta2['skinArquero']) {
+			switch ($skinA) {
 				case '1':
 						$skin = "<img class=imag src=images/Arquera1.png width=150 height=230 border=2px>";
 					break;
@@ -147,8 +176,10 @@
 		}
 	}
 
-//Mosrar el mundo que tiene desbloqueado
-	switch ($consulta3['mundoAvance']) {
+//Mosrar el mundo que tiene desbloqueado el jugador
+
+	$mundo = ConsultarMundoDesbloqueado($cod);
+	switch ($mundo) {
 		case '1':
 				$imgMundo = "<img src=images/Mundo1.png width=250 height=250>";
 				$nomMundo = "Village";
@@ -167,15 +198,20 @@
 			break;
 	}
 
-//Gráfica en barra horizolntal que muestra el porcentaje del avance del juego
-	$porciento = round(((($consulta4['mundoCheckpoint']+($consulta4['posXCheckpoint']/'10000'))*'100')/'4.0715'), 0);
+//Gráfica en barra horizontal que muestra el porcentaje del avance del juego
+
+	$mundoCheck = ConsultarMundoCheckpoint($cod);
+	$posCheck = ConsultarPosicionCheckpoint($cod);
+
+	$porciento = round(((($mundoCheck+($posCheck/'10000'))*'100')/'4.0715'), 0);
 
 
-//Mostrar en una tabla las compras realizadas por el estudiante
-	while ($consulta5 = mysqli_fetch_array($resultados5)) {
+//Mostrar en una tabla las compras realizadas por el jugador
+	
+	$resultados5 = ConsultarCompras($cod);
+	while ($consulta5 = mysqli_fetch_assoc($resultados5)){
 		
 		$compras = $consulta5['idObjeto'];
-
 	 	switch ($compras) {
 	 		case '1':
 	 				$img = "<td><img src=images/Espada1.png width=80 height=180></td>";
@@ -272,11 +308,17 @@
 	 	$table .= "$img";
 	}
 
-//Recorrer la tabla resultado desafios e imprimir el deasifio, la cantidad de preguntas que se le hicieron y la cantidad de respuestas correctas en el mundo Aldea.
+//Ejecutar la funcion que recorre la tabla de desafios de la Aldea, para mostrar los datos en una tabla.
+	
 	$table1 = '';
-	while ($consulta6 = mysqli_fetch_array($resultados6)) {
+	$resultados6 = ConsultarDatosDesafioMundoAldea($cod);
+	while ($consulta6 = mysqli_fetch_assoc($resultados6)) {
+
+		$desafio = $consulta6['desafio'];
+		$preguntas = $consulta6['preguntas'];
+		$correctas = $consulta6['correctas'];
 			
-	 	switch ($consulta6['desafio']) {
+	 	switch ($desafio) {
 	 		case '1':
 	 				$desA = "CorrectBox";
 	 			break;
@@ -304,15 +346,21 @@
 	 	}
 	 	$table1 .= "<tr>";
 	 	$table1 .= "<td>$desA</td>";
-	 	$table1 .= "<td>$consulta6[preguntas]</td>";
-	 	$table1 .= "<td>$consulta6[correctas]</td>";
+	 	$table1 .= "<td>$preguntas</td>";
+	 	$table1 .= "<td>$correctas</td>";
 	 	$table1 .= "</tr>";
 	}
 
-//Recorrer la tabla resultado desafios e imprimir el deasifio, la cantidad de preguntas que se le hicieron y la cantidad de respuestas correctas en el mundo Bosque.			
+//Ejecutar la funcion que recorre la tabla de desafios del Bosque, para mostrar los datos en una tabla			
+	
 	$table2 = '';
-	while ($consulta7 = mysqli_fetch_array($resultados7)) {
-		switch ($consulta7['desafio']) {
+	$resultados7 = ConsultarDatosDesafioMundoBosque($cod);
+	while ($consulta7 = mysqli_fetch_assoc($resultados7)) {
+
+		$desafio = $consulta7['desafio'];
+		$preguntas = $consulta7['preguntas'];
+		$correctas = $consulta7['correctas'];
+		switch ($desafio) {
 	 		case '1':
 	 				$desB = "CorrectBox";
 	 			break;
@@ -340,16 +388,22 @@
 	 	}
 	 	$table2 .= "<tr>";
 	 	$table2 .= "<td>$desB</td>";
-	 	$table2 .= "<td>$consulta7[preguntas]</td>";
-	 	$table2 .= "<td>$consulta7[correctas]</td>";
+	 	$table2 .= "<td>$preguntas</td>";
+	 	$table2 .= "<td>$correctas</td>";
 	 	$table2 .= "</tr>";
 	}
 
 
-//Recorrer la tabla resultado desafios e imprimir el deasifio, la cantidad de preguntas que se le hicieron y la cantidad de respuestas correctas en el mundo Cueva.			
-	$table3 = '';	
-	while ($consulta8 = mysqli_fetch_array($resultados8)) {
-		switch ($consulta8['desafio']) {
+//Ejecutar la funcion que recorre la tabla de desafios de la Cueva, para mostrar los datos en una tabla			
+	
+	$table3 = '';
+	$resultados8 = ConsultarDatosDesafioMundoCueva($cod);
+	while ($consulta8 = mysqli_fetch_assoc($resultados8)) {
+
+		$desafio = $consulta8['desafio'];
+		$preguntas = $consulta8['preguntas'];
+		$correctas = $consulta8['correctas'];
+		switch ($desafio) {
 	 		case '1':
 	 				$desC = "CorrectBox";
 	 			break;
@@ -377,16 +431,22 @@
 	 	}
 	 	$table3 .= "<tr>";
 	 	$table3 .= "<td>$desC</td>";
-	 	$table3 .= "<td>$consulta8[preguntas]</td>";
-	 	$table3 .= "<td>$consulta8[correctas]</td>";
+	 	$table3 .= "<td>$preguntas</td>";
+	 	$table3 .= "<td>$correctas</td>";
 	 	$table3 .= "</tr>";
 	}
 
-
-//Recorrer la tabla resultado desafios e imprimir el deasifio, la cantidad de preguntas que se le hicieron y la cantidad de respuestas correctas en el mundo Cueva.		
+//Ejecutar la funcion que recorre la tabla de desafios del Castillo, para mostrar los datos en una tabla	
+	
 	$table4 = '';
-	while ($consulta9 = mysqli_fetch_array($resultados9)) {
-		switch ($consulta9['desafio']) {
+	$resultados9 = ConsultarDatosDesafioMundoCastillo($cod);
+	while ($consulta9 = mysqli_fetch_assoc($resultados9)) {
+
+
+		$desafio = $consulta9['desafio'];
+		$preguntas = $consulta9['preguntas'];
+		$correctas = $consulta9['correctas'];
+		switch ($desafio) {
 	 		case '1':
 	 				$desCa = "CorrectBox";
 	 			break;
@@ -414,8 +474,8 @@
 	 	}
 	 	$table4 .= "<tr>";
 	 	$table4 .= "<td>$desCa</td>";
-	 	$table4 .= "<td>$consulta9[preguntas]</td>";
-	 	$table4 .= "<td>$consulta9[correctas]</td>";
+	 	$table4 .= "<td>$preguntas</td>";
+	 	$table4 .= "<td>$correctas</td>";
 	 	$table4 .= "</tr>";
 	}
 ?>
