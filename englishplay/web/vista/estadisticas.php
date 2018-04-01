@@ -1,7 +1,7 @@
 <?php 
 include("header.php");
-require('../conexionDB.php');
-include("php/sesion.php");
+require('../../conexionDB.php');
+include("../controlador/sesion.php");
 ?>
 	<body>
 		<section style="padding-top: 0rem; padding-bottom: 0rem; background-color: rgba(230,167,86,.9);">

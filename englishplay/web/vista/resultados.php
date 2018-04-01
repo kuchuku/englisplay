@@ -1,7 +1,7 @@
 <?php 
 include("header.php");
-require('../conexionDB.php');
-include("php/sesion.php");
+require('../../conexionDB.php');
+include("../controlador/sesion.php");
 ?>
 
 	<body>
