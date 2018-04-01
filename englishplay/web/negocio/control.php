@@ -1,15 +1,11 @@
 <?php 
 	include ('../../conexionDB.php');
+	include ('../datos/usuario.php');
 
 	$codigoEst = $_POST["codigo"];
-	
-	$consulta=mysqli_query($conexion,"SELECT codigoUsuario,contraseniaUsuario, tipoUsuario FROM usuario");
+		
 	//el mysql_fetch_array (9 devuelve los registros de la tabla usuarios)
-	while($filas=mysqli_fetch_array($consulta)){
-
-		$usuario=$filas['codigoUsuario'];
-		$pass=$filas['contraseniaUsuario'];
-		$tipoUsuario=$filas['tipoUsuario'];
+	
 
 	if ($email=$_POST['codigo']!==$usuario || $password=$_POST['password']!==$pass) {
 		$email=$_POST['codigo'];
