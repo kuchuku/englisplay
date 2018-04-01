@@ -77,19 +77,19 @@ include 'header.php';
 			  		<option value="5">Round 5
 				</select><br>
 
-				Theme: <input type="text" id="theme" size="100"><br>
-				Question: <input type="text" id="question" size="100"><br>
-				Answer 1: <input type="text" id="answer1">
+				Theme: <input type="text" id="theme" size="80%"><br>
+				Question: <input type="text" id="question" size="80%"><br>
+				Answer 1: <input type="text" id="answer1" size="40%">
 				<select id="answer1Bool">
 			 		<option value="false">False
 					<option value="true">True
 				</select><br>
-				Answer 2: <input type="text" id="answer2">
+				Answer 2: <input type="text" id="answer2" size="40%">
 				<select id="answer2Bool">
 			 		<option value="false">False
 					<option value="true">True
 				</select><br>
-				Answer 3: <input type="text" id="answer3">
+				Answer 3: <input type="text" id="answer3" size="40%">
 				<select id="answer3Bool">
 			 		<option value="false">False
 					<option value="true">True

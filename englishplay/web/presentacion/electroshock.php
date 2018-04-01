@@ -88,34 +88,34 @@ include 'header.php';
 			  		<option value="5">Round 5
 				</select><br>
 
-				Theme: <input type="text" id="theme" size="100"><br>
-				Question: <input type="text" id="question" size="100"><br>
-				Answer 1: <input type="text" id="answer1">
+				Theme: <input type="text" id="theme" size="80%"><br>
+				Question: <input type="text" id="question" size="80%"><br>
+				Answer 1: <input type="text" id="answer1" size="40%">
 				<select id="answerBool1">
 			 		<option value="false">False
 					<option value="true">True
 				</select><br>
-				Answer 2: <input type="text" id="answer2">
+				Answer 2: <input type="text" id="answer2" size="40%">
 				<select id="answerBool2">
 			 		<option value="false">False
 					<option value="true">True
 				</select><br>
-				Answer 3: <input type="text" id="answer3">
+				Answer 3: <input type="text" id="answer3" size="40%">
 				<select id="answerBool3">
 			 		<option value="false">False
 					<option value="true">True
 				</select><br>
-				Answer 4: <input type="text" id="answer4">
+				Answer 4: <input type="text" id="answer4" size="40%">
 				<select id="answerBool4">
 			 		<option value="false">False
 					<option value="true">True
 				</select><br>
-				Answer 5: <input type="text" id="answer5">
+				Answer 5: <input type="text" id="answer5" size="40%">
 				<select id="answerBool5">
 			 		<option value="false">False
 					<option value="true">True
 				</select><br>
-				Answer 6: <input type="text" id="answer6">
+				Answer 6: <input type="text" id="answer6" size="40%">
 				<select id="answerBool6">
 			 		<option value="false">False
 					<option value="true">True

@@ -74,15 +74,15 @@ include 'header.php';
 			  		<option value="5">Round 5
 				</select><br>
 
-				Theme: <input type="text" id="theme" size="100"><br>
-				Question: <input type="text" id="question" size="100"><br>
+				Theme: <input type="text" id="theme" size="80%"><br>
+				Question: <input type="text" id="question" size="80%"><br>
 				Phrase Type: <select id="phraseType">
 			 		<option value="false">False
 					<option value="true">True
 				</select><br>
-				Question Part 1: <input type="text" id="questionP1" size="50"><br>
-				Question Part 2: <input type="text" id="questionP2" size="50"><br>
-				Answer: <input type="text" id="answer"><br>
+				Question Part 1: <input type="text" id="questionP1" size="40%"><br>
+				Question Part 2: <input type="text" id="questionP2" size="40%"><br>
+				Answer: <input type="text" id="answer" size="40%"><br>
 				Contractions: <select id="contractions">
 			 		<option value="false">False
 					<option value="true">True
