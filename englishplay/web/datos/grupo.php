@@ -2,9 +2,9 @@
 
 	include('../../conexionDB.php');
 
-	function insertarGrupo($codigoDocente, $nombreGrupo) {
+	function insertarGrupo($codigoUsuario, $nombreGrupo) {
 		global $conexion;
-		$sql = "INSERT INTO grupo(codigoDocente, nombreGrupo) VALUES('$codigoDocente', '$nombreGrupo')";
+		$sql = "INSERT INTO grupo(codigoUsuario, nombreGrupo) VALUES('$codigoUsuario', '$nombreGrupo')";
 		mysqli_query($conexion, $sql);
 	}
 

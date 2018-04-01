@@ -2,6 +2,7 @@
 
 	include '../datos/grupo.php';
 	include '../datos/usuario.php';
+	include '../datos/estudiante.php';
 
 	session_start();
 	$codigo = $_SESSION["codEst"];

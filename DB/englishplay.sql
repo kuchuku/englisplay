@@ -110,16 +110,16 @@ INSERT INTO `estudiante` (`codigoUsuario`, `idGrupo`, `nickEstudiante`) VALUES
 -- Volcando estructura para tabla englishplay.grupo
 CREATE TABLE IF NOT EXISTS `grupo` (
   `idGrupo` int(11) NOT NULL AUTO_INCREMENT,
-  `codigoDocente` double DEFAULT NULL,
+  `codigoUsuario` double DEFAULT NULL,
   `nombreGrupo` varchar(50) NOT NULL,
   PRIMARY KEY (`idGrupo`),
-  KEY `Usuario_Grupo_codigoUsuario` (`codigoDocente`),
-  CONSTRAINT `Usuario_Grupo_codigoUsuario` FOREIGN KEY (`codigoDocente`) REFERENCES `usuario` (`codigoUsuario`)
+  KEY `Usuario_Grupo_codigoUsuario` (`codigoUsuario`),
+  CONSTRAINT `Usuario_Grupo_codigoUsuario` FOREIGN KEY (`codigoUsuario`) REFERENCES `usuario` (`codigoUsuario`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 -- Volcando datos para la tabla englishplay.grupo: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `grupo` DISABLE KEYS */;
-INSERT INTO `grupo` (`idGrupo`, `codigoDocente`, `nombreGrupo`) VALUES
+INSERT INTO `grupo` (`idGrupo`, `codigoUsuario`, `nombreGrupo`) VALUES
 	(1, 201255229, 'TG 1');
 /*!40000 ALTER TABLE `grupo` ENABLE KEYS */;
 
