@@ -1,5 +1,5 @@
 <?php
-	require ("../conexionDB.php");
+	require ("../../conexionDB.php");
 	include("header.php");
 			
 	session_start();
