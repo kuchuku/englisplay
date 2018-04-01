@@ -3,6 +3,7 @@
 	include('../../conexionDB.php');
 
 	function insertarUsuario($codigoUsuario, $nombreUsuario, $tipoUsuario) {
+		global $conexion;
 		$sql = "INSERT INTO usuario(codigoUsuario, nombreUsuario, tipoUsuario) VALUES('$codigoUsuario', '$nombreUsuario', '$tipoUsuario')";
 		mysqli_query($conexion, $sql);
 	}
@@ -14,6 +15,6 @@
 		$usuario=$filas['codigoUsuario'];
 		$pass=$filas['contraseniaUsuario'];
 		$tipoUsuario=$filas['tipoUsuario'];
-	}
+	}}
 
 ?>

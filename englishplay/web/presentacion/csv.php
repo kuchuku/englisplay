@@ -3,6 +3,8 @@
 	include '../datos/grupo.php';
 	include '../datos/usuario.php';
 
+	session_start();
+
 	$codigo = $_SESSION["codEst"];
 	$grupo = $_POST["group"];
 
