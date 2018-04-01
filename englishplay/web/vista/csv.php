@@ -2,7 +2,7 @@
 
 	include("header.php");
 
-	include '../conexionDB.php';
+	include '../../conexionDB.php';
 
 	$codigo = $_SESSION["codEst"];
 	$grupo = $_POST["group"];

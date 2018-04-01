@@ -12,7 +12,7 @@ include 'header.php';
 		var desafio = "Plataformas";
 
 		function cargarJson() {
-			$.getJSON("../juego/json/"+desafio+".json")
+			$.getJSON("../../juego/json/"+desafio+".json")
  			.done(function(json) {
  				jsonDesafio = json;
  				actualizarFormulario();

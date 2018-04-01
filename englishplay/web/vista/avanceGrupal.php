@@ -2,7 +2,7 @@
 
 include 'header.php';
 
-include '../conexionDB.php';
+include '../../conexionDB.php';
 
 $numPersonajesGuerrero = 0;
 $numPersonajesMago = 0;
