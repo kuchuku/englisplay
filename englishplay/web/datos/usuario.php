@@ -9,12 +9,9 @@
 	}
 
 	function consultarUsuario(){
-		$consulta=mysqli_query($conexion,"SELECT codigoUsuario,contraseniaUsuario, tipoUsuario FROM usuario");
-		while($filas=mysqli_fetch_array($consulta)){
-
-		$usuario=$filas['codigoUsuario'];
-		$pass=$filas['contraseniaUsuario'];
-		$tipoUsuario=$filas['tipoUsuario'];
-	}}
+		global $conexion;
+		$consulta = mysqli_query($conexion,"SELECT codigoUsuario,contraseniaUsuario, tipoUsuario FROM usuario");
+		return $consulta;
+	}
 
 ?>
