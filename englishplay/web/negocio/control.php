@@ -14,7 +14,7 @@
 	if ($email=$_POST['codigo']!==$usuario || $password=$_POST['password']!==$pass) {
 		$email=$_POST['codigo'];
 		?>
-		<form name="formulario" method="post" action="../login.php">
+		<form name="formulario" method="post" action="../presentacion/login.php">
 			<input type="hidden" name="codigo" value="<?php echo $email; ?>">
 		</form>
 		<script type="text/javascript">
@@ -35,7 +35,7 @@
 			$_SESSION["autenticado"] = true;
 			$_SESSION["codEst"] = $codigoEst;	 			
 			$_SESSION["usuario"] = $_POST['email'];
-			header("Location: ../vista/index.php");
+			header("Location: ../presentacion/index.php");
 		}
 	}			
  ?>
