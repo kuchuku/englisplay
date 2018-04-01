@@ -5,7 +5,7 @@ isset($_POST["codigo"]);
 	$email = $_POST["codigo"];
  ?>
  <section id="form">
- 	<form class="contact_form" action="../controlador/control.php" method="post">
+ 	<form class="contact_form" action="../negocio/control.php" method="post">
  		<ul>
  			<li>
  				<h2>Iniciar sesión</h2>
