@@ -25,7 +25,7 @@
 
 		if ($i >= 5 && $content[0] != '')
 		{
-			insertarUsuario($content[1], $content[2]);
+			insertarUsuario($content[1], $content[2], 0);
 			$sql 	= "INSERT INTO estudiante(codigoUsuario, idGrupo) VALUES('$content[1]', 1)";
 			mysqli_query($conexion, $sql);
 			$sql 	= "UPDATE estudiante SET idGrupo = '$last_id' WHERE codigoUsuario = '$content[1]'";
