@@ -1,7 +1,8 @@
 <?php 
 include("header.php");
 require('../../conexionDB.php');
-include("../controlador/sesion.php");
+include("../negocio/sesion.php");
+include("../negocio/pregunta.php");
 ?>
 
 	<body>
@@ -16,51 +17,10 @@ include("../controlador/sesion.php");
 	                <span style="display: block; font-size: 3rem;font-weight: 100;text-transform: uppercase;">Check your results</span>
 	              </h2>	
 				<br>
-				<?php  
-
-					$query ="SELECT * FROM pregunta WHERE test = ".$_POST['exam']." AND capitulo = ".$_POST['cap'];
-				 	//Get result
-				 	$results = mysqli_query($conexion,$query); 	
-				 	$_SESSION['score'] = 0;
-				 	$total = $results->num_rows;
-
-				 	while ($row = mysqli_fetch_array($results)) 
-				 	{
-				 	$idprg = $row['id'];
-				 	$preg = $row['pregunta'];
-				 	$selected_choice = $_POST['choice'.$row['id']]; 	
-				 	$num_pregunta;
-				 	$num_pregunta++;
-				    	if (!isset($_SESSION['score'])) {
-							$_SESSION['score'] = 0;
-						}
-				    	if ($_POST) 
-				    	{	    			
-						 	//Obtener la respuesta correcta
-						 	$query ="SELECT respuesta FROM preguntas WHERE id='$questionID'";
-						 	//Get result
-						 	$respuesta = mysqli_query($conexion,$query); 
-				 			$correct_choice = $row ['respuesta'];
-				 		}?>
-				 		<div style="text-align:left;"><?php		 		
-				 		echo '<div >';
-				 		echo '<span>'."(".$num_pregunta.")".'</span>'." ".'<span id="pregidform2">'.$preg.'</span>';
-				 		?>
-				 		<?php 
-				 		if ($correct_choice != $selected_choice) 
-				 		{				 	
-						 	//answer is incorrect				 	
-						 	echo '<br><span style="margin-left:2rem;">'."Wrong! your answer was : ".'</span>'.'<span style="color:#dc3545;">'.$selected_choice.'</span>'.'<br>';
-						 	echo '<span style="margin-left:2rem;">'." The correct answer is : ".'</span>'.'<span style="color:#28a745;">'.$correct_choice.'</span>'.'<br><br>';
-				 		}		
-				 		if ($correct_choice == $selected_choice) 
-				 		{
-						 	//answer is correct
-						 	$_SESSION['score']++;
-						 	echo '<br><span style="margin-left:2rem;">'."Congratulations! Your answer: ".'</span><span style="color:#28a745;">'.$selected_choice.'</span>'." is correct".'<br><br>';
-				 		}	
-				 	}
-				 echo '</div>';	
+				<?php 
+					$tipoExamen = $_POST['exam'];
+					$capExamen = $_POST['cap'];
+					questionsInBD($tipoExamen,$capExamen);				 		
 				?>	</div>	
 
 		
@@ -74,7 +34,7 @@ include("../controlador/sesion.php");
 	        var data = google.visualization.arrayToDataTable([
 	          ['Task', 'Hours per Day'],
 	          ['Aciertos', <?php echo $_SESSION['score']; ?> ],
-	          ['Fallos', <?php $fallos = $total - $_SESSION['score']; echo $fallos; ?> ]
+	          ['Fallos', <?php $fallos = 15 - $_SESSION['score']; echo $fallos; ?> ]
        		 ]);
 
 	        var options = {
@@ -92,14 +52,8 @@ include("../controlador/sesion.php");
 	</div>
 	</div>
 	<?php 
-		session_start();
-		 		//recibe el codigo del estudiante que inició sesión.
-		$cod = $_SESSION["codEst"];
-		$sql=  mysqli_query($conexion,"SELECT nombreUsuario FROM usuario WHERE codigoUsuario = '$cod'");	
-		$consulta = mysqli_fetch_array($sql);	
-		$nombre= $consulta[0];
-		$query= "INSERT INTO estadisticas (codEstudiante,nombreEstudiante,examen,tema,puntuacion) VALUES('".$cod."','".$nombre."','".$_POST['exam']."','".$_POST['cap']."','".$_SESSION['score']."')";
-		$estadisticas=  mysqli_query($conexion,$query);
+		$score =  $_SESSION['score'];
+		regExam($tipoExamen,$capExamen,$score);
 	 ?>
 </div>
 	</div>
