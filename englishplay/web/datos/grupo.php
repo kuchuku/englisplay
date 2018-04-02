@@ -8,4 +8,10 @@
 		mysqli_query($conexion, $sql);
 	}
 
+	function consultarGruposPorUsuario($codigoUsuario) {
+		global $conexion;
+		$sql = "SELECT idGrupo, nombreGrupo FROM grupo WHERE codigoUsuario = '$codigoUsuario'";
+		return mysqli_query($conexion, $sql);
+	}
+
 ?>

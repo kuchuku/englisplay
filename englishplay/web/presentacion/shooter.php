@@ -152,7 +152,7 @@ include 'header.php';
 				jsonDesafio.allRoundData[mundo-1].questions5[0].completeFalse9 = document.getElementById("wrongA9").value;
     		}
 
-			$.post("saveJson.php", {json : JSON.stringify(jsonDesafio), archivo : desafio+".json"});
+			$.post("../negocio/saveJson.php", {json : JSON.stringify(jsonDesafio), archivo : desafio+".json"});
 			alert("Saved");
 		} 
 
@@ -166,6 +166,9 @@ include 'header.php';
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <div class="cta text-center rounded" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 
+				<h2 class="section-heading mb-5">
+	            	<span class="section-heading-lower">Edit Shooter</span>
+	            </h2>
 				<select id="mundo" onchange="actualizarFormulario()">
 			 		<option value="1" selected="selected">Village
 					<option value="2">Forest
@@ -191,7 +194,7 @@ include 'header.php';
 				Wrong Answer: <input type="text" id="wrongA6" size="40%"><br>
 				Wrong Answer: <input type="text" id="wrongA7" size="40%"><br>
 				Wrong Answer: <input type="text" id="wrongA8" size="40%"><br>
-				Wrong Answer: <input type="text" id="wrongA9" size="40%"><br>
+				Wrong Answer: <input type="text" id="wrongA9" size="40%"><br><br>
 
 				<button onclick="guardarJson()">Save Changes</button>
 	 		</div>

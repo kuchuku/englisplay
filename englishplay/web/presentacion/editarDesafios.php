@@ -14,7 +14,10 @@ include 'header.php';
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-            <div class="cta text-center rounded" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 
+            <div class="cta text-center rounded" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" >
+            	<h2 class="section-heading mb-5">
+	            	<span class="section-heading-lower">Select the challenge:</span>
+	            </h2>
 				<a class='nav-link text-uppercase text-expanded' href='correctBox.php'>CorrectBox</a>
 				<a class='nav-link text-uppercase text-expanded' href='combat.php'>Combat</a>
 				<a class='nav-link text-uppercase text-expanded' href='plataformas.php'>Plataformas</a>

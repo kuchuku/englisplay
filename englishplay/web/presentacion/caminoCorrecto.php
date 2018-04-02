@@ -84,10 +84,10 @@ include 'header.php';
     			jsonCastle.englishValues[ronda-1] = document.getElementById("english").value;
     		}
 
-			$.post("saveJson.php", {json : JSON.stringify(jsonVillage), archivo : "Village.json"});
-			$.post("saveJson.php", {json : JSON.stringify(jsonForest), archivo : "Forest.json"});
-			$.post("saveJson.php", {json : JSON.stringify(jsonCave), archivo : "Cave.json"});
-			$.post("saveJson.php", {json : JSON.stringify(jsonCastle), archivo : "Castle.json"});
+			$.post("../negocio/saveJson.php", {json : JSON.stringify(jsonVillage), archivo : "Village.json"});
+			$.post("../negocio/saveJson.php", {json : JSON.stringify(jsonForest), archivo : "Forest.json"});
+			$.post("../negocio/saveJson.php", {json : JSON.stringify(jsonCave), archivo : "Cave.json"});
+			$.post("../negocio/saveJson.php", {json : JSON.stringify(jsonCastle), archivo : "Castle.json"});
 			
 			alert("Saved");
 		}   
@@ -102,7 +102,10 @@ include 'header.php';
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <div class="cta text-center rounded" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 
-            	<select id="mundo" onchange="actualizarFormulario()">
+            	<h2 class="section-heading mb-5">
+                    <span class="section-heading-lower">Edit CaminoCorrecto</span>
+                </h2>
+                <select id="mundo" onchange="actualizarFormulario()">
              		<option value="1" selected="selected">Village
             		<option value="2">Forest
              		<option value="3">Cave
@@ -119,7 +122,8 @@ include 'header.php';
 
             	Theme: <input type="text" id="theme" size="80%"><br>
             	Spanish: <input type="text" id="spanish" size="40%"><br>
-            	English: <input type="text" id="english" size="40%"><br>
+            	English: <input type="text" id="english" size="40%"><br><br>
+                
             	<button onclick="guardarJson()">Save Changes</button>
             </div>
           </div>

@@ -4,6 +4,8 @@ include 'header.php';
 
 include '../../conexionDB.php';
 
+$idGrupo = $_POST["grupo"];
+
 $numPersonajesGuerrero = 0;
 $numPersonajesMago = 0;
 $numPersonajesArquero = 0;
@@ -15,7 +17,7 @@ $numNiveles16a20 = 0;
 $numNiveles21a25 = 0;
 $numNiveles26a30 = 0;
 
-$sql = "SELECT rolPersonaje, nivelPersonaje FROM personaje";
+$sql = "SELECT rolPersonaje, nivelPersonaje FROM personaje, estudiante WHERE estudiante.idGrupo = '$idGrupo' AND estudiante.codigoUsuario = personaje.codigoEstudiante";
 $resultado = mysqli_query($conexion, $sql);
 while ($row = mysqli_fetch_assoc($resultado))
 {
@@ -61,14 +63,12 @@ while ($row = mysqli_fetch_assoc($resultado))
 	}
 }
 
-$
-
 $numAvance1 = 0;
 $numAvance2 = 0;
 $numAvance3 = 0;
 $numAvance4 = 0;
 
-$sql = "SELECT mundoAvance FROM avance";
+$sql = "SELECT mundoAvance FROM avance, estudiante WHERE estudiante.idGrupo = '$idGrupo' AND estudiante.codigoUsuario = avance.codigoEstudiante";
 $resultado = mysqli_query($conexion, $sql);
 while ($row = mysqli_fetch_assoc($resultado))
 {
@@ -95,7 +95,7 @@ while ($row = mysqli_fetch_assoc($resultado))
 $numPreguntas;
 $numCorrectas;
 
-$sql = "SELECT preguntas, correctas FROM resultadoDesafio";
+$sql = "SELECT preguntas, correctas FROM resultadoDesafio, estudiante WHERE estudiante.idGrupo = '$idGrupo' AND estudiante.codigoUsuario = resultadoDesafio.codigoEstudiante";
 $resultado = mysqli_query($conexion, $sql);
 while ($row = mysqli_fetch_assoc($resultado))
 {
@@ -125,90 +125,84 @@ while ($row = mysqli_fetch_assoc($resultado))
       // draws it.
       function drawCharts() {
 
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Create the data table.
-        var dataPersonajes = new google.visualization.DataTable();
-        dataPersonajes.addColumn('string', 'Topping');
-        dataPersonajes.addColumn('number', 'Slices');
-        dataPersonajes.addRows([
-          ['Guerrero', <?php echo $numPersonajesGuerrero ?>],
-          ['Mago', <?php echo $numPersonajesArquero ?>],
-          ['Arquero', <?php echo $numPersonajesMago ?>]
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Warrior', <?php echo $numPersonajesGuerrero ?>],
+          ['Magician', <?php echo $numPersonajesArquero ?>],
+          ['Archer', <?php echo $numPersonajesMago ?>]
         ]);
-
         // Set chart options
-        var optionsPersonajes = {'title':'Personajes',
+        var options = {'title':'Role',
                        'width':350,
                        'height':300,
                        'backgroundColor': 'transparent'};
-
         // Instantiate and draw our chart, passing in some options.
-        var chartPersonajes = new google.visualization.PieChart(document.getElementById('chart1_div'));
-        chartPersonajes.draw(dataPersonajes, optionsPersonajes);
+        var chart = new google.visualization.PieChart(document.getElementById('divChart1'));
+        chart.draw(data, options);
 
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Create the data table.
-        var dataNiveles = new google.visualization.DataTable();
-        dataNiveles.addColumn('string', 'Topping');
-        dataNiveles.addColumn('number', 'Slices');
-        dataNiveles.addRows([
-          ['Nivel 1 a 5', <?php echo $numNiveles1a5 ?>],
-          ['Nivel 6 a 10', <?php echo $numNiveles6a10 ?>],
-          ['Nivel 11 a 15', <?php echo $numNiveles11a15 ?>],
-          ['Nivel 16 a 20', <?php echo $numNiveles16a20 ?>],
-          ['Nivel 21 a 25', <?php echo $numNiveles21a25 ?>],
-          ['Nivel 26 a 30', <?php echo $numNiveles26a30 ?>]
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Level 1 to 5', <?php echo $numNiveles1a5 ?>],
+          ['Level 6 to 10', <?php echo $numNiveles6a10 ?>],
+          ['Level 11 to 15', <?php echo $numNiveles11a15 ?>],
+          ['Level 16 to 20', <?php echo $numNiveles16a20 ?>],
+          ['Level 21 to 25', <?php echo $numNiveles21a25 ?>],
+          ['Level 26 to 30', <?php echo $numNiveles26a30 ?>]
         ]);
-
         // Set chart options
-        var optionsNiveles = {'title':'Niveles',
+        var options = {'title':'Level',
                        'width':350,
                        'height':300,
                        'backgroundColor': 'transparent'};
-
         // Instantiate and draw our chart, passing in some options.
-        var chartNiveles = new google.visualization.PieChart(document.getElementById('chart2_div'));
-        chartNiveles.draw(dataNiveles, optionsNiveles);
+        var chart = new google.visualization.PieChart(document.getElementById('divChart2'));
+        chart.draw(data, options);
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
         // Create the data table.
-        var dataNiveles = new google.visualization.DataTable();
-        dataNiveles.addColumn('string', 'Topping');
-        dataNiveles.addColumn('number', 'Slices');
-        dataNiveles.addRows([
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
           ['Village', <?php echo $numAvance1 ?>],
           ['Forest', <?php echo $numAvance2 ?>],
           ['Cave', <?php echo $numAvance3 ?>],
           ['Castle', <?php echo $numAvance4 ?>]
         ]);
-
         // Set chart options
-        var optionsNiveles = {'title':'Avance',
+        var options = {'title':'Current World',
                        'width':350,
                        'height':300,
                        'backgroundColor': 'transparent'};
-
         // Instantiate and draw our chart, passing in some options.
-        var chartNiveles = new google.visualization.PieChart(document.getElementById('chart3_div'));
-        chartNiveles.draw(dataNiveles, optionsNiveles);
+        var chart = new google.visualization.PieChart(document.getElementById('divChart3'));
+        chart.draw(data, options);
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
         // Create the data table.
-        var dataNiveles = new google.visualization.DataTable();
-        dataNiveles.addColumn('string', 'Topping');
-        dataNiveles.addColumn('number', 'Slices');
-        dataNiveles.addRows([
-          ['Village', <?php echo $numAvance1 ?>],
-          ['Forest', <?php echo $numAvance2 ?>],
-          ['Cave', <?php echo $numAvance3 ?>],
-          ['Castle', <?php echo $numAvance4 ?>]
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Correct Answers', <?php echo $numCorrectas ?>],
+          ['Wrong Answers', <?php echo $numPreguntas - $numCorrectas ?>]
         ]);
-
         // Set chart options
-        var optionsNiveles = {'title':'Avance',
+        var options = {'title':'All Challenges',
                        'width':350,
                        'height':300,
                        'backgroundColor': 'transparent'};
-
         // Instantiate and draw our chart, passing in some options.
-        var chartNiveles = new google.visualization.PieChart(document.getElementById('chart4_div'));
-        chartNiveles.draw(dataNiveles, optionsNiveles);
+        var chart = new google.visualization.PieChart(document.getElementById('divChart4'));
+        chart.draw(data, options);
 
       }
     </script>
@@ -220,10 +214,10 @@ while ($row = mysqli_fetch_assoc($resultado))
         <div class="row">
           <div class="col-xl-9 mx-auto">
             <div class="cta text-center rounded" id="contenedor" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 
-              	<div id="chart1_div" class="divInterno"></div>
-              	<div id="chart2_div" class="divInterno"></div>
-                <div id="chart3_div" class="divInterno"></div>
-                <div id="chart4_div" class="divInterno"></div>
+              	<div id="divChart1" class="divInterno"></div>
+              	<div id="divChart2" class="divInterno"></div>
+                <div id="divChart3" class="divInterno"></div>
+                <div id="divChart4" class="divInterno"></div>
             </div>
           </div>
         </div>
