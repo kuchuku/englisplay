@@ -311,7 +311,7 @@
 //Ejecutar la funcion que recorre la tabla de desafios de la Aldea, para mostrar los datos en una tabla.
 	
 	$table1 = '';
-	$resultados6 = ConsultarDatosDesafioMundoAldea($cod);
+	$resultados6 = ConsultarDatosDesafioMundos($cod, 1);
 	while ($consulta6 = mysqli_fetch_assoc($resultados6)) {
 
 		$desafio = $consulta6['desafio'];
@@ -354,7 +354,7 @@
 //Ejecutar la funcion que recorre la tabla de desafios del Bosque, para mostrar los datos en una tabla			
 	
 	$table2 = '';
-	$resultados7 = ConsultarDatosDesafioMundoBosque($cod);
+	$resultados7 = ConsultarDatosDesafioMundos($cod, 2);
 	while ($consulta7 = mysqli_fetch_assoc($resultados7)) {
 
 		$desafio = $consulta7['desafio'];
@@ -397,7 +397,7 @@
 //Ejecutar la funcion que recorre la tabla de desafios de la Cueva, para mostrar los datos en una tabla			
 	
 	$table3 = '';
-	$resultados8 = ConsultarDatosDesafioMundoCueva($cod);
+	$resultados8 = ConsultarDatosDesafioMundos($cod, 3);
 	while ($consulta8 = mysqli_fetch_assoc($resultados8)) {
 
 		$desafio = $consulta8['desafio'];
@@ -439,7 +439,7 @@
 //Ejecutar la funcion que recorre la tabla de desafios del Castillo, para mostrar los datos en una tabla	
 	
 	$table4 = '';
-	$resultados9 = ConsultarDatosDesafioMundoCastillo($cod);
+	$resultados9 = ConsultarDatosDesafioMundos($cod, 4);
 	while ($consulta9 = mysqli_fetch_assoc($resultados9)) {
 
 
