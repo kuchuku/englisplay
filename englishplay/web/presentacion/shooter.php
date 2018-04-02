@@ -181,17 +181,17 @@ include 'header.php';
 			  		<option value="5">Round 5
 				</select><br>
 
-				Sentence: <input type="text" id="sentence" size="100"><br>
-				Correct Answer: <input type="text" id="corectA"><br>
-				Wrong Answer: <input type="text" id="wrongA1"><br>
-				Wrong Answer: <input type="text" id="wrongA2"><br>
-				Wrong Answer: <input type="text" id="wrongA3"><br>
-				Wrong Answer: <input type="text" id="wrongA4"><br>
-				Wrong Answer: <input type="text" id="wrongA5"><br>
-				Wrong Answer: <input type="text" id="wrongA6"><br>
-				Wrong Answer: <input type="text" id="wrongA7"><br>
-				Wrong Answer: <input type="text" id="wrongA8"><br>
-				Wrong Answer: <input type="text" id="wrongA9"><br>
+				Sentence: <input type="text" id="sentence" size="80%"><br>
+				Correct Answer: <input type="text" id="corectA" size="40%"><br>
+				Wrong Answer: <input type="text" id="wrongA1" size="40%"><br>
+				Wrong Answer: <input type="text" id="wrongA2" size="40%"><br>
+				Wrong Answer: <input type="text" id="wrongA3" size="40%"><br>
+				Wrong Answer: <input type="text" id="wrongA4" size="40%"><br>
+				Wrong Answer: <input type="text" id="wrongA5" size="40%"><br>
+				Wrong Answer: <input type="text" id="wrongA6" size="40%"><br>
+				Wrong Answer: <input type="text" id="wrongA7" size="40%"><br>
+				Wrong Answer: <input type="text" id="wrongA8" size="40%"><br>
+				Wrong Answer: <input type="text" id="wrongA9" size="40%"><br>
 
 				<button onclick="guardarJson()">Save Changes</button>
 	 		</div>

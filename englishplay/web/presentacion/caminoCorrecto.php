@@ -117,9 +117,9 @@ include 'header.php';
               		<option value="5">Round 5
             	</select><br>
 
-            	Theme: <input type="text" id="theme" size="100"><br>
-            	Spanish: <input type="text" id="spanish" size="75"><br>
-            	English: <input type="text" id="english" size="75"><br>
+            	Theme: <input type="text" id="theme" size="80%"><br>
+            	Spanish: <input type="text" id="spanish" size="40%"><br>
+            	English: <input type="text" id="english" size="40%"><br>
             	<button onclick="guardarJson()">Save Changes</button>
             </div>
           </div>

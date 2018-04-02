@@ -71,15 +71,15 @@ include 'header.php';
 			  		<option value="4">Castle
 				</select><br>
 
-				Phrase 1: <input type="text" id="phrase1" size="80">
-				Word 1: <input type="text" id="word1"><br>
-				Phrase 2: <input type="text" id="phrase2" size="80">
-				Word 2: <input type="text" id="word2"><br>
-				Phrase 3: <input type="text" id="phrase3" size="80">
-				Word 3: <input type="text" id="word3"><br>
-				Phrase 4: <input type="text" id="phrase4" size="80">
-				Word 4: <input type="text" id="word4"><br>
-				Phrase 5: <input type="text" id="phrase5" size="80">
+				Phrase 1: <input type="text" id="phrase1" size="80%">
+				Word 1: <input type="text" id="word1" size="40%"><br>
+				Phrase 2: <input type="text" id="phrase2" size="80%">
+				Word 2: <input type="text" id="word2" size="40%"><br>
+				Phrase 3: <input type="text" id="phrase3" size="80%">
+				Word 3: <input type="text" id="word3" size="40%"><br>
+				Phrase 4: <input type="text" id="phrase4" size="80%">
+				Word 4: <input type="text" id="word4" size="40%"><br>
+				Phrase 5: <input type="text" id="phrase5" size="80%">
 				Word 5: <input type="text" id="word5"><br>
 
 				<button onclick="guardarJson()">Save Changes</button>

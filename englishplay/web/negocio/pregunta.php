@@ -28,5 +28,48 @@ function preguntasExamen($consulta){
 						';	
 					} 
 }
-
+function questionsInBD($tipoExamen, $capExamen){
+	$pregExamen = pregBD ($tipoExamen, $capExamen);
+	checkAnswers($pregExamen);
+}
+function checkAnswers($pregExamen){
+	$results = $pregExamen;
+	$total = $results->num_rows;
+	$_SESSION['score'] = 0;	
+	while ($row = mysqli_fetch_array($results)) 
+	 	{
+	 	$idprg = $row['id'];
+	 	$preg = $row['pregunta'];
+	 	$selected_choice = $_POST['choice'.$row['id']]; 	
+	 	$num_pregunta;
+	 	$num_pregunta++;
+	    	if (!isset($_SESSION['score'])) {
+				$_SESSION['score'] = 0;
+			}
+	    	if ($_POST) 
+	    	{	    			
+	    		checkAns($idprg);
+	 			$correct_choice = $row ['respuesta'];
+	 		}
+	 		echo '<div style="text-align:left;">';		 		
+	 		echo '<div >';
+	 		echo '<span>'."(".$num_pregunta.")".'</span>'." ".'<span id="pregidform2">'.$preg.'</span>';
+	 		if ($correct_choice != $selected_choice) 
+	 		{				 	
+			 	//answer is incorrect				 	
+			 	echo '<br><span style="margin-left:2rem;">'."Wrong! your answer was : ".'</span>'.'<span style="color:#dc3545;">'.$selected_choice.'</span>'.'<br>';
+			 	echo '<span style="margin-left:2rem;">'." The correct answer is : ".'</span>'.'<span style="color:#28a745;">'.$correct_choice.'</span>'.'<br><br>';
+	 		}		
+	 		if ($correct_choice == $selected_choice) 
+	 		{
+			 	//answer is correct
+			 	$_SESSION['score']++;
+			 	echo '<br><span style="margin-left:2rem;">'."Congratulations! Your answer: ".'</span><span style="color:#28a745;">'.$selected_choice.'</span>'." is correct".'<br><br>';
+	 		}	
+	 	}
+	 echo '</div>';	
+}
+function regExam($tipoExamen, $capExamen,$score){
+	registrarScore($tipoExamen,$capExamen,$score);
+}
 ?>
