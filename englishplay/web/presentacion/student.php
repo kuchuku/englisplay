@@ -1,5 +1,17 @@
 <?php 
+
+@$codEstudiante = $_POST["estudiante"];
+
+if($codEstudiante != null) {
+	$cod = $codEstudiante;
+}else{
+	session_start();	
+	$cod = $_SESSION["codEst"];
+}
+
+
 include("../negocio/estudiante.php");
+
 ?>
 <head>	
  			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>

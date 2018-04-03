@@ -20,12 +20,10 @@ $codigousuario = $_SESSION["codEst"];
           <div class="col-xl-9 mx-auto">
             <div class="cta text-center rounded" id="contenedor" style="background-color: rgba(255,255,255,.85);    position: relative;  padding: 3rem;  margin: .5rem;" > 
               <h2 class="section-heading mb-5">
-                    <span class="section-heading-lower">Select the group</span>
+                    <span class="section-heading-lower">Write the code</span>
               </h2>
-              <form enctype="multipart/form-data" action="avanceGrupal.php" method="POST">
-                <select name="grupo">
-                  <?php echo generarListadoGrupos($codigousuario) ?>
-                </select><br><br>
+              <form enctype="multipart/form-data" action="student.php" method="POST"><br>
+                Student Code: <input type="text" name="estudiante" required="true"><br><br><br>
                 <input type="submit" value="Statistics" />
               </form>
             </div>

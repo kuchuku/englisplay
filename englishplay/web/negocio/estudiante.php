@@ -8,11 +8,6 @@
 	include ("../datos/desafios.php");
 
 
-//recibe el codigo del estudiante que inició sesión.
-	
-	session_start();	
-	$cod = $_SESSION["codEst"];
-
 //información del estudiante
 	
 	$nick = consultarNickEstudiante($cod);

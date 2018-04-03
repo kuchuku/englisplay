@@ -22,10 +22,10 @@ $codigousuario = $_SESSION["codEst"];
               <h2 class="section-heading mb-5">
                     <span class="section-heading-lower">Select the group</span>
               </h2>
-              <form enctype="multipart/form-data" action="avanceGrupal.php" method="POST">
-                <select name="grupo">
+              <form enctype="multipart/form-data" action="avanceGrupal.php" method="POST"><br>
+                Group: <select name="grupo">
                   <?php echo generarListadoGrupos($codigousuario) ?>
-                </select><br><br>
+                </select><br><br><br>
                 <input type="submit" value="Statistics" />
               </form>
             </div>
