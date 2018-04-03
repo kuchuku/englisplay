@@ -23,7 +23,7 @@ $codigousuario = $_SESSION["codEst"];
                     <span class="section-heading-lower">Write the code</span>
               </h2>
               <form enctype="multipart/form-data" action="student.php" method="POST"><br>
-                Student Code: <input type="text" name="estudiante" required="true"><br><br><br>
+                Student Code: <input type="text" name="estudiante" required="true" autofocus><br><br><br>
                 <input type="submit" value="Statistics" />
               </form>
             </div>
