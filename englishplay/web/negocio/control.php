@@ -12,7 +12,7 @@
 		$pass=$filas['contraseniaUsuario'];
 		$tipoUsuario=$filas['tipoUsuario'];
 
-	if ($email=$_POST['codigo']!==$usuario || $password=$_POST['password']!==$pass) {
+	if ($email=$_POST['codigo']!==$usuario || $password=md5($_POST['password'])!==$pass) {
 		$email=$_POST['codigo'];
 		?>
 		<form name="formulario" method="post" action="../presentacion/login.php">
