@@ -3,7 +3,10 @@
 	include '../conexionDB.php';
 
 	$txtCodigo		= $_GET['txtCodigo'];
+
 	$txtContrasenia	= $_GET['txtContrasenia'];
+	$txtContrasenia = md5($txtContrasenia);
+
 	$txtNick		= $_GET['txtNick'];
 
 	if(!$conexion->connect_errno) {

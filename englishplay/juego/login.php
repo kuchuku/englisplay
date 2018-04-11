@@ -3,7 +3,9 @@
 	include '../conexionDB.php';
 
 	$txtCodigo		= $_GET['txtCodigo'];
+	
 	$txtContrasenia	= $_GET['txtContrasenia'];
+	$txtContrasenia = md5($txtContrasenia);
 
 	if(!$conexion->connect_errno) {
 		$sql 		= "SELECT nombreUsuario FROM usuario WHERE codigoUsuario = '$txtCodigo' AND contraseniaUsuario = '$txtContrasenia'";
