@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes" ?>
 <DBMODEL Version="4.0">
 <SETTINGS>
-<GLOBALSETTINGS ModelName="englishplay" IDModel="0" IDVersion="0" VersionStr="1.0.0.0" Comments="" UseVersionHistroy="1" AutoIncVersion="1" DatabaseType="MySQL" ZoomFac="100.00" XPos="539" YPos="120" DefaultDataType="5" DefaultTablePrefix="0" DefSaveDBConn="" DefSyncDBConn="" DefQueryDBConn="" Printer="" HPageCount="4.0" PageAspectRatio="1.440892512336408" PageOrientation="1" PageFormat="A4 (210x297 mm, 8.26x11.7 inches)" SelectedPages="" UsePositionGrid="0" PositionGridX="20" PositionGridY="20" TableNameInRefs="1" DefaultTableType="0" ActivateRefDefForNewRelations="1" FKPrefix="" FKPostfix="" CreateFKRefDefIndex="1" DBQuoteCharacter="`" CreateSQLforLinkedObjects="0" DefModelFont="Tahoma" CanvasWidth="4096" CanvasHeight="2842" />
+<GLOBALSETTINGS ModelName="englishplay" IDModel="0" IDVersion="0" VersionStr="1.0.0.0" Comments="" UseVersionHistroy="1" AutoIncVersion="1" DatabaseType="MySQL" ZoomFac="100.00" XPos="0" YPos="72" DefaultDataType="5" DefaultTablePrefix="0" DefSaveDBConn="" DefSyncDBConn="" DefQueryDBConn="" Printer="" HPageCount="4.0" PageAspectRatio="1.440892512336408" PageOrientation="1" PageFormat="A4 (210x297 mm, 8.26x11.7 inches)" SelectedPages="" UsePositionGrid="0" PositionGridX="20" PositionGridY="20" TableNameInRefs="1" DefaultTableType="0" ActivateRefDefForNewRelations="1" FKPrefix="" FKPostfix="" CreateFKRefDefIndex="1" DBQuoteCharacter="`" CreateSQLforLinkedObjects="0" DefModelFont="Tahoma" CanvasWidth="4096" CanvasHeight="2842" />
 <DATATYPEGROUPS>
 <DATATYPEGROUP Name="Numeric Types" Icon="1" />
 <DATATYPEGROUP Name="Date and Time Types" Icon="2" />
@@ -260,9 +260,14 @@
 <REGIONS>
 </REGIONS>
 <TABLES>
-<TABLE ID="1000" Tablename="Estudiante" PrevTableName="Table_01" XPos="420" YPos="338" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="2" >
+<TABLE ID="1000" Tablename="Estudiante" PrevTableName="Table_01" XPos="459" YPos="304" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="2" >
 <COLUMNS>
-<COLUMN ID="1357" ColName="Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1420" ColName="Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1448" ColName="Grupo_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
@@ -293,26 +298,27 @@
 <RELATION_END ID="1356" />
 </RELATIONS_END>
 <INDICES>
-<INDEX ID="1359" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEX ID="1422" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1357" LengthParam="0" />
+<INDEXCOLUMN idColumn="1420" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 <INDEX ID="1225" IndexName="Estudiante_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1223">
 <INDEXCOLUMNS>
 <INDEXCOLUMN idColumn="1224" LengthParam="0" />
+<INDEXCOLUMN idColumn="1448" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1358" IndexName="Estudiante_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1356">
+<INDEX ID="1421" IndexName="Estudiante_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1356">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1357" LengthParam="0" />
+<INDEXCOLUMN idColumn="1420" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1011" Tablename="Checkpoint" PrevTableName="Table_02" XPos="871" YPos="769" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="3" >
+<TABLE ID="1011" Tablename="Checkpoint" PrevTableName="Table_02" XPos="878" YPos="698" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="3" >
 <COLUMNS>
-<COLUMN ID="1360" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1424" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
@@ -432,19 +438,19 @@
 <RELATION_END ID="1013" />
 </RELATIONS_END>
 <INDICES>
-<INDEX ID="1372" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEX ID="1431" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1360" LengthParam="0" />
+<INDEXCOLUMN idColumn="1424" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1361" IndexName="Checkpoint_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1013">
+<INDEX ID="1449" IndexName="Checkpoint_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1013">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1360" LengthParam="0" />
+<INDEXCOLUMN idColumn="1424" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1037" Tablename="Objeto" PrevTableName="Table_05" XPos="48" YPos="526" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="9" >
+<TABLE ID="1037" Tablename="Objeto" PrevTableName="Table_05" XPos="108" YPos="526" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="9" >
 <COLUMNS>
 <COLUMN ID="1039" ColName="idObjeto" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -474,7 +480,7 @@
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1044" Tablename="ResultadoTest" PrevTableName="Table_06" XPos="94" YPos="807" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="11" >
+<TABLE ID="1044" Tablename="ResultadoTest" PrevTableName="Table_06" XPos="33" YPos="655" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="11" >
 <COLUMNS>
 <COLUMN ID="1047" ColName="idResultadoTest" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -482,7 +488,12 @@
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1362" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1425" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1476" ColName="Tema_idTema" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
@@ -508,28 +519,29 @@
 </COLUMNS>
 <RELATIONS_END>
 <RELATION_END ID="1277" />
+<RELATION_END ID="1475" />
 </RELATIONS_END>
 <INDICES>
 <INDEX ID="1048" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
 <INDEXCOLUMN idColumn="1047" LengthParam="0" />
-<INDEXCOLUMN idColumn="1362" LengthParam="0" />
+<INDEXCOLUMN idColumn="1425" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1363" IndexName="ResultadoTest_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1277">
+<INDEX ID="1450" IndexName="ResultadoTest_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1277">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1362" LengthParam="0" />
+<INDEXCOLUMN idColumn="1425" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1477" IndexName="ResultadoTest_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1475">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1476" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1056" Tablename="ResultadoDesafio" PrevTableName="Table_07" XPos="985" YPos="171" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="13" >
+<TABLE ID="1056" Tablename="ResultadoDesafio" PrevTableName="Table_07" XPos="985" YPos="128" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="13" >
 <COLUMNS>
-<COLUMN ID="1381" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
-<OPTIONSELECTED>
-<OPTIONSELECT Value="0" />
-</OPTIONSELECTED>
-</COLUMN>
 <COLUMN ID="1064" ColName="mundo" PrevColName="mundoDesafio" Pos="2" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
@@ -539,6 +551,11 @@
 <COLUMN ID="1067" ColName="desafio" PrevColName="idDesafio" Pos="5" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1426" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
@@ -561,21 +578,21 @@
 <INDICES>
 <INDEX ID="1059" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1381" LengthParam="0" />
 <INDEXCOLUMN idColumn="1064" LengthParam="0" />
 <INDEXCOLUMN idColumn="1067" LengthParam="0" />
+<INDEXCOLUMN idColumn="1426" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1382" IndexName="ResultadoDesafio_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1380">
+<INDEX ID="1451" IndexName="ResultadoDesafio_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1380">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1381" LengthParam="0" />
+<INDEXCOLUMN idColumn="1426" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1068" Tablename="Avance" PrevTableName="Table_08" XPos="917" YPos="637" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="15" >
+<TABLE ID="1068" Tablename="Avance" PrevTableName="Table_08" XPos="952" YPos="570" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="15" >
 <COLUMNS>
-<COLUMN ID="1364" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1427" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
@@ -597,21 +614,21 @@
 <RELATION_END ID="1070" />
 </RELATIONS_END>
 <INDICES>
-<INDEX ID="1373" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEX ID="1432" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1364" LengthParam="0" />
+<INDEXCOLUMN idColumn="1427" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1365" IndexName="Avance_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1070">
+<INDEX ID="1452" IndexName="Avance_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1070">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1364" LengthParam="0" />
+<INDEXCOLUMN idColumn="1427" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1077" Tablename="Personaje" PrevTableName="Table_09" XPos="989" YPos="365" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="17" >
+<TABLE ID="1077" Tablename="Personaje" PrevTableName="Table_09" XPos="1008" YPos="300" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="17" >
 <COLUMNS>
-<COLUMN ID="1366" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1428" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
@@ -685,23 +702,28 @@
 <RELATION_END ID="1079" />
 </RELATIONS_END>
 <INDICES>
-<INDEX ID="1374" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEX ID="1433" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1366" LengthParam="0" />
+<INDEXCOLUMN idColumn="1428" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1367" IndexName="Personaje_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1079">
+<INDEX ID="1453" IndexName="Personaje_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1079">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1366" LengthParam="0" />
+<INDEXCOLUMN idColumn="1428" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1091" Tablename="Grupo" PrevTableName="Table_10" XPos="557" YPos="741" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="19" >
+<TABLE ID="1091" Tablename="Grupo" PrevTableName="Table_10" XPos="185" YPos="103" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="19" >
 <COLUMNS>
 <COLUMN ID="1094" ColName="idGrupo" PrevColName="" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1445" ColName="Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
@@ -714,15 +736,24 @@
 <RELATIONS_START>
 <RELATION_START ID="1223" />
 </RELATIONS_START>
+<RELATIONS_END>
+<RELATION_END ID="1444" />
+</RELATIONS_END>
 <INDICES>
 <INDEX ID="1095" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
 <INDEXCOLUMN idColumn="1094" LengthParam="0" />
+<INDEXCOLUMN idColumn="1445" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
+<INDEX ID="1446" IndexName="Grupo_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1444">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1445" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1235" Tablename="Compra" PrevTableName="Table_11" XPos="7" YPos="653" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" >
+<TABLE ID="1235" Tablename="Compra" PrevTableName="Table_11" XPos="54" YPos="260" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" >
 <COLUMNS>
 <COLUMN ID="1245" ColName="Objeto_idObjeto" PrevColName="" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -730,7 +761,7 @@
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1368" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1429" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
@@ -744,7 +775,7 @@
 <INDEX ID="1243" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
 <INDEXCOLUMN idColumn="1245" LengthParam="0" />
-<INDEXCOLUMN idColumn="1368" LengthParam="0" />
+<INDEXCOLUMN idColumn="1429" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 <INDEX ID="1246" IndexName="Compra_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1244">
@@ -752,14 +783,14 @@
 <INDEXCOLUMN idColumn="1245" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1369" IndexName="Compra_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1240">
+<INDEX ID="1454" IndexName="Compra_FKIndex2" IndexKind="1" FKRefDef_Obj_id="1240">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1368" LengthParam="0" />
+<INDEXCOLUMN idColumn="1429" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1250" Tablename="Tema" PrevTableName="Table_12" XPos="797" YPos="538" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="19" >
+<TABLE ID="1250" Tablename="Tema" PrevTableName="Table_12" XPos="366" YPos="823" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="19" >
 <COLUMNS>
 <COLUMN ID="1257" ColName="idTema" PrevColName="" Pos="0" idDatatype="20" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -772,6 +803,10 @@
 </OPTIONSELECTED>
 </COLUMN>
 </COLUMNS>
+<RELATIONS_START>
+<RELATION_START ID="1472" />
+<RELATION_START ID="1475" />
+</RELATIONS_START>
 <INDICES>
 <INDEX ID="1258" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
@@ -780,20 +815,33 @@
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1302" Tablename="Examen" PrevTableName="Table_11" XPos="358" YPos="831" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" >
+<TABLE ID="1302" Tablename="Estadisticas" PrevTableName="Table_11" XPos="446" YPos="576" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" >
 <COLUMNS>
-<COLUMN ID="1370" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<COLUMN ID="1430" ColName="Estudiante_Usuario_codigoUsuario" PrevColName="" Pos="1" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1309" ColName="resultadoExamenInicial" PrevColName="examenInicial" Pos="1" idDatatype="7" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<COLUMN ID="1309" ColName="examen" PrevColName="examenInicial" Pos="1" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1312" ColName="tema" PrevColName="resultadoExamenFinal" Pos="2" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1438" ColName="nombreEstudiante" PrevColName="" Pos="3" idDatatype="20" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
-<COLUMN ID="1312" ColName="resultadoExamenFinal" PrevColName="" Pos="2" idDatatype="7" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
+<COLUMN ID="1442" ColName="puntuacion" PrevColName="" Pos="4" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="0" AutoInc="0" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
+<OPTIONSELECT Value="1" />
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
@@ -802,23 +850,30 @@
 <RELATION_END ID="1304" />
 </RELATIONS_END>
 <INDICES>
-<INDEX ID="1375" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
+<INDEX ID="1434" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1370" LengthParam="0" />
+<INDEXCOLUMN idColumn="1430" LengthParam="0" />
+<INDEXCOLUMN idColumn="1309" LengthParam="0" />
+<INDEXCOLUMN idColumn="1312" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
-<INDEX ID="1371" IndexName="Examen_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1304">
+<INDEX ID="1455" IndexName="Estadisticas_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1304">
 <INDEXCOLUMNS>
-<INDEXCOLUMN idColumn="1370" LengthParam="0" />
+<INDEXCOLUMN idColumn="1430" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1319" Tablename="Pregunta" PrevTableName="Table_13" XPos="1310" YPos="459" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="23" >
+<TABLE ID="1319" Tablename="Pregunta" PrevTableName="Table_13" XPos="570" YPos="756" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="23" >
 <COLUMNS>
 <COLUMN ID="1322" ColName="id" PrevColName="idPregunta" Pos="0" idDatatype="5" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
 <OPTIONSELECT Value="1" />
+<OPTIONSELECT Value="0" />
+</OPTIONSELECTED>
+</COLUMN>
+<COLUMN ID="1473" ColName="Tema_idTema" PrevColName="" Pos="1" idDatatype="20" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="0" NotNull="1" AutoInc="0" IsForeignKey="1" DefaultValue="" Comments="">
+<OPTIONSELECTED>
 <OPTIONSELECT Value="0" />
 </OPTIONSELECTED>
 </COLUMN>
@@ -855,15 +910,23 @@
 </OPTIONSELECTED>
 </COLUMN>
 </COLUMNS>
+<RELATIONS_END>
+<RELATION_END ID="1472" />
+</RELATIONS_END>
 <INDICES>
 <INDEX ID="1323" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
 <INDEXCOLUMNS>
 <INDEXCOLUMN idColumn="1322" LengthParam="0" />
 </INDEXCOLUMNS>
 </INDEX>
+<INDEX ID="1474" IndexName="Pregunta_FKIndex1" IndexKind="1" FKRefDef_Obj_id="1472">
+<INDEXCOLUMNS>
+<INDEXCOLUMN idColumn="1473" LengthParam="0" />
+</INDEXCOLUMNS>
+</INDEX>
 </INDICES>
 </TABLE>
-<TABLE ID="1342" Tablename="Usuario" PrevTableName="Table_15" XPos="567" YPos="122" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="24" >
+<TABLE ID="1342" Tablename="Usuario" PrevTableName="Table_15" XPos="623" YPos="95" TableType="0" TablePrefix="0" nmTable="0" Temporary="0" UseStandardInserts="0" StandardInserts="\n" TableOptions="DelayKeyTblUpdates=0\nPackKeys=0\nRowChecksum=0\nRowFormat=0\nUseRaid=0\nRaidType=0\n" Comments="" Collapsed="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="24" >
 <COLUMNS>
 <COLUMN ID="1344" ColName="codigoUsuario" PrevColName="" Pos="0" idDatatype="9" DatatypeParams="" Width="-1" Prec="-1" PrimaryKey="1" NotNull="1" AutoInc="1" IsForeignKey="0" DefaultValue="" Comments="">
 <OPTIONSELECTED>
@@ -889,6 +952,7 @@
 </COLUMNS>
 <RELATIONS_START>
 <RELATION_START ID="1356" />
+<RELATION_START ID="1444" />
 </RELATIONS_START>
 <INDICES>
 <INDEX ID="1345" IndexName="PRIMARY" IndexKind="0" FKRefDef_Obj_id="-1">
@@ -900,16 +964,19 @@
 </TABLE>
 </TABLES>
 <RELATIONS>
-<RELATION ID="1013" RelationName="Rel_01" Kind="0" SrcTable="1000" DestTable="1011" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1361" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="4" />
-<RELATION ID="1070" RelationName="Rel_07" Kind="0" SrcTable="1000" DestTable="1068" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1365" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="16" />
-<RELATION ID="1079" RelationName="Rel_08" Kind="0" SrcTable="1000" DestTable="1077" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1367" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="18" />
-<RELATION ID="1223" RelationName="Rel_10" Kind="2" SrcTable="1091" DestTable="1000" FKFields="idGrupo=Grupo_idGrupo\n" FKFieldsComments="\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1225" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" />
-<RELATION ID="1240" RelationName="Rel_13" Kind="1" SrcTable="1000" DestTable="1235" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1369" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="21" />
-<RELATION ID="1244" RelationName="Rel_14" Kind="1" SrcTable="1037" DestTable="1235" FKFields="idObjeto=Objeto_idObjeto\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1246" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="22" />
-<RELATION ID="1277" RelationName="Rel_09" Kind="1" SrcTable="1000" DestTable="1044" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1363" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="19" />
-<RELATION ID="1304" RelationName="Rel_09" Kind="0" SrcTable="1000" DestTable="1302" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1371" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="21" />
-<RELATION ID="1356" RelationName="Rel_10" Kind="0" SrcTable="1342" DestTable="1000" FKFields="codigoUsuario=Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1358" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="24" />
-<RELATION ID="1380" RelationName="Rel_11" Kind="1" SrcTable="1000" DestTable="1056" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1382" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="24" />
+<RELATION ID="1013" RelationName="Rel_01" Kind="0" SrcTable="1000" DestTable="1011" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1449" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="4" />
+<RELATION ID="1070" RelationName="Rel_07" Kind="0" SrcTable="1000" DestTable="1068" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1452" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="16" />
+<RELATION ID="1079" RelationName="Rel_08" Kind="0" SrcTable="1000" DestTable="1077" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1453" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="18" />
+<RELATION ID="1223" RelationName="Rel_10" Kind="2" SrcTable="1091" DestTable="1000" FKFields="idGrupo=Grupo_idGrupo\nUsuario_codigoUsuario=Grupo_Usuario_codigoUsuario\n" FKFieldsComments="\n\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1225" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="20" />
+<RELATION ID="1240" RelationName="Rel_13" Kind="1" SrcTable="1000" DestTable="1235" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1454" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="21" />
+<RELATION ID="1244" RelationName="Rel_14" Kind="1" SrcTable="1037" DestTable="1235" FKFields="idObjeto=Objeto_idObjeto\n" FKFieldsComments="\n" relDirection="1" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1246" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="22" />
+<RELATION ID="1277" RelationName="Rel_09" Kind="1" SrcTable="1000" DestTable="1044" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1450" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="19" />
+<RELATION ID="1304" RelationName="Rel_09" Kind="0" SrcTable="1000" DestTable="1302" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1455" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="21" />
+<RELATION ID="1380" RelationName="Rel_11" Kind="1" SrcTable="1000" DestTable="1056" FKFields="Usuario_codigoUsuario=Estudiante_Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1451" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="24" />
+<RELATION ID="1356" RelationName="Rel_10" Kind="0" SrcTable="1342" DestTable="1000" FKFields="codigoUsuario=Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="3" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1421" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="24" />
+<RELATION ID="1444" RelationName="Rel_12" Kind="0" SrcTable="1342" DestTable="1091" FKFields="codigoUsuario=Usuario_codigoUsuario\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1446" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="25" />
+<RELATION ID="1472" RelationName="Rel_12" Kind="2" SrcTable="1250" DestTable="1319" FKFields="idTema=Tema_idTema\n" FKFieldsComments="\n" relDirection="2" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1474" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="26" />
+<RELATION ID="1475" RelationName="Rel_13" Kind="2" SrcTable="1250" DestTable="1044" FKFields="idTema=Tema_idTema\n" FKFieldsComments="\n" relDirection="4" MidOffset="0" OptionalStart="0" OptionalEnd="0" CaptionOffsetX="0" CaptionOffsetY="0" StartIntervalOffsetX="0" StartIntervalOffsetY="0" EndIntervalOffsetX="0" EndIntervalOffsetY="0" CreateRefDef="1" Invisible="0" RefDef="Matching=0\nOnDelete=3\nOnUpdate=3\n" Comments="" FKRefDefIndex_Obj_id="1477" Splitted="0" IsLinkedObject="0" IDLinkedModel="-1" Obj_id_Linked="-1" OrderPos="27" />
 </RELATIONS>
 <NOTES>
 </NOTES>
