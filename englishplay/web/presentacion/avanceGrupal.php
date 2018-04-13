@@ -95,15 +95,94 @@ while ($row = mysqli_fetch_assoc($resultado))
 $numPreguntas;
 $numCorrectas;
 
-$sql = "SELECT preguntas, correctas FROM resultadoDesafio, estudiante WHERE estudiante.idGrupo = '$idGrupo' AND estudiante.codigoUsuario = resultadoDesafio.codigoEstudiante";
+$numPreguntasAldea;
+$numCorrectasAldea;
+
+$numPreguntasBosque;
+$numCorrectasBosque;
+
+$numPreguntasCueva;
+$numCorrectasCueva;
+
+$numPreguntasCastillo;
+$numCorrectasCastillo;
+
+$sql = "SELECT preguntas, correctas, mundo FROM resultadoDesafio, estudiante WHERE estudiante.idGrupo = '$idGrupo' AND estudiante.codigoUsuario = resultadoDesafio.codigoEstudiante";
 $resultado = mysqli_query($conexion, $sql);
 while ($row = mysqli_fetch_assoc($resultado))
 {
 	$numPreguntas += $row[preguntas];
 	$numCorrectas += $row[correctas];
+
+  if($row[mundo]==1){
+    $numPreguntasAldea += $row[preguntas];
+    $numCorrectasAldea += $row[correctas];
+  }else if($row[mundo]==2){
+    $numPreguntasBosque += $row[preguntas];
+    $numCorrectasBosque += $row[correctas];
+  }else if($row[mundo]==3){
+    $numPreguntasCueva += $row[preguntas];
+    $numCorrectasCueva += $row[correctas];
+  }else if($row[mundo]==4){
+    $numPreguntasCastillo += $row[preguntas];
+    $numCorrectasCastillo += $row[correctas];
+  }
 }
 
+$puntuacionInicialAldea;
+$puntuacionInicialBosque;
+$puntuacionInicialCueva;
+$puntuacionInicialCastillo;
 
+$estudiantesInicialAldea;
+$estudiantesInicialBosque;
+$estudiantesInicialCueva;
+$estudiantesInicialCastillo;
+
+$puntuacionFinalAldea;
+$puntuacionFinalBosque;
+$puntuacionFinalCueva;
+$puntuacionFinalCastillo;
+
+$estudiantesFinalAldea;
+$estudiantesFinalBosque;
+$estudiantesFinalCueva;
+$estudiantesFinalCastillo;
+
+$sql = "SELECT examen, tema, puntuacion FROM estadisticas, estudiante WHERE estudiante.idGrupo = '$idGrupo' AND estudiante.codigoUsuario = estadisticas.codEstudiante";
+$resultado = mysqli_query($conexion, $sql);
+while ($row = mysqli_fetch_assoc($resultado))
+{
+  if($row[examen]==0){
+    if($row[tema]==1){
+      $puntuacionInicialAldea += $row[puntuacion];
+      $estudiantesInicialAldea += 1;
+    }else if($row[tema]==2){
+      $puntuacionInicialBosque += $row[puntuacion];
+      $estudiantesInicialBosque += 1;
+    }else if($row[tema]==3){
+      $puntuacionInicialCueva += $row[puntuacion];
+      $estudiantesInicialCueva += 1;
+    }else if($row[tema]==4){
+      $puntuacionInicialCastillo += $row[puntuacion];
+      $estudiantesInicialCastillo += 1;
+    }
+  }else if($row[examen]==1){
+    if($row[tema]==1){
+      $puntuacionFinalAldea += $row[puntuacion];
+      $estudiantesFinalAldea += 1;
+    }else if($row[tema]==2){
+      $puntuacionFinalBosque += $row[puntuacion];
+      $estudiantesFinalBosque += 1;
+    }else if($row[tema]==3){
+      $puntuacionFinalCueva += $row[puntuacion];
+      $estudiantesFinalCueva += 1;
+    }else if($row[tema]==4){
+      $puntuacionFinalCastillo += $row[puntuacion];
+      $estudiantesFinalCastillo += 1;
+    }
+  }
+}
 
 ?>
 
@@ -178,7 +257,7 @@ while ($row = mysqli_fetch_assoc($resultado))
           ['Castle', <?php echo $numAvance4 ?>]
         ]);
         // Set chart options
-        var options = {'title':'Current World',
+        var options = {'title':'Current World Unlocked',
                        'width':350,
                        'height':300,
                        'backgroundColor': 'transparent'};
@@ -204,6 +283,120 @@ while ($row = mysqli_fetch_assoc($resultado))
         var chart = new google.visualization.PieChart(document.getElementById('divChart4'));
         chart.draw(data, options);
 
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Correct Answers', <?php echo $numCorrectasAldea ?>],
+          ['Wrong Answers', <?php echo $numPreguntasAldea - $numCorrectasAldea ?>]
+        ]);
+        // Set chart options
+        var options = {'title':'Simple and Continous Times',
+                       'width':350,
+                       'height':300,
+                       'backgroundColor': 'transparent'};
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('divChart5'));
+        chart.draw(data, options);
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Correct Answers', <?php echo $numCorrectasBosque ?>],
+          ['Wrong Answers', <?php echo $numPreguntasBosque - $numCorrectasBosque ?>]
+        ]);
+        // Set chart options
+        var options = {'title':'Perfect Times and Passive Voice',
+                       'width':350,
+                       'height':300,
+                       'backgroundColor': 'transparent'};
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('divChart6'));
+        chart.draw(data, options);
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Correct Answers', <?php echo $numCorrectasCueva ?>],
+          ['Wrong Answers', <?php echo $numPreguntasCueva - $numCorrectasCueva ?>]
+        ]);
+        // Set chart options
+        var options = {'title':'Prepositions and Linking Words',
+                       'width':350,
+                       'height':300,
+                       'backgroundColor': 'transparent'};
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('divChart7'));
+        chart.draw(data, options);
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Correct Answers', <?php echo $numCorrectasCastillo ?>],
+          ['Wrong Answers', <?php echo $numPreguntasCastillo - $numCorrectasCastillo ?>]
+        ]);
+        // Set chart options
+        var options = {'title':'Adjectives and Superlatives',
+                       'width':350,
+                       'height':300,
+                       'backgroundColor': 'transparent'};
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('divChart8'));
+        chart.draw(data, options);
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Score');
+        data.addRows([
+          ['Village Average Score', <?php echo $puntuacionInicialAldea / $estudiantesInicialAldea ?>],
+          ['Forest Average Score', <?php echo $puntuacionInicialBosque / $estudiantesInicialBosque ?>],
+          ['Cave Average Score', <?php echo $puntuacionInicialCueva / $estudiantesInicialCueva ?>],
+          ['Castle Average Score', <?php echo $puntuacionInicialCastillo / $estudiantesInicialCastillo ?>]
+        ]);
+        // Set chart options
+        var options = {'title':'Initial Exam',
+                       'width':350,
+                       'height':300,
+                       'backgroundColor': 'transparent',
+                       'legend': { position: "none" }};
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.ColumnChart(document.getElementById('divChart9'));
+        chart.draw(data, options);
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Score');
+        data.addRows([
+          ['Village Average Score', <?php echo $puntuacionFinalAldea / $estudiantesFinalAldea ?>],
+          ['Forest Average Score', <?php echo $puntuacionFinalBosque / $estudiantesFinalBosque ?>],
+          ['Cave Average Score', <?php echo $puntuacionFinalCueva / $estudiantesFinalCueva ?>],
+          ['Castle Average Score', <?php echo $puntuacionFinalCastillo / $estudiantesFinalCastillo ?>]
+        ]);
+        // Set chart options
+        var options = {'title':'Final Exam',
+                       'width':350,
+                       'height':300,
+                       'backgroundColor': 'transparent',
+                       'legend': { position: "none" }};
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.ColumnChart(document.getElementById('divChart10'));
+        chart.draw(data, options);
+
       }
     </script>
   </head>
@@ -218,6 +411,12 @@ while ($row = mysqli_fetch_assoc($resultado))
               	<div id="divChart2" class="divInterno"></div>
                 <div id="divChart3" class="divInterno"></div>
                 <div id="divChart4" class="divInterno"></div>
+                <div id="divChart5" class="divInterno"></div>
+                <div id="divChart6" class="divInterno"></div>
+                <div id="divChart7" class="divInterno"></div>
+                <div id="divChart8" class="divInterno"></div>
+                <div id="divChart9" class="divInterno"></div>
+                <div id="divChart10" class="divInterno"></div>
             </div>
           </div>
         </div>
