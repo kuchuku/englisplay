@@ -107,7 +107,7 @@ $numCorrectasCueva;
 $numPreguntasCastillo;
 $numCorrectasCastillo;
 
-$sql = "SELECT preguntas, correctas, mundo FROM resultadoDesafio, estudiante WHERE estudiante.idGrupo = '$idGrupo' AND estudiante.codigoUsuario = resultadoDesafio.codigoEstudiante";
+$sql = "SELECT preguntas, correctas, mundo FROM resultadodesafio, estudiante WHERE estudiante.idGrupo = '$idGrupo' AND estudiante.codigoUsuario = resultadodesafio.codigoEstudiante";
 $resultado = mysqli_query($conexion, $sql);
 while ($row = mysqli_fetch_assoc($resultado))
 {
