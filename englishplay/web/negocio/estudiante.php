@@ -176,19 +176,19 @@
 	$mundo = ConsultarMundoDesbloqueado($cod);
 	switch ($mundo) {
 		case '1':
-				$imgMundo = "<img src=images/Mundo1.png width=250 height=250>";
+				$imgMundo = "<img src=images/mundo1.png width=250 height=250>";
 				$nomMundo = "Village";
 			break;
 		case '2':
-				$imgMundo = "<img src=images/Mundo2.png width=250 height=250>";
+				$imgMundo = "<img src=images/mundo2.png width=250 height=250>";
 				$nomMundo = "Forest";
 			break;
 		case '3':
-				$imgMundo = "<img src=images/Mundo3.png width=250 height=250>";
+				$imgMundo = "<img src=images/mundo3.png width=250 height=250>";
 				$nomMundo = "Cave";
 			break;
 		case '4':
-				$imgMundo = "<img src=images/Mundo4.png width=250 height=250>";
+				$imgMundo = "<img src=images/mundo4.png width=250 height=250>";
 				$nomMundo = "Castle";
 			break;
 	}
