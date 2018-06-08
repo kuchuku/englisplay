@@ -23,7 +23,7 @@
 						    <!-- MAX_FILE_SIZE debe preceder al campo de entrada del fichero -->
 						    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
 						    <!-- El nombre del elemento de entrada determina el nombre en el array $_FILES -->
-						    <input name="csv" type="file" /><br>
+						    <input name="csv" type="file" required/><br>
 						   	<strong>Note: Only .csv format is accepted.</strong><br><br><br><br>
 						    <input type="submit" value="Load Group" />
 						</form>
