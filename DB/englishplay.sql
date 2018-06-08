@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-04-2018 a las 18:09:04
+-- Tiempo de generación: 08-06-2018 a las 16:05:55
 -- Versión del servidor: 10.1.26-MariaDB
 -- Versión de PHP: 7.1.9
 
@@ -1197,7 +1197,7 @@ INSERT INTO `tema` (`idTema`, `contenido`) VALUES
 
 CREATE TABLE `usuario` (
   `codigoUsuario` double NOT NULL,
-  `contraseniaUsuario` varchar(50) NOT NULL,
+  `contraseniaUsuario` varchar(64) NOT NULL,
   `nombreUsuario` varchar(50) NOT NULL,
   `tipoUsuario` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -1207,8 +1207,8 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`codigoUsuario`, `contraseniaUsuario`, `nombreUsuario`, `tipoUsuario`) VALUES
-(201255218, 'b1f37ec94d5ce01b55b89cec07183cef', 'BUENO PEÑA ANDRES MAURICIO', 0),
-(201255229, 'b1f37ec94d5ce01b55b89cec07183cef', 'NARANJO HERRERA JAVIER SIMÓN', 1),
+(201255218, '46e23946235c386a53de6147f994e549d03bf24b64548ab0250f49a1da2ef9a7', 'BUENO PEÑA ANDRES MAURICIO', 0),
+(201255229, '46e23946235c386a53de6147f994e549d03bf24b64548ab0250f49a1da2ef9a7', 'NARANJO HERRERA JAVIER SIMÓN', 1),
 (201513141, '12345', 'ZAPATA CASTAÑO JORGE LEONARDO', 0),
 (201663714, '12345', 'QUINTERO CASTAÑO LUIS FERNANDO', 0),
 (201765504, 'Ma7letrq0501', 'GOMEZ PUERTA JHON ALEXANDER', 0),

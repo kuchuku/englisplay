@@ -12,7 +12,9 @@
 		$pass=$filas['contraseniaUsuario'];
 		$tipoUsuario=$filas['tipoUsuario'];
 
-	if ($email=$_POST['codigo']!==$usuario || $password=md5($_POST['password'])!==$pass) {
+		$salt = "nAranjo_qUintero-zApata.bUeno@univaLLeEnglishPlay20183743cifradosha8342201318_caligean!!!";
+
+	if ($email=$_POST['codigo']!==$usuario || $password=hash('sha256', $salt.$_POST['password'])!==$pass) {
 		$email=$_POST['codigo'];
 		?>
 		<form name="formulario" method="post" action="../presentacion/login.php">

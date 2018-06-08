@@ -5,7 +5,11 @@
 	$txtCodigo		= $_GET['txtCodigo'];
 	
 	$txtContrasenia	= $_GET['txtContrasenia'];
-	$txtContrasenia = md5($txtContrasenia);
+
+	$salt = "nAranjo_qUintero-zApata.bUeno@univaLLeEnglishPlay20183743cifradosha8342201318_caligean!!!";
+	$txtContrasenia = $salt.$txtContrasenia;
+
+	$txtContrasenia = hash('sha256', $txtContrasenia);
 
 	if(!$conexion->connect_errno) {
 		$sql 		= "SELECT nombreUsuario FROM usuario WHERE codigoUsuario = '$txtCodigo' AND contraseniaUsuario = '$txtContrasenia'";
